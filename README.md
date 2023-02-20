@@ -11,6 +11,7 @@ You can download it here: https://unity.com/releases/editor/archive
 
 ## Repository Policy
 Hello team :)
+
 For this project I would like to try out **trunk based development** with the least amount of friction possible. This means we do not have two protected branches (such as **main** and **dev**) like I remember many of us had in *Making Games* but only one **main** branch. The former does give more protection but I also remember some unnecessary duplicate work had to be done. 
 
 With the approach I thought of, we only have one branch: **main**; and we keep it functional at all times by pushing our changes to it frequently and in small batches. It has weak protection enabled, meaning we cannot push changes directly to it, but have to do work in branches. When someone is done working on their feature, they generate a pull request, to merge their changes into **main**. It requires one person to approve the pull request, so theoretically the person generating the pull request can approve it at the same time. This allows us to get small changes into **main** quickly, without having to wait for someone else to approve. Should there be merge conflicts though, the merge can be aborted and brought to the attention of Felix or Aske, so we can have a look at it.
@@ -21,8 +22,13 @@ This should make development easy and quick, and as only Aske and Felix will do 
  2. Create a branch off of **main**, naming it in this format: 
 
 > **task-type/task-description**
+
+some examples:
+
 > feature/player-jump
+
 > experimental/toon-shader
+
 > bug-fix/collider-level1-fix
 
  3. Create a scene in Unity with the same *task-description*, you chose for your branch name.
