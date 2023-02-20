@@ -1,7 +1,5 @@
 # Myth-Office
-IT University of Copenhagen
-Game World Design Semester Project
-Spring 2023
+IT University of Copenhagen | Game World Design Semester Project | Spring 2023
 ## General Info
 We will be using the following Unity version:
 
