@@ -136,3 +136,16 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+# Crashlytics generated file
+crashlytics-build.properties
+
+# Extra stuff
+*.log
+
+#IDE stuff
+*.vsconfig
+*.vscode
+
+# Mac folder ordering files
+**/.DS_Store

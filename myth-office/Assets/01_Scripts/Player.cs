@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour, Controls.IPlayerActions
+public class Player : MonoBehaviour
 {
     /// <summary>
     /// based on    https://docs.unity3d.com/ScriptReference/CharacterController.Move.html
