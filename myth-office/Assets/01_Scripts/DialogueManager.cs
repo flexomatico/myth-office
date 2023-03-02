@@ -44,7 +44,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H))
         {
-            StartDialogue();
+            //StartDialogue();
         }
     }
 
