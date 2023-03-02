@@ -8,10 +8,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour, IInteractable
 {
     [SerializeField] private Dialogue dialogue;
-
+    [SerializeField][Range(0.1f, 10.0f)] private float colliderRadius;
+    
     private Canvas canvas;
     private TextMeshProUGUI textField;
     private Image leftImage;
@@ -20,6 +21,22 @@ public class DialogueManager : MonoBehaviour
     
     private List<DialoguePart> dialogueParts;
     private int currentDialogue = 0;
+
+    private PlayerInput _playerInput;
+    private SphereCollider _sphereCollider;
+
+    void Awake()
+    {
+        _sphereCollider = gameObject.AddComponent<SphereCollider>();
+        _sphereCollider.radius = colliderRadius;
+        _sphereCollider.isTrigger = true;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, colliderRadius);
+    }
 
     private void Start()
     {
@@ -36,36 +53,18 @@ public class DialogueManager : MonoBehaviour
         {
             throw new Exception("UI References not found. Is UI_REFS the topmost object in the UI scene?");
         }
-
+        
         dialogueParts = dialogue.dialogueParts;
     }
 
-    private void Update()
+    public void StartInteraction(PlayerInput playerInput)
     {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            //StartDialogue();
-        }
-    }
-
-    public void StartDialogue()
-    {
+        _playerInput = playerInput;
         canvas.gameObject.SetActive(true);
-        ProgressDialogue();
+        ContinueInteraction(new InputAction.CallbackContext());
     }
-
-    public void ReceiveInteractInput(InputAction.CallbackContext context)
-    {
-        bool isSuperfluousCallback = !context.started;
-        if (isSuperfluousCallback)
-        {
-            return;
-        }
-
-        ProgressDialogue();
-    }
-
-    public void ProgressDialogue()
+    
+    public void ContinueInteraction(InputAction.CallbackContext context)
     {
         bool canvasNotEnabled = !canvas.gameObject.activeSelf;
         if (canvasNotEnabled)
@@ -75,7 +74,7 @@ public class DialogueManager : MonoBehaviour
         
         bool dialogueIndexIsInsideBounds = dialogueParts.Count > currentDialogue;
         if (dialogueIndexIsInsideBounds)
-        { 
+        {
             textField.text = dialogueParts[currentDialogue].line; 
             leftImage.sprite = dialogueParts[currentDialogue].leftImage; 
             rightImage.sprite = dialogueParts[currentDialogue].rightImage; 
@@ -93,5 +92,7 @@ public class DialogueManager : MonoBehaviour
     {
         canvas.gameObject.SetActive(false);
         currentDialogue = 0;
+        _playerInput.actions["Submit"].performed -= ContinueInteraction;
+        _playerInput.SwitchCurrentActionMap("Player");
     }
 }
