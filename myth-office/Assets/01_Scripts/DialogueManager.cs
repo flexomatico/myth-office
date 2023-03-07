@@ -75,12 +75,12 @@ public class DialogueManager : MonoBehaviour, IInteractable
         bool dialogueIndexIsInsideBounds = dialogueParts.Count > currentDialogue;
         if (dialogueIndexIsInsideBounds)
         {
-            textField.text = dialogueParts[currentDialogue].line; 
-            leftImage.sprite = dialogueParts[currentDialogue].leftImage; 
-            rightImage.sprite = dialogueParts[currentDialogue].rightImage; 
-            audioSource.clip = dialogueParts[currentDialogue].sound; 
-            audioSource.Play(); 
-            currentDialogue++;
+            //textField.text = dialogueParts[currentDialogue].line; 
+            //leftImage.sprite = dialogueParts[currentDialogue].leftImage; 
+            //rightImage.sprite = dialogueParts[currentDialogue].rightImage; 
+            //audioSource.clip = dialogueParts[currentDialogue].sound; 
+            //audioSource.Play(); 
+            //currentDialogue++;
         }
         else
         {
