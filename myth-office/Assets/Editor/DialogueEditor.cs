@@ -27,6 +27,9 @@ public class DialogueEditor : Editor
     private const float ShrinkHeaderWidth = 15.0f;
     private const float XShiftHeaders = 15.0f;
 
+    private const float npcResponseElementHeight = 155.0f;
+    private const float playerResponseElementHeight = 185.0f;
+
     private GUIStyle headersStyle;
 
     private ReorderableList list;
@@ -86,31 +89,40 @@ public class DialogueEditor : Editor
 
         Rect foldoutHeaderRect = rect;
         foldoutHeaderRect.height = HeightHeader;
+        foldoutHeaderRect.x += XShiftHeaders;
         element.isExpanded = EditorGUI.BeginFoldoutHeaderGroup(foldoutHeaderRect, element.isExpanded, dialogueTypeName);
-
-        if (!element.isExpanded)
-            return;
-
         EditorGUI.indentLevel++;
 
-        if ((DialogueType)dialogueType.enumValueFlag == DialogueType.NPCResponse)
+        if (element.isExpanded)
         {
+
             EditorGUILayout.BeginVertical();
             
-            rect.y += GetDefaultSpaceBetweenElements();
-            rect.height = EditorGUIUtility.singleLineHeight;
-            EditorGUI.PropertyField(rect, element.FindPropertyRelative("line"), new GUIContent("Line"));
+            if ((DialogueType)dialogueType.enumValueFlag == DialogueType.NPCResponse)
+            {
+                rect.y += GetDefaultSpaceBetweenElements();
+                rect.height = EditorGUIUtility.singleLineHeight * 4.0f;
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("line"), new GUIContent("Line"));
 
-            EditorGUILayout.BeginHorizontal();
-            
-            rect.y += GetDefaultSpaceBetweenElements();
-            rect.width *= 0.5f;
-            EditorGUI.PropertyField(rect, element.FindPropertyRelative("leftImage"), new GUIContent("Left Image"));
-            rect.x += rect.width;
-            EditorGUI.PropertyField(rect, element.FindPropertyRelative("rightImage"), new GUIContent("Right Image"));
-            
-            EditorGUILayout.EndHorizontal();
-            
+                rect.y += rect.height + EditorGUIUtility.standardVerticalSpacing;
+                rect.height = EditorGUIUtility.singleLineHeight;
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("leftImage"), new GUIContent("Left Image"));
+                rect.y += GetDefaultSpaceBetweenElements();
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("rightImage"), new GUIContent("Right Image"));
+                rect.y += GetDefaultSpaceBetweenElements();
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("sound"), new GUIContent("Sound"));
+
+            } 
+            else if ((DialogueType)dialogueType.enumValueFlag == DialogueType.PlayerResponse)
+            {
+                rect.height = EditorGUIUtility.singleLineHeight * 3.0f;
+                rect.y += GetDefaultSpaceBetweenElements();
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("choice1"), new GUIContent("Choice 1"));
+                rect.y += rect.height;
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("choice2"), new GUIContent("Choice 2"));
+                rect.y += rect.height;
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("choice3"), new GUIContent("Choice 3"));
+            }
             EditorGUILayout.EndVertical();
         }
 
@@ -199,28 +211,13 @@ public class DialogueEditor : Editor
 
     private float OnReorderListElementHeight(int index)
     {
-        int length = list.serializedProperty.arraySize;
-
-        if (length <= 0)
-            return 0.0f;
-
-        SerializedProperty iteratorProp = list.serializedProperty.GetArrayElementAtIndex(index);
-        SerializedProperty endProp = iteratorProp.GetEndProperty();
-
-        float height = GetDefaultSpaceBetweenElements();
-
-        if (!iteratorProp.isExpanded)
-            return height;
-
-        int i = 0;
-        while (iteratorProp.NextVisible(true) && !EqualContents(endProp, iteratorProp))
-        {
-            float multiplier = i == 0 ? AdditionalSpaceMultiplier : 1.0f;
-            height += GetDefaultSpaceBetweenElements() * multiplier;
-            ++i;
-        }
-
-        return height;
+        SerializedProperty element = list.serializedProperty.GetArrayElementAtIndex(index);
+        DialogueType dialogueType = (DialogueType)element.FindPropertyRelative("dialogueType").enumValueFlag;
+        if (dialogueType == DialogueType.NPCResponse)
+            return element.isExpanded ? npcResponseElementHeight : HeightHeader;
+        else if (dialogueType == DialogueType.PlayerResponse)
+            return element.isExpanded ? playerResponseElementHeight : HeightHeader;
+        return 0.0f;
     }
 
     private void OnReorderListAddDropdown(Rect buttonRect, ReorderableList list)

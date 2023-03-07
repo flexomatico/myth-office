@@ -20,7 +20,7 @@ public abstract class DialoguePart
 [Serializable]
 public class NPCResponse : DialoguePart
 {
-    [SerializeField] public string line;
+    [SerializeField, TextArea] public string line;
     [SerializeField] public Sprite leftImage;
     [SerializeField] public Sprite rightImage;
     [SerializeField] public AudioClip sound;
@@ -34,7 +34,9 @@ public class NPCResponse : DialoguePart
 [Serializable]
 public class PlayerResponse : DialoguePart
 {
-    [SerializeField] public List<string> choices;
+    [SerializeField, TextArea] public string choice1;
+    [SerializeField, TextArea] public string choice2;
+    [SerializeField, TextArea] public string choice3;
 
     public PlayerResponse()
     {
