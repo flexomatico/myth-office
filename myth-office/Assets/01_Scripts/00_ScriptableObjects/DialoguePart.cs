@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum DialogueType
+public enum ResponseType
 {
     Invalid = -1,
     
@@ -14,7 +14,7 @@ public enum DialogueType
 [Serializable]
 public abstract class DialoguePart
 {
-    [SerializeField, HideInInspector] protected DialogueType dialogueType = DialogueType.Invalid;
+    [SerializeField, HideInInspector] public ResponseType responseType = ResponseType.Invalid;
 }
 
 [Serializable]
@@ -27,19 +27,17 @@ public class NPCResponse : DialoguePart
 
     public NPCResponse()
     {
-        dialogueType = DialogueType.NPCResponse;
+        responseType = ResponseType.NPCResponse;
     }
 }
 
 [Serializable]
 public class PlayerResponse : DialoguePart
 {
-    [SerializeField, TextArea] public string choice1;
-    [SerializeField, TextArea] public string choice2;
-    [SerializeField, TextArea] public string choice3;
+    [SerializeField, TextArea] public string[] choices;
 
     public PlayerResponse()
     {
-        dialogueType = DialogueType.PlayerResponse;
+        responseType = ResponseType.PlayerResponse;
     }
 }

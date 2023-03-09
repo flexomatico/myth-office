@@ -28,7 +28,8 @@ public class DialogueEditor : Editor
     private const float XShiftHeaders = 15.0f;
 
     private const float npcResponseElementHeight = 155.0f;
-    private const float playerResponseElementHeight = 185.0f;
+    private const float playerResponseChoiceHeight = 65.0f;
+    private const float listManipulationButtonsHeight = 25.0f;
 
     private GUIStyle headersStyle;
 
@@ -84,21 +85,18 @@ public class DialogueEditor : Editor
             return;
         
         SerializedProperty element = list.serializedProperty.GetArrayElementAtIndex(index);
-        SerializedProperty dialogueType = element.FindPropertyRelative("dialogueType");
-        string dialogueTypeName = dialogueType.enumDisplayNames[dialogueType.enumValueIndex];
+        SerializedProperty responseType = element.FindPropertyRelative("responseType");
+        string responseTypeDisplay = responseType.enumDisplayNames[responseType.enumValueIndex];
 
         Rect foldoutHeaderRect = rect;
         foldoutHeaderRect.height = HeightHeader;
-        foldoutHeaderRect.x += XShiftHeaders;
-        element.isExpanded = EditorGUI.BeginFoldoutHeaderGroup(foldoutHeaderRect, element.isExpanded, dialogueTypeName);
+        EditorGUI.LabelField(foldoutHeaderRect, responseTypeDisplay, EditorStyles.boldLabel);
         EditorGUI.indentLevel++;
 
+        element.isExpanded = true;
         if (element.isExpanded)
         {
-
-            EditorGUILayout.BeginVertical();
-            
-            if ((DialogueType)dialogueType.enumValueFlag == DialogueType.NPCResponse)
+            if ((ResponseType)responseType.enumValueFlag == ResponseType.NPCResponse)
             {
                 rect.y += GetDefaultSpaceBetweenElements();
                 rect.height = EditorGUIUtility.singleLineHeight * 4.0f;
@@ -113,21 +111,15 @@ public class DialogueEditor : Editor
                 EditorGUI.PropertyField(rect, element.FindPropertyRelative("sound"), new GUIContent("Sound"));
 
             } 
-            else if ((DialogueType)dialogueType.enumValueFlag == DialogueType.PlayerResponse)
+            else if ((ResponseType)responseType.enumValueFlag == ResponseType.PlayerResponse)
             {
                 rect.height = EditorGUIUtility.singleLineHeight * 3.0f;
                 rect.y += GetDefaultSpaceBetweenElements();
-                EditorGUI.PropertyField(rect, element.FindPropertyRelative("choice1"), new GUIContent("Choice 1"));
-                rect.y += rect.height;
-                EditorGUI.PropertyField(rect, element.FindPropertyRelative("choice2"), new GUIContent("Choice 2"));
-                rect.y += rect.height;
-                EditorGUI.PropertyField(rect, element.FindPropertyRelative("choice3"), new GUIContent("Choice 3"));
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("choices"), GUIContent.none);
             }
-            EditorGUILayout.EndVertical();
         }
 
         EditorGUI.indentLevel--;
-        EditorGUILayout.EndFoldoutHeaderGroup();
     }
     
     private void OnDrawReorderListHeader(Rect rect)
@@ -212,11 +204,18 @@ public class DialogueEditor : Editor
     private float OnReorderListElementHeight(int index)
     {
         SerializedProperty element = list.serializedProperty.GetArrayElementAtIndex(index);
-        DialogueType dialogueType = (DialogueType)element.FindPropertyRelative("dialogueType").enumValueFlag;
-        if (dialogueType == DialogueType.NPCResponse)
+        ResponseType responseType = (ResponseType)element.FindPropertyRelative("responseType").enumValueFlag;
+        if (responseType == ResponseType.NPCResponse)
+        {
             return element.isExpanded ? npcResponseElementHeight : HeightHeader;
-        else if (dialogueType == DialogueType.PlayerResponse)
-            return element.isExpanded ? playerResponseElementHeight : HeightHeader;
+        }
+        else if (responseType == ResponseType.PlayerResponse)
+        {
+            SerializedProperty choicesProperty = element.FindPropertyRelative("choices");
+            float expandedHeight = HeightHeader * 2.0f + playerResponseChoiceHeight * choicesProperty.arraySize + listManipulationButtonsHeight;
+            expandedHeight = choicesProperty.arraySize == 0 ? HeightHeader * 2.0f + listManipulationButtonsHeight + GetDefaultSpaceBetweenElements() : expandedHeight;
+            return choicesProperty.isExpanded ? expandedHeight : HeightHeader * 2.0f;
+        }
         return 0.0f;
     }
 

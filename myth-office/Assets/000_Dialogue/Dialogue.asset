@@ -12,7 +12,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
   m_Name: Dialogue
   m_EditorClassIdentifier: 
-  dialogueParts: []
+  dialogueParts:
+  - rid: 4308214425179127873
+  - rid: 4308214425179127874
+  - rid: 4308214425179127875
+  - rid: 4308214425179127876
+  - rid: 4308214425179127877
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 4308214425179127873
+      type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        line: 1
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+    - rid: 4308214425179127874
+      type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        line: 2
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+    - rid: 4308214425179127875
+      type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        line: 3
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+    - rid: 4308214425179127876
+      type: {class: PlayerResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        choices:
+        - jojojo
+        - Whaaat
+    - rid: 4308214425179127877
+      type: {class: PlayerResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        choices:
+        - stop
+        - this
+        - shit
