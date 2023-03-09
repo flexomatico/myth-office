@@ -178,7 +178,10 @@ public class DialogueManager : MonoBehaviour, IInteractable
         switch(nextResponseType) {
             case ResponseType.PlayerResponse:
                 _playerInput.actions["Submit"].performed -= ContinueInteraction;
+                RemoveDialogueContinueFromButtons();
+                Invoke("AttachDialogueContinueToButtons", 0.1f);
                 FillPlayerChoiceButtons();
+                currentDialogue++;
                 break;
             case ResponseType.NPCResponse:
                 _playerInput.actions["Submit"].performed += ContinueInteraction;
