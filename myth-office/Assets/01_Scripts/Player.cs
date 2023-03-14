@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
         if (_direction != Vector3.zero)
         {
-            gameObject.transform.forward = _direction;
+            //gameObject.transform.forward = _direction;
         }
 
         _playerVelocity.y += _gravityValue * Time.deltaTime;
