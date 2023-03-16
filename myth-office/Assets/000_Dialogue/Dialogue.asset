@@ -30,44 +30,50 @@ MonoBehaviour:
       type: {class: PlayerResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
         choices:
         - Hello good sir.
     - rid: 4308214425179127882
       type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        line: Piss off
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
+        line: Piss off
     - rid: 4308214425179127884
       type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        line: Bad day brother...
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
+        line: Bad day brother...
     - rid: 4308214425179127886
       type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        line: ...
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
+        line: ...
     - rid: 4308214425179127887
       type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        line: I'm sorry, didn't want to jump at you like that
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
+        line: I'm sorry, didn't want to jump at you like that
     - rid: 4308214425179127888
       type: {class: PlayerResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
         choices:
         - It's cool
         - Bye
@@ -75,14 +81,17 @@ MonoBehaviour:
       type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        line: Okay bye
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
+        line: Okay bye
     - rid: 4308214425179127890
       type: {class: PlayerResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
         choices:
         - Hold on, one more thing
         - Babaye
@@ -90,14 +99,18 @@ MonoBehaviour:
       type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        line: OK
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
+        line: OK
     - rid: 4308214425179127892
       type: {class: PlayerResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
         choices:
         - Ummm, okay
+        - bro
         - bro

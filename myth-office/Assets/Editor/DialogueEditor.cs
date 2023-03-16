@@ -116,6 +116,14 @@ public class DialogueEditor : Editor
                 rect.height = EditorGUIUtility.singleLineHeight * 3.0f;
                 rect.y += GetDefaultSpaceBetweenElements();
                 EditorGUI.PropertyField(rect, element.FindPropertyRelative("choices"), GUIContent.none);
+
+                rect.y += OnReorderListElementHeight(index) - EditorGUIUtility.singleLineHeight * 4.65f;
+                rect.height = EditorGUIUtility.singleLineHeight;
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("leftImage"), new GUIContent("Left Image"));
+                rect.y += GetDefaultSpaceBetweenElements();
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("rightImage"), new GUIContent("Right Image"));
+                rect.y += GetDefaultSpaceBetweenElements();
+                EditorGUI.PropertyField(rect, element.FindPropertyRelative("sound"), new GUIContent("Sound"));
             }
         }
 
@@ -125,49 +133,6 @@ public class DialogueEditor : Editor
     private void OnDrawReorderListHeader(Rect rect)
     {
         EditorGUI.LabelField(rect, "Dialogue Parts");
-    }
-
-    private void OnDrawReorderListElement(Rect rect, int index, bool isActive, bool isFocused)
-    {
-        int length = list.serializedProperty.arraySize;
-
-        if (length <= 0)
-            return;
-
-        SerializedProperty iteratorProp = list.serializedProperty.GetArrayElementAtIndex(index);
-
-        SerializedProperty actionTypeParentProp = iteratorProp.FindPropertyRelative("dialogueType");
-        string actionName = actionTypeParentProp.enumDisplayNames[actionTypeParentProp.enumValueIndex];
-
-        Rect labelfoldRect = rect;
-        labelfoldRect.height = HeightHeader;
-        labelfoldRect.x += XShiftHeaders;
-        labelfoldRect.width -= ShrinkHeaderWidth;
-
-        iteratorProp.isExpanded = EditorGUI.BeginFoldoutHeaderGroup(labelfoldRect, iteratorProp.isExpanded, actionName);
-
-        if (iteratorProp.isExpanded)
-        {
-            ++EditorGUI.indentLevel;
-
-            SerializedProperty endProp = iteratorProp.GetEndProperty();
-
-            int i = 0;
-            while (iteratorProp.NextVisible(true) && !EqualContents(endProp, iteratorProp))
-            {
-                float multiplier = i == 0 ? AdditionalSpaceMultiplier : 1.0f;
-                rect.y += GetDefaultSpaceBetweenElements() * multiplier;
-                rect.height = EditorGUIUtility.singleLineHeight;
-
-                EditorGUI.PropertyField(rect, iteratorProp, true);
-
-                ++i;
-            }
-
-            --EditorGUI.indentLevel;
-        }
-
-        EditorGUI.EndFoldoutHeaderGroup();
     }
 
     private void OnDrawReorderListBg(Rect rect, int index, bool isActive, bool isFocused)
@@ -214,7 +179,8 @@ public class DialogueEditor : Editor
             SerializedProperty choicesProperty = element.FindPropertyRelative("choices");
             float expandedHeight = HeightHeader * 2.0f + playerResponseChoiceHeight * choicesProperty.arraySize + listManipulationButtonsHeight;
             expandedHeight = choicesProperty.arraySize == 0 ? HeightHeader * 2.0f + listManipulationButtonsHeight + GetDefaultSpaceBetweenElements() : expandedHeight;
-            return choicesProperty.isExpanded ? expandedHeight : HeightHeader * 2.0f;
+            float otherPropsHeight = EditorGUIUtility.singleLineHeight * 4.0f;
+            return choicesProperty.isExpanded ? expandedHeight + otherPropsHeight : HeightHeader * 2.0f + otherPropsHeight;
         }
         return 0.0f;
     }
