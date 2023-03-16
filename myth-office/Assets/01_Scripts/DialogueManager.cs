@@ -17,13 +17,11 @@ public class DialogueManager : MonoBehaviour, IInteractable
 
     private EventSystem eventSystem;
     private Canvas canvas;
-    private GameObject mainDialoguePanel;
+    private GameObject dialoguePanel;
     private TextMeshProUGUI textField;
     private Image leftImage;
     private Image rightImage;
     private AudioSource audioSource;
-
-    private GameObject playerChoicePanel;
     private Button[] buttons;
 
     private List<DialoguePart> dialogueParts;
@@ -52,12 +50,11 @@ public class DialogueManager : MonoBehaviour, IInteractable
         {
             eventSystem = uiRefs.eventSystem;
             canvas = uiRefs.canvas;
-            mainDialoguePanel = uiRefs.mainDialoguePanel;
+            dialoguePanel = uiRefs.dialoguePanel;
             textField = uiRefs.textField;
             leftImage = uiRefs.leftImage;
             rightImage = uiRefs.rightImage;
             audioSource = uiRefs.audioSource;
-            playerChoicePanel = uiRefs.playerChoicePanel;
             buttons = uiRefs.buttons;
         }
         else
@@ -90,7 +87,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
         switch (dialogueParts[currentDialogue].responseType)
         {
             case ResponseType.NPCResponse:
-                FillMainDialogueField();
+                FillDialogueTextField();
                 PrepareForNextDialoguePartFromNPC();
                 break;
             case ResponseType.PlayerResponse:
@@ -103,8 +100,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
 
     public void EndInteraction()
     {
-        mainDialoguePanel.gameObject.SetActive(false);
-        playerChoicePanel.gameObject.SetActive(false);
+        dialoguePanel.gameObject.SetActive(false);
         RemoveDialogueContinueFromButtons();
         _playerInput.SwitchCurrentActionMap("Player");
         currentDialogue = 0;
@@ -136,10 +132,6 @@ public class DialogueManager : MonoBehaviour, IInteractable
 
     private void FillPlayerChoiceButtons()
     {
-        bool playerChoicePanelIsHidden = !playerChoicePanel.activeSelf;
-        if(playerChoicePanelIsHidden)
-            playerChoicePanel.SetActive(true);
-        
         PlayerResponse response = dialogueParts[currentDialogue] as PlayerResponse;
         for (int i = 0; i < response.choices.Length && i < buttons.Length; i++)
         {
@@ -149,14 +141,19 @@ public class DialogueManager : MonoBehaviour, IInteractable
         eventSystem.SetSelectedGameObject(buttons[0].gameObject);
     }
 
-    private void FillMainDialogueField()
+    private void FillDialogueTextField()
     {
-        bool mainDialoguePanelIsHidden = !mainDialoguePanel.activeSelf;
+        bool mainDialoguePanelIsHidden = !dialoguePanel.activeSelf;
         if(mainDialoguePanelIsHidden)
-            mainDialoguePanel.SetActive(true);
+            dialoguePanel.SetActive(true);
         
         NPCResponse response = dialogueParts[currentDialogue] as NPCResponse;
         textField.text = response.line;
+    }
+
+    private void FillDialogueAudioVisuals()
+    {
+        DialoguePart response = dialogueParts[currentDialogue];
         leftImage.sprite = response.leftImage;
         rightImage.sprite = response.rightImage;
         audioSource.clip = response.sound;

@@ -15,15 +15,15 @@ public enum ResponseType
 public abstract class DialoguePart
 {
     [SerializeField, HideInInspector] public ResponseType responseType = ResponseType.Invalid;
+    [SerializeField] public Sprite leftImage;
+    [SerializeField] public Sprite rightImage;
+    [SerializeField] public AudioClip sound;
 }
 
 [Serializable]
 public class NPCResponse : DialoguePart
 {
     [SerializeField, TextArea] public string line;
-    [SerializeField] public Sprite leftImage;
-    [SerializeField] public Sprite rightImage;
-    [SerializeField] public AudioClip sound;
 
     public NPCResponse()
     {
