@@ -28,7 +28,7 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: Intern
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -68,7 +68,7 @@ MonoBehaviour:
       data:
         responseType: 1
         speakerName: Intern
-        speakerLocation: 1
+        speakerLocation: 0
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -81,7 +81,7 @@ MonoBehaviour:
       data:
         responseType: 1
         speakerName: Boss
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}

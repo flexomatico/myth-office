@@ -79,6 +79,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
         if(mainDialoguePanelIsHidden)
             dialoguePanel.SetActive(true);
         
+        ResetNameTextFields();
         ContinueInteraction(new InputAction.CallbackContext());
     }
     
@@ -169,6 +170,12 @@ public class DialogueManager : MonoBehaviour, IInteractable
                 rightName.text = response.speakerName;
                 break;
         }
+    }
+
+    private void ResetNameTextFields()
+    {
+        leftName.text = "...";
+        rightName.text = "...";
     }
     
     // The onClick function of the buttons does not trigger anything.
