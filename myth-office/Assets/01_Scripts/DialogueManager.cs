@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -194,16 +195,15 @@ public class DialogueManager : MonoBehaviour, IInteractable
         {
             case 0:
                 leftImage.color = Color.white;
-                //leftImage.transform.localScale = Vector3.one * 1.0f;
-                
+                leftImage.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 200.0f);
                 rightImage.color = Color.grey;
-                //rightImage.transform.localScale = Vector3.one * 0.5f;
+                rightImage.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 150.0f);
                 break;
             case 1:
                 rightImage.color = Color.white;
-                //rightImage.transform.localScale = Vector3.one * 1.0f;
+                rightImage.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 200.0f);
                 leftImage.color = Color.grey;
-                //leftImage.transform.localScale = Vector3.one * 0.5f;
+                leftImage.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 150.0f);
                 break;
         }
     }
