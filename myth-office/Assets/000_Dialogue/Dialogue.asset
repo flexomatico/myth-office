@@ -27,7 +27,8 @@ MonoBehaviour:
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: 
+        speakerName: Intern
+        speakerLocation: 0
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -36,7 +37,8 @@ MonoBehaviour:
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: 
+        speakerName: Boss
+        speakerLocation: 1
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -45,7 +47,8 @@ MonoBehaviour:
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: 
+        speakerName: Intern
+        speakerLocation: 0
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -54,7 +57,8 @@ MonoBehaviour:
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: 
+        speakerName: Boss
+        speakerLocation: 1
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -63,7 +67,8 @@ MonoBehaviour:
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
-        speakerName: 
+        speakerName: Intern
+        speakerLocation: 1
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -75,7 +80,8 @@ MonoBehaviour:
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
-        speakerName: 
+        speakerName: Boss
+        speakerLocation: 0
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -86,7 +92,8 @@ MonoBehaviour:
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
-        speakerName: 
+        speakerName: Intern
+        speakerLocation: 0
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}

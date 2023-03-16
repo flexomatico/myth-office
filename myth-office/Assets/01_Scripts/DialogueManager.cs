@@ -58,6 +58,8 @@ public class DialogueManager : MonoBehaviour, IInteractable
             rightImage = uiRefs.rightImage;
             audioSource = uiRefs.audioSource;
             buttons = uiRefs.buttons;
+            leftName = uiRefs.leftName;
+            rightName = uiRefs.rightName;
         }
         else
         {
@@ -103,8 +105,8 @@ public class DialogueManager : MonoBehaviour, IInteractable
         }
         
         FillDialogueAudioVisuals();
+        FillDialogueNames();
         currentDialogue++;
-        print(currentDialogue);
     }
 
     public void EndInteraction()
@@ -153,8 +155,20 @@ public class DialogueManager : MonoBehaviour, IInteractable
         rightImage.sprite = response.rightImage;
         audioSource.clip = response.sound;
         audioSource.Play();
-        leftName.text = response.speakerName;
-        
+    }
+
+    private void FillDialogueNames()
+    {
+        DialoguePart response = dialogueParts[currentDialogue];
+        switch (response.speakerLocation)
+        {
+            case 0:
+                leftName.text = response.speakerName;
+                break;
+            case 1:
+                rightName.text = response.speakerName;
+                break;
+        }
     }
     
     // The onClick function of the buttons does not trigger anything.

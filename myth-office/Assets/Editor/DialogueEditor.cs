@@ -99,7 +99,7 @@ public class DialogueEditor : Editor
         rect.y += GetDefaultSpaceBetweenElements();
         Rect toolbarRect = new Rect(rect.x + 30.0f, rect.y + 25.0f, 328, 100);
         GUILayout.BeginArea(toolbarRect);
-        GUILayout.Toolbar(0, new[] { "Left", "Right"});
+        element.FindPropertyRelative("speakerLocation").intValue = GUILayout.Toolbar(element.FindPropertyRelative("speakerLocation").intValue, new[] { "Left", "Right"});
         GUILayout.EndArea();
         if ((ResponseType)responseType.enumValueFlag == ResponseType.TextResponse)
         {

@@ -16,6 +16,7 @@ public abstract class DialoguePart
 {
     [SerializeField, HideInInspector] public ResponseType responseType = ResponseType.Invalid;
     [SerializeField] public string speakerName;
+    [SerializeField, HideInInspector] public int speakerLocation = 0;
     [SerializeField] public Sprite leftImage;
     [SerializeField] public Sprite rightImage;
     [SerializeField] public AudioClip sound;
