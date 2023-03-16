@@ -27,7 +27,7 @@ public class DialogueEditor : Editor
     private const float ShrinkHeaderWidth = 15.0f;
     private const float XShiftHeaders = 15.0f;
 
-    private const float npcResponseElementHeight = 155.0f;
+    private const float npcResponseElementHeight = 195.0f;
     private const float playerResponseChoiceHeight = 65.0f;
     private const float listManipulationButtonsHeight = 25.0f;
 
@@ -92,82 +92,47 @@ public class DialogueEditor : Editor
         foldoutHeaderRect.height = HeightHeader;
         EditorGUI.LabelField(foldoutHeaderRect, responseTypeDisplay, EditorStyles.boldLabel);
         EditorGUI.indentLevel++;
-
-        element.isExpanded = true;
-        if (element.isExpanded)
+        
+        rect.y += GetDefaultSpaceBetweenElements();
+        rect.height = EditorGUIUtility.singleLineHeight;
+        EditorGUI.PropertyField(rect, element.FindPropertyRelative("speakerName"), new GUIContent("Speaker Name"));
+        rect.y += GetDefaultSpaceBetweenElements();
+        Rect toolbarRect = new Rect(rect.x + 30.0f, rect.y + 25.0f, 328, 100);
+        GUILayout.BeginArea(toolbarRect);
+        element.FindPropertyRelative("speakerLocation").intValue = GUILayout.Toolbar(element.FindPropertyRelative("speakerLocation").intValue, new[] { "Left", "Right"});
+        GUILayout.EndArea();
+        if ((ResponseType)responseType.enumValueFlag == ResponseType.TextResponse)
         {
-            if ((ResponseType)responseType.enumValueFlag == ResponseType.NPCResponse)
-            {
-                rect.y += GetDefaultSpaceBetweenElements();
-                rect.height = EditorGUIUtility.singleLineHeight * 4.0f;
-                EditorGUI.PropertyField(rect, element.FindPropertyRelative("line"), new GUIContent("Line"));
+            rect.y += GetDefaultSpaceBetweenElements();
+            rect.height = EditorGUIUtility.singleLineHeight * 4.0f;
+            EditorGUI.PropertyField(rect, element.FindPropertyRelative("line"), new GUIContent("Line"));
 
-                rect.y += rect.height + EditorGUIUtility.standardVerticalSpacing;
-                rect.height = EditorGUIUtility.singleLineHeight;
-                EditorGUI.PropertyField(rect, element.FindPropertyRelative("leftImage"), new GUIContent("Left Image"));
-                rect.y += GetDefaultSpaceBetweenElements();
-                EditorGUI.PropertyField(rect, element.FindPropertyRelative("rightImage"), new GUIContent("Right Image"));
-                rect.y += GetDefaultSpaceBetweenElements();
-                EditorGUI.PropertyField(rect, element.FindPropertyRelative("sound"), new GUIContent("Sound"));
+            rect.y += rect.height + EditorGUIUtility.standardVerticalSpacing;
+            rect.height = EditorGUIUtility.singleLineHeight;
 
-            } 
-            else if ((ResponseType)responseType.enumValueFlag == ResponseType.PlayerResponse)
-            {
-                rect.height = EditorGUIUtility.singleLineHeight * 3.0f;
-                rect.y += GetDefaultSpaceBetweenElements();
-                EditorGUI.PropertyField(rect, element.FindPropertyRelative("choices"), GUIContent.none);
-            }
+        } 
+        else if ((ResponseType)responseType.enumValueFlag == ResponseType.ChoiceResponse)
+        {
+            rect.height = EditorGUIUtility.singleLineHeight * 3.0f;
+            rect.y += GetDefaultSpaceBetweenElements();
+            EditorGUI.PropertyField(rect, element.FindPropertyRelative("choices"), GUIContent.none);
+
+            rect.y += OnReorderListElementHeight(index) - EditorGUIUtility.singleLineHeight * 6.65f;
+            rect.height = EditorGUIUtility.singleLineHeight;
         }
+        EditorGUI.PropertyField(rect, element.FindPropertyRelative("leftImage"), new GUIContent("Left Image"));
+        rect.y += GetDefaultSpaceBetweenElements(); 
+        EditorGUI.PropertyField(rect, element.FindPropertyRelative("rightImage"), new GUIContent("Right Image")); 
+        rect.y += GetDefaultSpaceBetweenElements(); 
+        EditorGUI.PropertyField(rect, element.FindPropertyRelative("sound"), new GUIContent("Sound"));
 
+        
         EditorGUI.indentLevel--;
     }
     
     private void OnDrawReorderListHeader(Rect rect)
     {
         EditorGUI.LabelField(rect, "Dialogue Parts");
-    }
-
-    private void OnDrawReorderListElement(Rect rect, int index, bool isActive, bool isFocused)
-    {
-        int length = list.serializedProperty.arraySize;
-
-        if (length <= 0)
-            return;
-
-        SerializedProperty iteratorProp = list.serializedProperty.GetArrayElementAtIndex(index);
-
-        SerializedProperty actionTypeParentProp = iteratorProp.FindPropertyRelative("dialogueType");
-        string actionName = actionTypeParentProp.enumDisplayNames[actionTypeParentProp.enumValueIndex];
-
-        Rect labelfoldRect = rect;
-        labelfoldRect.height = HeightHeader;
-        labelfoldRect.x += XShiftHeaders;
-        labelfoldRect.width -= ShrinkHeaderWidth;
-
-        iteratorProp.isExpanded = EditorGUI.BeginFoldoutHeaderGroup(labelfoldRect, iteratorProp.isExpanded, actionName);
-
-        if (iteratorProp.isExpanded)
-        {
-            ++EditorGUI.indentLevel;
-
-            SerializedProperty endProp = iteratorProp.GetEndProperty();
-
-            int i = 0;
-            while (iteratorProp.NextVisible(true) && !EqualContents(endProp, iteratorProp))
-            {
-                float multiplier = i == 0 ? AdditionalSpaceMultiplier : 1.0f;
-                rect.y += GetDefaultSpaceBetweenElements() * multiplier;
-                rect.height = EditorGUIUtility.singleLineHeight;
-
-                EditorGUI.PropertyField(rect, iteratorProp, true);
-
-                ++i;
-            }
-
-            --EditorGUI.indentLevel;
-        }
-
-        EditorGUI.EndFoldoutHeaderGroup();
     }
 
     private void OnDrawReorderListBg(Rect rect, int index, bool isActive, bool isFocused)
@@ -205,16 +170,17 @@ public class DialogueEditor : Editor
     {
         SerializedProperty element = list.serializedProperty.GetArrayElementAtIndex(index);
         ResponseType responseType = (ResponseType)element.FindPropertyRelative("responseType").enumValueFlag;
-        if (responseType == ResponseType.NPCResponse)
+        if (responseType == ResponseType.TextResponse)
         {
             return element.isExpanded ? npcResponseElementHeight : HeightHeader;
         }
-        else if (responseType == ResponseType.PlayerResponse)
+        else if (responseType == ResponseType.ChoiceResponse)
         {
             SerializedProperty choicesProperty = element.FindPropertyRelative("choices");
             float expandedHeight = HeightHeader * 2.0f + playerResponseChoiceHeight * choicesProperty.arraySize + listManipulationButtonsHeight;
             expandedHeight = choicesProperty.arraySize == 0 ? HeightHeader * 2.0f + listManipulationButtonsHeight + GetDefaultSpaceBetweenElements() : expandedHeight;
-            return choicesProperty.isExpanded ? expandedHeight : HeightHeader * 2.0f;
+            float otherPropsHeight = EditorGUIUtility.singleLineHeight * 6.0f;
+            return choicesProperty.isExpanded ? expandedHeight + otherPropsHeight : HeightHeader * 2.0f + otherPropsHeight;
         }
         return 0.0f;
     }

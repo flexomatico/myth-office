@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -17,14 +18,14 @@ public class DialogueManager : MonoBehaviour, IInteractable
 
     private EventSystem eventSystem;
     private Canvas canvas;
-    private GameObject mainDialoguePanel;
+    private GameObject dialoguePanel;
     private TextMeshProUGUI textField;
     private Image leftImage;
     private Image rightImage;
     private AudioSource audioSource;
-
-    private GameObject playerChoicePanel;
     private Button[] buttons;
+    private TextMeshProUGUI leftName;
+    private TextMeshProUGUI rightName;
 
     private List<DialoguePart> dialogueParts;
     private int currentDialogue = 0;
@@ -52,13 +53,14 @@ public class DialogueManager : MonoBehaviour, IInteractable
         {
             eventSystem = uiRefs.eventSystem;
             canvas = uiRefs.canvas;
-            mainDialoguePanel = uiRefs.mainDialoguePanel;
+            dialoguePanel = uiRefs.dialoguePanel;
             textField = uiRefs.textField;
             leftImage = uiRefs.leftImage;
             rightImage = uiRefs.rightImage;
             audioSource = uiRefs.audioSource;
-            playerChoicePanel = uiRefs.playerChoicePanel;
             buttons = uiRefs.buttons;
+            leftName = uiRefs.leftName;
+            rightName = uiRefs.rightName;
         }
         else
         {
@@ -72,7 +74,13 @@ public class DialogueManager : MonoBehaviour, IInteractable
     {
         _playerInput = playerInput;
         _playerInput.SwitchCurrentActionMap("UI");
-        Invoke("AttachDialogueContinueToButtons", 0.1f); // If the onClick method of the buttons is attached immediately, they will fire immediately
+        _playerInput.actions["Submit"].performed += ContinueInteraction;
+        
+        bool mainDialoguePanelIsHidden = !dialoguePanel.activeSelf;
+        if(mainDialoguePanelIsHidden)
+            dialoguePanel.SetActive(true);
+        
+        ResetNameTextFields();
         ContinueInteraction(new InputAction.CallbackContext());
     }
     
@@ -86,44 +94,30 @@ public class DialogueManager : MonoBehaviour, IInteractable
         }
         
         ResetPlayerChoiceButtons();
+        ResetDialogueTextField();
         
         switch (dialogueParts[currentDialogue].responseType)
         {
-            case ResponseType.NPCResponse:
-                FillMainDialogueField();
-                PrepareForNextDialoguePartFromNPC();
+            case ResponseType.TextResponse:
+                FillDialogueTextField();
                 break;
-            case ResponseType.PlayerResponse:
+            case ResponseType.ChoiceResponse:
                 FillPlayerChoiceButtons();
-                PrepareForNextDialoguePartFromPlayerChoice();
-                currentDialogue++;
                 break;
         }
+        
+        FillDialogueAudioVisuals();
+        FillDialogueNames();
+        SetActiveSpeaker();
+        currentDialogue++;
     }
 
     public void EndInteraction()
     {
-        mainDialoguePanel.gameObject.SetActive(false);
-        playerChoicePanel.gameObject.SetActive(false);
-        RemoveDialogueContinueFromButtons();
+        dialoguePanel.gameObject.SetActive(false);
+        _playerInput.actions["Submit"].performed -= ContinueInteraction;
         _playerInput.SwitchCurrentActionMap("Player");
         currentDialogue = 0;
-    }
-
-    private void AttachDialogueContinueToButtons()
-    {
-        foreach (Button button in buttons)
-        {
-            button.onClick.AddListener(() => ContinueInteraction(new InputAction.CallbackContext()));
-        }
-    }
-
-    private void RemoveDialogueContinueFromButtons()
-    {
-        foreach (Button button in buttons)
-        {
-            button.onClick.RemoveAllListeners();
-        }
     }
 
     private void ResetPlayerChoiceButtons()
@@ -134,13 +128,14 @@ public class DialogueManager : MonoBehaviour, IInteractable
         }
     }
 
+    private void ResetDialogueTextField()
+    {
+        textField.gameObject.SetActive(false);
+    }
+
     private void FillPlayerChoiceButtons()
     {
-        bool playerChoicePanelIsHidden = !playerChoicePanel.activeSelf;
-        if(playerChoicePanelIsHidden)
-            playerChoicePanel.SetActive(true);
-        
-        PlayerResponse response = dialogueParts[currentDialogue] as PlayerResponse;
+        ChoiceResponse response = dialogueParts[currentDialogue] as ChoiceResponse;
         for (int i = 0; i < response.choices.Length && i < buttons.Length; i++)
         {
             buttons[i].gameObject.GetComponentInChildren<TextMeshProUGUI>().text = response.choices[i];
@@ -149,59 +144,109 @@ public class DialogueManager : MonoBehaviour, IInteractable
         eventSystem.SetSelectedGameObject(buttons[0].gameObject);
     }
 
-    private void FillMainDialogueField()
+    private void FillDialogueTextField()
     {
-        bool mainDialoguePanelIsHidden = !mainDialoguePanel.activeSelf;
-        if(mainDialoguePanelIsHidden)
-            mainDialoguePanel.SetActive(true);
-        
-        NPCResponse response = dialogueParts[currentDialogue] as NPCResponse;
+        textField.gameObject.SetActive(true);
+        TextResponse response = dialogueParts[currentDialogue] as TextResponse;
         textField.text = response.line;
-        leftImage.sprite = response.leftImage;
-        rightImage.sprite = response.rightImage;
+    }
+
+    private void FillDialogueAudioVisuals()
+    {
+        DialoguePart response = dialogueParts[currentDialogue];
+        if (response.leftImage != null)
+        {
+            leftImage.sprite = response.leftImage;
+            leftImage.preserveAspect = true;
+            SetSpeakerImageRect(response.leftImage, leftImage);
+        }
+
+        if (response.rightImage != null)
+        {
+            rightImage.sprite = response.rightImage;
+            rightImage.preserveAspect = true;
+            SetSpeakerImageRect(response.rightImage, rightImage);
+        }
+        
         audioSource.clip = response.sound;
         audioSource.Play();
     }
 
-    private void PrepareForNextDialoguePartFromNPC()
+    private void SetSpeakerImageRect(Sprite sprite, Image imageComponent)
     {
-        bool isLastDialoguePart = currentDialogue == dialogueParts.Count - 1;
-        if (isLastDialoguePart)
+        bool widthGreaterThanHeight = sprite.texture.width > sprite.texture.height;
+        if (widthGreaterThanHeight)
         {
-            _playerInput.actions["Submit"].performed += ContinueInteraction;
-            currentDialogue++;
-            return;
+            imageComponent.GetComponent<ContentSizeFitter>().horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
         }
-        
-        ResponseType nextResponseType = dialogueParts[currentDialogue + 1].responseType;
-        currentDialogue++;
-        switch(nextResponseType) {
-            case ResponseType.PlayerResponse:
-                _playerInput.actions["Submit"].performed -= ContinueInteraction;
-                RemoveDialogueContinueFromButtons();
-                Invoke("AttachDialogueContinueToButtons", 0.1f);
-                FillPlayerChoiceButtons();
-                currentDialogue++;
+        else
+        {
+            imageComponent.GetComponent<ContentSizeFitter>().horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
+        }
+    }
+
+    private void FillDialogueNames()
+    {
+        DialoguePart response = dialogueParts[currentDialogue];
+        switch (response.speakerLocation)
+        {
+            case 0:
+                leftName.gameObject.SetActive(true);
+                leftName.text = response.speakerName;
+                rightName.gameObject.SetActive(false);
                 break;
-            case ResponseType.NPCResponse:
-                _playerInput.actions["Submit"].performed += ContinueInteraction;
+            case 1:
+                rightName.gameObject.SetActive(true);
+                rightName.text = response.speakerName;
+                leftName.gameObject.SetActive(false);
                 break;
         }
     }
 
-    private void PrepareForNextDialoguePartFromPlayerChoice()
+    private void ResetNameTextFields()
     {
-        bool isFirstDialoguePart = currentDialogue == 0;
-        if (isFirstDialoguePart)
+        leftName.text = "...";
+        rightName.text = "...";
+    }
+
+    private void SetActiveSpeaker()
+    {
+        DialoguePart response = dialogueParts[currentDialogue];
+        switch (response.speakerLocation)
         {
-           return;
-        }
-        
-        bool isLastDialoguePart = currentDialogue == dialogueParts.Count - 1;
-        ResponseType previousResponseType = dialogueParts[currentDialogue - 1].responseType;
-        if (isLastDialoguePart || previousResponseType == ResponseType.PlayerResponse)
-        {
-            textField.text = "...";
+            case 0:
+                leftImage.color = Color.white;
+                //leftImage.GetComponent<RectTransform>().anchorMax
+                rightImage.color = Color.grey;
+                break;
+            case 1:
+                rightImage.color = Color.white;
+                leftImage.color = Color.grey;
+                break;
         }
     }
+    
+    // The onClick function of the buttons does not trigger anything.
+    // Advancing the dialogue is solely handled by the InputManagers "Submit" Action.
+    // This is due to problematic double click behaviour with mixing the two.
+    /* 
+    private void AttachDialogueContinueToButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            button.onClick.AddListener(() =>
+            {
+                ContinueInteraction(new InputAction.CallbackContext());
+            });
+        }
+    }
+
+    private void RemoveDialogueContinueFromButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            button.onClick.RemoveAllListeners();
+        }
+    }
+    */
 }

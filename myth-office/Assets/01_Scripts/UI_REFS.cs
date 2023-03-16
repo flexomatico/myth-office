@@ -10,11 +10,12 @@ public class UI_REFS : MonoBehaviour
 {
     public EventSystem eventSystem;
     public Canvas canvas;
-    public GameObject mainDialoguePanel;
+    public GameObject dialoguePanel;
     public TextMeshProUGUI textField;
     public Image leftImage;
     public Image rightImage;
     public AudioSource audioSource;
-    public GameObject playerChoicePanel;
     public Button[] buttons;
+    public TextMeshProUGUI leftName;
+    public TextMeshProUGUI rightName;
 }
