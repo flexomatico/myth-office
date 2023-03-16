@@ -69,7 +69,12 @@ public class DialogueManager : MonoBehaviour, IInteractable
     {
         _playerInput = playerInput;
         _playerInput.SwitchCurrentActionMap("UI");
-        Invoke("AttachDialogueContinueToButtons", 0.1f); // If the onClick method of the buttons is attached immediately, they will fire immediately
+        _playerInput.actions["Submit"].performed += ContinueInteraction;
+        
+        bool mainDialoguePanelIsHidden = !dialoguePanel.activeSelf;
+        if(mainDialoguePanelIsHidden)
+            dialoguePanel.SetActive(true);
+        
         ContinueInteraction(new InputAction.CallbackContext());
     }
     
@@ -87,40 +92,25 @@ public class DialogueManager : MonoBehaviour, IInteractable
         
         switch (dialogueParts[currentDialogue].responseType)
         {
-            case ResponseType.NPCResponse:
+            case ResponseType.TextResponse:
                 FillDialogueTextField();
                 break;
-            case ResponseType.PlayerResponse:
+            case ResponseType.ChoiceResponse:
                 FillPlayerChoiceButtons();
                 break;
         }
         
         FillDialogueAudioVisuals();
         currentDialogue++;
+        print(currentDialogue);
     }
 
     public void EndInteraction()
     {
         dialoguePanel.gameObject.SetActive(false);
-        RemoveDialogueContinueFromButtons();
+        _playerInput.actions["Submit"].performed -= ContinueInteraction;
         _playerInput.SwitchCurrentActionMap("Player");
         currentDialogue = 0;
-    }
-
-    private void AttachDialogueContinueToButtons()
-    {
-        foreach (Button button in buttons)
-        {
-            button.onClick.AddListener(() => ContinueInteraction(new InputAction.CallbackContext()));
-        }
-    }
-
-    private void RemoveDialogueContinueFromButtons()
-    {
-        foreach (Button button in buttons)
-        {
-            button.onClick.RemoveAllListeners();
-        }
     }
 
     private void ResetPlayerChoiceButtons()
@@ -138,7 +128,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
 
     private void FillPlayerChoiceButtons()
     {
-        PlayerResponse response = dialogueParts[currentDialogue] as PlayerResponse;
+        ChoiceResponse response = dialogueParts[currentDialogue] as ChoiceResponse;
         for (int i = 0; i < response.choices.Length && i < buttons.Length; i++)
         {
             buttons[i].gameObject.GetComponentInChildren<TextMeshProUGUI>().text = response.choices[i];
@@ -149,11 +139,8 @@ public class DialogueManager : MonoBehaviour, IInteractable
 
     private void FillDialogueTextField()
     {
-        bool mainDialoguePanelIsHidden = !dialoguePanel.activeSelf;
-        if(mainDialoguePanelIsHidden)
-            dialoguePanel.SetActive(true);
-        
-        NPCResponse response = dialogueParts[currentDialogue] as NPCResponse;
+        textField.gameObject.SetActive(true);
+        TextResponse response = dialogueParts[currentDialogue] as TextResponse;
         textField.text = response.line;
     }
 
@@ -165,4 +152,28 @@ public class DialogueManager : MonoBehaviour, IInteractable
         audioSource.clip = response.sound;
         audioSource.Play();
     }
+    
+    // The onClick function of the buttons does not trigger anything.
+    // Advancing the dialogue is solely handled by the InputManagers "Submit" Action.
+    // This is due to problematic double click behaviour with mixing the two.
+    /* 
+    private void AttachDialogueContinueToButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            button.onClick.AddListener(() =>
+            {
+                ContinueInteraction(new InputAction.CallbackContext());
+            });
+        }
+    }
+
+    private void RemoveDialogueContinueFromButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            button.onClick.RemoveAllListeners();
+        }
+    }
+    */
 }

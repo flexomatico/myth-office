@@ -7,37 +7,38 @@ public enum ResponseType
 {
     Invalid = -1,
     
-    NPCResponse,
-    PlayerResponse
+    TextResponse,
+    ChoiceResponse
 }
 
 [Serializable]
 public abstract class DialoguePart
 {
     [SerializeField, HideInInspector] public ResponseType responseType = ResponseType.Invalid;
+    [SerializeField] public string speakerName;
     [SerializeField] public Sprite leftImage;
     [SerializeField] public Sprite rightImage;
     [SerializeField] public AudioClip sound;
 }
 
 [Serializable]
-public class NPCResponse : DialoguePart
+public class TextResponse : DialoguePart
 {
     [SerializeField, TextArea] public string line;
 
-    public NPCResponse()
+    public TextResponse()
     {
-        responseType = ResponseType.NPCResponse;
+        responseType = ResponseType.TextResponse;
     }
 }
 
 [Serializable]
-public class PlayerResponse : DialoguePart
+public class ChoiceResponse : DialoguePart
 {
     [SerializeField, TextArea] public string[] choices;
 
-    public PlayerResponse()
+    public ChoiceResponse()
     {
-        responseType = ResponseType.PlayerResponse;
+        responseType = ResponseType.ChoiceResponse;
     }
 }

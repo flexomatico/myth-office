@@ -13,104 +13,82 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   dialogueParts:
-  - rid: 4308214425179127881
-  - rid: 4308214425179127882
-  - rid: 4308214425179127892
-  - rid: 4308214425179127884
-  - rid: 4308214425179127886
-  - rid: 4308214425179127887
-  - rid: 4308214425179127888
-  - rid: 4308214425179127889
-  - rid: 4308214425179127890
-  - rid: 4308214425179127891
+  - rid: 4308214582177955848
+  - rid: 4308214582177955850
+  - rid: 4308214582177955851
+  - rid: 4308214582177955852
+  - rid: 4308214582177955854
+  - rid: 4308214582177955855
+  - rid: 4308214582177955856
   references:
     version: 2
     RefIds:
-    - rid: 4308214425179127881
-      type: {class: PlayerResponse, ns: , asm: Assembly-CSharp}
+    - rid: 4308214582177955848
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: 
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: 1
+    - rid: 4308214582177955850
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: 
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: 2
+    - rid: 4308214582177955851
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: 
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: 3
+    - rid: 4308214582177955852
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: 
+        leftImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: 4
+    - rid: 4308214582177955854
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
+        speakerName: 
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
-        - Hello good sir.
-    - rid: 4308214425179127882
-      type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        leftImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Piss off
-    - rid: 4308214425179127884
-      type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        leftImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Bad day brother...
-    - rid: 4308214425179127886
-      type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        leftImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: ...
-    - rid: 4308214425179127887
-      type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        leftImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: I'm sorry, didn't want to jump at you like that
-    - rid: 4308214425179127888
-      type: {class: PlayerResponse, ns: , asm: Assembly-CSharp}
+        - 1
+        - 2
+        - 3
+    - rid: 4308214582177955855
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
+        speakerName: 
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
-        - It's cool
-        - Bye
-    - rid: 4308214425179127889
-      type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        leftImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Okay bye
-    - rid: 4308214425179127890
-      type: {class: PlayerResponse, ns: , asm: Assembly-CSharp}
+        - 1
+        - 2
+    - rid: 4308214582177955856
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
+        speakerName: 
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
-        - Hold on, one more thing
-        - Babaye
-    - rid: 4308214425179127891
-      type: {class: NPCResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        leftImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: OK
-    - rid: 4308214425179127892
-      type: {class: PlayerResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 1
-        leftImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        choices:
-        - Ummm, okay
-        - bro
-        - bro
+        - 1

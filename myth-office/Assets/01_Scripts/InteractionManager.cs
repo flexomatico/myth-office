@@ -42,7 +42,6 @@ public class InteractionManager : MonoBehaviour
         bool listContainsItems = _interactables.Count > 0;
         if (listContainsItems)
         {
-            print("Interaction Manager triggered");
             _interactables[0].StartInteraction(_playerInput);
             //_playerInput.actions["Submit"].performed += _interactables[0].ContinueInteraction;
             //_playerInput.SwitchCurrentActionMap("UI");
