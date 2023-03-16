@@ -107,6 +107,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
         
         FillDialogueAudioVisuals();
         FillDialogueNames();
+        SetActiveSpeaker();
         currentDialogue++;
     }
 
@@ -153,7 +154,11 @@ public class DialogueManager : MonoBehaviour, IInteractable
     {
         DialoguePart response = dialogueParts[currentDialogue];
         leftImage.sprite = response.leftImage;
+        leftImage.preserveAspect = true;
+        leftImage.SetNativeSize();
         rightImage.sprite = response.rightImage;
+        rightImage.preserveAspect = true;
+        rightImage.SetNativeSize();
         audioSource.clip = response.sound;
         audioSource.Play();
     }
@@ -164,10 +169,14 @@ public class DialogueManager : MonoBehaviour, IInteractable
         switch (response.speakerLocation)
         {
             case 0:
+                leftName.gameObject.SetActive(true);
                 leftName.text = response.speakerName;
+                rightName.gameObject.SetActive(false);
                 break;
             case 1:
+                rightName.gameObject.SetActive(true);
                 rightName.text = response.speakerName;
+                leftName.gameObject.SetActive(false);
                 break;
         }
     }
@@ -176,6 +185,27 @@ public class DialogueManager : MonoBehaviour, IInteractable
     {
         leftName.text = "...";
         rightName.text = "...";
+    }
+
+    private void SetActiveSpeaker()
+    {
+        DialoguePart response = dialogueParts[currentDialogue];
+        switch (response.speakerLocation)
+        {
+            case 0:
+                leftImage.color = Color.white;
+                //leftImage.transform.localScale = Vector3.one * 1.0f;
+                
+                rightImage.color = Color.grey;
+                //rightImage.transform.localScale = Vector3.one * 0.5f;
+                break;
+            case 1:
+                rightImage.color = Color.white;
+                //rightImage.transform.localScale = Vector3.one * 1.0f;
+                leftImage.color = Color.grey;
+                //leftImage.transform.localScale = Vector3.one * 0.5f;
+                break;
+        }
     }
     
     // The onClick function of the buttons does not trigger anything.
