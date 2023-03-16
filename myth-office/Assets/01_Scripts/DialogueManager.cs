@@ -154,14 +154,35 @@ public class DialogueManager : MonoBehaviour, IInteractable
     private void FillDialogueAudioVisuals()
     {
         DialoguePart response = dialogueParts[currentDialogue];
-        leftImage.sprite = response.leftImage;
-        leftImage.preserveAspect = true;
-        leftImage.SetNativeSize();
-        rightImage.sprite = response.rightImage;
-        rightImage.preserveAspect = true;
-        rightImage.SetNativeSize();
+        if (response.leftImage != null)
+        {
+            leftImage.sprite = response.leftImage;
+            leftImage.preserveAspect = true;
+            SetSpeakerImageRect(response.leftImage, leftImage);
+        }
+
+        if (response.rightImage != null)
+        {
+            rightImage.sprite = response.rightImage;
+            rightImage.preserveAspect = true;
+            SetSpeakerImageRect(response.rightImage, rightImage);
+        }
+        
         audioSource.clip = response.sound;
         audioSource.Play();
+    }
+
+    private void SetSpeakerImageRect(Sprite sprite, Image imageComponent)
+    {
+        bool widthGreaterThanHeight = sprite.texture.width > sprite.texture.height;
+        if (widthGreaterThanHeight)
+        {
+            imageComponent.GetComponent<ContentSizeFitter>().horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
+        }
+        else
+        {
+            imageComponent.GetComponent<ContentSizeFitter>().horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
+        }
     }
 
     private void FillDialogueNames()
@@ -195,15 +216,12 @@ public class DialogueManager : MonoBehaviour, IInteractable
         {
             case 0:
                 leftImage.color = Color.white;
-                leftImage.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 200.0f);
+                //leftImage.GetComponent<RectTransform>().anchorMax
                 rightImage.color = Color.grey;
-                rightImage.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 150.0f);
                 break;
             case 1:
                 rightImage.color = Color.white;
-                rightImage.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 200.0f);
                 leftImage.color = Color.grey;
-                leftImage.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 150.0f);
                 break;
         }
     }

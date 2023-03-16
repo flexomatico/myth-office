@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueParts:
   - rid: 4308214582177955848
-  - rid: 4308214582177955850
-  - rid: 4308214582177955851
-  - rid: 4308214582177955852
   - rid: 4308214582177955854
+  - rid: 4308214582177955850
   - rid: 4308214582177955855
+  - rid: 4308214582177955851
   - rid: 4308214582177955856
   references:
     version: 2
@@ -27,42 +26,38 @@ MonoBehaviour:
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Intern
-        speakerLocation: 0
+        speakerName: Boss
+        speakerLocation: 1
         leftImage: {fileID: 21300000, guid: 46b94033415db426590c58c0859b995a, type: 3}
         rightImage: {fileID: 21300000, guid: 0bb57bf55fec94eb4ae55b745ac5faed, type: 3}
-        sound: {fileID: 0}
-        line: 1
+        sound: {fileID: 8300000, guid: b19869097da9a4a8f8f3cd78a4c88305, type: 3}
+        line: 'The intern runs into Odin at the coffee/vending-machine, which turns
+          out to only have sodas and water.
+
+          Odin is freaking out.'
     - rid: 4308214582177955850
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: Boss
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 46b94033415db426590c58c0859b995a, type: 3}
-        rightImage: {fileID: 21300000, guid: 0bb57bf55fec94eb4ae55b745ac5faed, type: 3}
-        sound: {fileID: 0}
-        line: 2
-    - rid: 4308214582177955851
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: 
-        speakerLocation: 0
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: 3
-    - rid: 4308214582177955852
+        line: '"This place basically runs on that stuff. Our efficiency will be taking
+          a detrimental hit - We are losing money by the minute!"'
+    - rid: 4308214582177955851
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: Boss
         speakerLocation: 1
-        leftImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 46b94033415db426590c58c0859b995a, type: 3}
+        rightImage: {fileID: 21300000, guid: 0bb57bf55fec94eb4ae55b745ac5faed, type: 3}
         sound: {fileID: 0}
-        line: 4
+        line: Maybe a taste-test commences, where Odin, Ra and Athena joins in. First
+          they accidentally create hot chocolate, then baked beans, then finally
+          coffee.
     - rid: 4308214582177955854
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -73,21 +68,21 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
-        - 1
-        - 2
-        - 3
+        - Oh no, the coffee!
+        - Why is it red?
+        - Alright, I'm out!
     - rid: 4308214582177955855
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
-        speakerName: Boss
+        speakerName: Intern
         speakerLocation: 1
         leftImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
-        - 1
-        - 2
+        - What should I do?
+        - Give me the task.
     - rid: 4308214582177955856
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -98,4 +93,4 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
-        - 1
+        - Roger that!
