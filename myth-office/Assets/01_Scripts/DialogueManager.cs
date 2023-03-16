@@ -83,19 +83,20 @@ public class DialogueManager : MonoBehaviour, IInteractable
         }
         
         ResetPlayerChoiceButtons();
+        ResetDialogueTextField();
         
         switch (dialogueParts[currentDialogue].responseType)
         {
             case ResponseType.NPCResponse:
                 FillDialogueTextField();
-                PrepareForNextDialoguePartFromNPC();
                 break;
             case ResponseType.PlayerResponse:
                 FillPlayerChoiceButtons();
-                PrepareForNextDialoguePartFromPlayerChoice();
-                currentDialogue++;
                 break;
         }
+        
+        FillDialogueAudioVisuals();
+        currentDialogue++;
     }
 
     public void EndInteraction()
@@ -130,6 +131,11 @@ public class DialogueManager : MonoBehaviour, IInteractable
         }
     }
 
+    private void ResetDialogueTextField()
+    {
+        textField.gameObject.SetActive(false);
+    }
+
     private void FillPlayerChoiceButtons()
     {
         PlayerResponse response = dialogueParts[currentDialogue] as PlayerResponse;
@@ -158,47 +164,5 @@ public class DialogueManager : MonoBehaviour, IInteractable
         rightImage.sprite = response.rightImage;
         audioSource.clip = response.sound;
         audioSource.Play();
-    }
-
-    private void PrepareForNextDialoguePartFromNPC()
-    {
-        bool isLastDialoguePart = currentDialogue == dialogueParts.Count - 1;
-        if (isLastDialoguePart)
-        {
-            _playerInput.actions["Submit"].performed += ContinueInteraction;
-            currentDialogue++;
-            return;
-        }
-        
-        ResponseType nextResponseType = dialogueParts[currentDialogue + 1].responseType;
-        currentDialogue++;
-        switch(nextResponseType) {
-            case ResponseType.PlayerResponse:
-                _playerInput.actions["Submit"].performed -= ContinueInteraction;
-                RemoveDialogueContinueFromButtons();
-                Invoke("AttachDialogueContinueToButtons", 0.1f);
-                FillPlayerChoiceButtons();
-                currentDialogue++;
-                break;
-            case ResponseType.NPCResponse:
-                _playerInput.actions["Submit"].performed += ContinueInteraction;
-                break;
-        }
-    }
-
-    private void PrepareForNextDialoguePartFromPlayerChoice()
-    {
-        bool isFirstDialoguePart = currentDialogue == 0;
-        if (isFirstDialoguePart)
-        {
-           return;
-        }
-        
-        bool isLastDialoguePart = currentDialogue == dialogueParts.Count - 1;
-        ResponseType previousResponseType = dialogueParts[currentDialogue - 1].responseType;
-        if (isLastDialoguePart || previousResponseType == ResponseType.PlayerResponse)
-        {
-            textField.text = "...";
-        }
     }
 }
