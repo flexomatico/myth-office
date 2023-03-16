@@ -16,4 +16,6 @@ public class UI_REFS : MonoBehaviour
     public Image rightImage;
     public AudioSource audioSource;
     public Button[] buttons;
+    public TextMeshProUGUI leftName;
+    public TextMeshProUGUI rightName;
 }

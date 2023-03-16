@@ -23,6 +23,8 @@ public class DialogueManager : MonoBehaviour, IInteractable
     private Image rightImage;
     private AudioSource audioSource;
     private Button[] buttons;
+    private TextMeshProUGUI leftName;
+    private TextMeshProUGUI rightName;
 
     private List<DialoguePart> dialogueParts;
     private int currentDialogue = 0;
@@ -151,6 +153,8 @@ public class DialogueManager : MonoBehaviour, IInteractable
         rightImage.sprite = response.rightImage;
         audioSource.clip = response.sound;
         audioSource.Play();
+        leftName.text = response.speakerName;
+        
     }
     
     // The onClick function of the buttons does not trigger anything.
