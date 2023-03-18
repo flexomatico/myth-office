@@ -15,6 +15,11 @@ public class DialogueManager : MonoBehaviour, IInteractable
 {
     [SerializeField] private Dialogue dialogue;
     [SerializeField][Range(0.1f, 10.0f)] private float colliderRadius;
+    
+    [ListToPopup(typeof(InteractionManager), "prerequisitesList")]
+    public List<string> NeedsPrerequisites;
+    [ListToPopup(typeof(InteractionManager), "prerequisitesList")]
+    public List<string> FulfillsPrerequisites;
 
     private EventSystem eventSystem;
     private Canvas canvas;
@@ -32,6 +37,23 @@ public class DialogueManager : MonoBehaviour, IInteractable
 
     private PlayerInput _playerInput;
     private SphereCollider _sphereCollider;
+    
+    [ContextMenu("Create List")]
+    private void CreateList()
+    {
+        List<string> temp = new List<string> { "Talked to Zeus", "Picked up paper", "Finished Level" };
+        foreach (var s in temp)
+        {
+            InteractionManager.AddPrerequisite(s);
+        }
+    }
+    
+    public void OnBeforeSerialize()
+    {
+        InteractionManager.prerequisitesList = InteractionManager.prerequisites;
+    }
+    
+    public void OnAfterDeserialize() {}
 
     void Awake()
     {

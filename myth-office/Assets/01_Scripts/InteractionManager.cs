@@ -11,6 +11,9 @@ public class InteractionManager : MonoBehaviour
 
     private CapsuleCollider _collider;
     private PlayerInput _playerInput;
+    
+    public static List<string> prerequisites = new List<string>();
+    public static List<string> prerequisitesList;
 
     void Start()
     {
@@ -46,5 +49,10 @@ public class InteractionManager : MonoBehaviour
             //_playerInput.actions["Submit"].performed += _interactables[0].ContinueInteraction;
             //_playerInput.SwitchCurrentActionMap("UI");
         }
+    }
+
+    public static void AddPrerequisite(string prerequisite)
+    {
+        prerequisites.Add(prerequisite);
     }
 }
