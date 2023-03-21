@@ -20,6 +20,8 @@ public class DialogueManager : MonoBehaviour, IInteractable
     public List<string> NeedsPrerequisites;
     [ListToPopup(typeof(InteractionManager), "prerequisitesList")]
     public List<string> FulfillsPrerequisites;
+    [EditPrerequisites(typeof(InteractionManager), "prerequisitesList")]
+    public List<string> EditPrerequisites;
 
     private EventSystem eventSystem;
     private Canvas canvas;
