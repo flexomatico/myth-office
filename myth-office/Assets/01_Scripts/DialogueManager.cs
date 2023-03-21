@@ -11,15 +11,10 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
-public class DialogueManager : MonoBehaviour, IInteractable
+public class DialogueManager : AbstractInteractable
 {
     [SerializeField] private Dialogue dialogue;
     [SerializeField][Range(0.1f, 10.0f)] private float colliderRadius;
-    
-    [ListToPopup(typeof(InteractionManager), "prerequisitesList")]
-    public List<string> NeedsPrerequisites;
-    [ListToPopup(typeof(InteractionManager), "prerequisitesList")]
-    public List<string> FulfillsPrerequisites;
 
     private EventSystem eventSystem;
     private Canvas canvas;
@@ -37,23 +32,6 @@ public class DialogueManager : MonoBehaviour, IInteractable
 
     private PlayerInput _playerInput;
     private SphereCollider _sphereCollider;
-    
-    [ContextMenu("Create List")]
-    private void CreateList()
-    {
-        List<string> temp = new List<string> { "Talked to Zeus", "Picked up paper", "Finished Level" };
-        foreach (var s in temp)
-        {
-            InteractionManager.AddPrerequisite(s);
-        }
-    }
-    
-    public void OnBeforeSerialize()
-    {
-        InteractionManager.prerequisitesList = InteractionManager.prerequisites;
-    }
-    
-    public void OnAfterDeserialize() {}
 
     void Awake()
     {
@@ -92,7 +70,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
         dialogueParts = dialogue.dialogueParts;
     }
 
-    public void StartInteraction(PlayerInput playerInput)
+    public override void StartInteraction(PlayerInput playerInput)
     {
         _playerInput = playerInput;
         _playerInput.SwitchCurrentActionMap("UI");
@@ -106,7 +84,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
         ContinueInteraction(new InputAction.CallbackContext());
     }
     
-    public void ContinueInteraction(InputAction.CallbackContext context)
+    public override void ContinueInteraction(InputAction.CallbackContext context)
     {
         bool dialogueIndexIsOutsideBounds = dialogueParts.Count <= currentDialogue;
         if (dialogueIndexIsOutsideBounds)
@@ -134,8 +112,9 @@ public class DialogueManager : MonoBehaviour, IInteractable
         currentDialogue++;
     }
 
-    public void EndInteraction()
+    public new void EndInteraction()
     {
+        base.EndInteraction();
         dialoguePanel.gameObject.SetActive(false);
         _playerInput.actions["Submit"].performed -= ContinueInteraction;
         _playerInput.SwitchCurrentActionMap("Player");

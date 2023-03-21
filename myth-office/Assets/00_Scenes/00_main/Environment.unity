@@ -626,12 +626,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: ac48618cfb2244a58815fc91387fb687, type: 2}
-  colliderRadius: 3.2
+  colliderRadius: 2.97
   NeedsPrerequisites:
-  - Talk to Zeus
-  - Talk to Zeus
+  - bla
+  - jooo
   FulfillsPrerequisites:
-  - Talk to Zeus
+  - jooo
+  - jooo
 --- !u!1 &1655292511
 GameObject:
   m_ObjectHideFlags: 0
