@@ -12,13 +12,16 @@ public class InteractionManager : MonoBehaviour
     private CapsuleCollider _collider;
     private PlayerInput _playerInput;
 
-    public Prerequisites prerequisitesObject;
+    public Prerequisites prerequisites;
     public static List<string> allPrerequisites;
     public static List<string> fulfilledPrerequisites = new List<string>();
+    [ListToPopup(typeof(InteractionManager), "allPrerequisites")]
+    public List<string> InitiallyFulfilledPrerequisites;
 
     private void OnValidate()
     {
-        allPrerequisites = prerequisitesObject.prerequisites;
+        allPrerequisites = prerequisites.prerequisites;
+        fulfilledPrerequisites = InitiallyFulfilledPrerequisites;
     }
 
     public static void MarkPrerequisiteAsFulfilled(List<string> fulfilled)
