@@ -172,7 +172,7 @@ public class DialogueEditor : Editor
         ResponseType responseType = (ResponseType)element.FindPropertyRelative("responseType").enumValueFlag;
         if (responseType == ResponseType.TextResponse)
         {
-            return element.isExpanded ? npcResponseElementHeight : HeightHeader;
+            return npcResponseElementHeight;
         }
         else if (responseType == ResponseType.ChoiceResponse)
         {
