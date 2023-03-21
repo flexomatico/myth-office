@@ -628,11 +628,10 @@ MonoBehaviour:
   dialogue: {fileID: 11400000, guid: ac48618cfb2244a58815fc91387fb687, type: 2}
   colliderRadius: 3.2
   NeedsPrerequisites:
-  - Talked to Zeus
-  - Picked up paper
+  - Talk to Zeus
+  - Talk to Zeus
   FulfillsPrerequisites:
-  - Finished Level
-  EditPrerequisites: []
+  - Talk to Zeus
 --- !u!1 &1655292511
 GameObject:
   m_ObjectHideFlags: 0
