@@ -11,7 +11,7 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
-public class DialogueManager : MonoBehaviour, IInteractable
+public class DialogueManager : AbstractInteractable
 {
     [SerializeField] private Dialogue dialogue;
     [SerializeField][Range(0.1f, 10.0f)] private float colliderRadius;
@@ -70,7 +70,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
         dialogueParts = dialogue.dialogueParts;
     }
 
-    public void StartInteraction(PlayerInput playerInput)
+    public override void StartInteraction(PlayerInput playerInput)
     {
         _playerInput = playerInput;
         _playerInput.SwitchCurrentActionMap("UI");
@@ -84,7 +84,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
         ContinueInteraction(new InputAction.CallbackContext());
     }
     
-    public void ContinueInteraction(InputAction.CallbackContext context)
+    public override void ContinueInteraction(InputAction.CallbackContext context)
     {
         bool dialogueIndexIsOutsideBounds = dialogueParts.Count <= currentDialogue;
         if (dialogueIndexIsOutsideBounds)
@@ -112,8 +112,9 @@ public class DialogueManager : MonoBehaviour, IInteractable
         currentDialogue++;
     }
 
-    public void EndInteraction()
+    public new void EndInteraction()
     {
+        base.EndInteraction();
         dialoguePanel.gameObject.SetActive(false);
         _playerInput.actions["Submit"].performed -= ContinueInteraction;
         _playerInput.SwitchCurrentActionMap("Player");
@@ -216,7 +217,6 @@ public class DialogueManager : MonoBehaviour, IInteractable
         {
             case 0:
                 leftImage.color = Color.white;
-                //leftImage.GetComponent<RectTransform>().anchorMax
                 rightImage.color = Color.grey;
                 break;
             case 1:
