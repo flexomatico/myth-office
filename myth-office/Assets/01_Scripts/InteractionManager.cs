@@ -11,9 +11,15 @@ public class InteractionManager : MonoBehaviour
 
     private CapsuleCollider _collider;
     private PlayerInput _playerInput;
-    
+
+    public Prerequisites prerequisitesObject;
     public static List<string> prerequisites = new List<string>();
     public static List<string> prerequisitesList;
+
+    private void OnValidate()
+    {
+        prerequisites = prerequisitesObject.prerequisites;
+    }
 
     void Start()
     {

@@ -20,8 +20,6 @@ public class DialogueManager : MonoBehaviour, IInteractable
     public List<string> NeedsPrerequisites;
     [ListToPopup(typeof(InteractionManager), "prerequisitesList")]
     public List<string> FulfillsPrerequisites;
-    [EditPrerequisites(typeof(InteractionManager), "prerequisitesList")]
-    public List<string> EditPrerequisites;
 
     private EventSystem eventSystem;
     private Canvas canvas;
@@ -240,7 +238,6 @@ public class DialogueManager : MonoBehaviour, IInteractable
         {
             case 0:
                 leftImage.color = Color.white;
-                //leftImage.GetComponent<RectTransform>().anchorMax
                 rightImage.color = Color.grey;
                 break;
             case 1:
