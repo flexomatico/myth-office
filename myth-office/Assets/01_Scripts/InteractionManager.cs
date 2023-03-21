@@ -62,7 +62,9 @@ public class InteractionManager : MonoBehaviour
         }
 
         if (fulfillsAllPrerequisites)
+        {
             _interactables.Add(interactable);
+        }
     }
 
     private void OnTriggerExit(Collider other)

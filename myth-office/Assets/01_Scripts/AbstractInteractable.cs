@@ -16,6 +16,6 @@ public abstract class AbstractInteractable : MonoBehaviour
 
     public void EndInteraction()
     {
-        
+        InteractionManager.MarkPrerequisiteAsFulfilled(FulfillsPrerequisites);
     }
 }
