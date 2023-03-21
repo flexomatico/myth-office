@@ -42,21 +42,32 @@ public class InteractionManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        AbstractInteractable abstractInteractable = other.gameObject.GetComponent<AbstractInteractable>();
-        if (abstractInteractable == null)
+        AbstractInteractable interactable = other.gameObject.GetComponent<AbstractInteractable>();
+        if (interactable == null)
         {
             return;
         }
-        
-        _interactables.Add(abstractInteractable);
+
+        bool fulfillsAllPrerequisites = true;
+        foreach (string s in interactable.NeedsPrerequisites)
+        {
+            bool prerequisiteNotFulfilled = !fulfilledPrerequisites.Contains(s);
+            if (prerequisiteNotFulfilled)
+            {
+                fulfillsAllPrerequisites = false;
+            }
+        }
+
+        if (fulfillsAllPrerequisites)
+            _interactables.Add(interactable);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        AbstractInteractable abstractInteractable = other.gameObject.GetComponent<AbstractInteractable>();
-        if (abstractInteractable != null)
+        AbstractInteractable interactable = other.gameObject.GetComponent<AbstractInteractable>();
+        if (interactable != null)
         {
-            _interactables.Remove(abstractInteractable);
+            _interactables.Remove(interactable);
         }
     }
 
