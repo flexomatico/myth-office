@@ -36,7 +36,7 @@ public class DialogueManager : AbstractInteractable
     void Awake()
     {
         _sphereCollider = gameObject.AddComponent<SphereCollider>();
-        _sphereCollider.radius = colliderRadius;
+        _sphereCollider.radius = colliderRadius / transform.localScale.x;
         _sphereCollider.isTrigger = true;
     }
 

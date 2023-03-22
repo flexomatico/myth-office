@@ -24,11 +24,11 @@ public class InteractionManager : MonoBehaviour
         fulfilledPrerequisites = InitiallyFulfilledPrerequisites;
     }
 
-    public static void MarkPrerequisiteAsFulfilled(List<string> fulfilled)
+    public static void MarkPrerequisiteAsFulfilled(List<string> fulfills)
     {
-        foreach (string s in fulfilled)
+        foreach (string s in fulfills)
         {
-            bool isAlreadyFulfilled = fulfilled.Contains(s);
+            bool isAlreadyFulfilled = fulfilledPrerequisites.Contains(s);
             if (isAlreadyFulfilled)
                 continue;
 
@@ -60,7 +60,7 @@ public class InteractionManager : MonoBehaviour
                 fulfillsAllPrerequisites = false;
             }
         }
-
+        
         if (fulfillsAllPrerequisites)
         {
             _interactables.Add(interactable);
