@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Zeus
   m_EditorClassIdentifier: 
   dialogueParts:
+  - rid: 4308214582177955850
   - rid: 4308214582177955848
   - rid: 4308214582177955854
-  - rid: 4308214582177955850
   - rid: 4308214582177955855
   - rid: 4308214582177955851
   - rid: 4308214582177955856
@@ -29,6 +29,7 @@ MonoBehaviour:
         speakerName: Boss
         speakerLocation: 1
         leftImage: {fileID: 21300000, guid: 46b94033415db426590c58c0859b995a, type: 3}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 0bb57bf55fec94eb4ae55b745ac5faed, type: 3}
         sound: {fileID: 8300000, guid: b19869097da9a4a8f8f3cd78a4c88305, type: 3}
         line: 'The intern runs into Odin at the coffee/vending-machine, which turns
@@ -42,6 +43,7 @@ MonoBehaviour:
         speakerName: Boss
         speakerLocation: 1
         leftImage: {fileID: 0}
+        middleImage: {fileID: 21300000, guid: 0bb57bf55fec94eb4ae55b745ac5faed, type: 3}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: '"This place basically runs on that stuff. Our efficiency will be taking
@@ -53,6 +55,7 @@ MonoBehaviour:
         speakerName: Boss
         speakerLocation: 1
         leftImage: {fileID: 21300000, guid: 46b94033415db426590c58c0859b995a, type: 3}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 0bb57bf55fec94eb4ae55b745ac5faed, type: 3}
         sound: {fileID: 0}
         line: Maybe a taste-test commences, where Odin, Ra and Athena joins in. First
@@ -65,6 +68,7 @@ MonoBehaviour:
         speakerName: Intern
         speakerLocation: 0
         leftImage: {fileID: 0}
+        middleImage: {fileID: 21300000, guid: 0bb57bf55fec94eb4ae55b745ac5faed, type: 3}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
@@ -78,6 +82,7 @@ MonoBehaviour:
         speakerName: Intern
         speakerLocation: 1
         leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
@@ -90,6 +95,7 @@ MonoBehaviour:
         speakerName: Intern
         speakerLocation: 0
         leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:

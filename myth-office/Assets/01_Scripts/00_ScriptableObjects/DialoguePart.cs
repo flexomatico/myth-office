@@ -18,6 +18,7 @@ public abstract class DialoguePart
     [SerializeField] public string speakerName;
     [SerializeField, HideInInspector] public int speakerLocation = 0;
     [SerializeField] public Sprite leftImage;
+    [SerializeField] public Sprite middleImage;
     [SerializeField] public Sprite rightImage;
     [SerializeField] public AudioClip sound;
 }
