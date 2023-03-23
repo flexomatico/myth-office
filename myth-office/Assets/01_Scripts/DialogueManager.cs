@@ -11,10 +11,10 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
-public class DialogueManager : MonoBehaviour, IInteractable
+public class DialogueManager : AbstractInteractable
 {
     [SerializeField] private Dialogue dialogue;
-    [SerializeField][Range(0.1f, 10.0f)] private float colliderRadius;
+    [SerializeField][Range(0.1f, 10.0f)] private float colliderRadius = 3.0f;
 
     private EventSystem eventSystem;
     private Canvas canvas;
@@ -36,7 +36,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
     void Awake()
     {
         _sphereCollider = gameObject.AddComponent<SphereCollider>();
-        _sphereCollider.radius = colliderRadius;
+        _sphereCollider.radius = colliderRadius / transform.localScale.x;
         _sphereCollider.isTrigger = true;
     }
 
@@ -70,7 +70,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
         dialogueParts = dialogue.dialogueParts;
     }
 
-    public void StartInteraction(PlayerInput playerInput)
+    public override void StartInteraction(PlayerInput playerInput)
     {
         _playerInput = playerInput;
         _playerInput.SwitchCurrentActionMap("UI");
@@ -84,7 +84,7 @@ public class DialogueManager : MonoBehaviour, IInteractable
         ContinueInteraction(new InputAction.CallbackContext());
     }
     
-    public void ContinueInteraction(InputAction.CallbackContext context)
+    public override void ContinueInteraction(InputAction.CallbackContext context)
     {
         bool dialogueIndexIsOutsideBounds = dialogueParts.Count <= currentDialogue;
         if (dialogueIndexIsOutsideBounds)
@@ -112,12 +112,18 @@ public class DialogueManager : MonoBehaviour, IInteractable
         currentDialogue++;
     }
 
-    public void EndInteraction()
+    public new void EndInteraction()
     {
         dialoguePanel.gameObject.SetActive(false);
         _playerInput.actions["Submit"].performed -= ContinueInteraction;
         _playerInput.SwitchCurrentActionMap("Player");
         currentDialogue = 0;
+
+        if (deleteAfterFinished)
+        {
+            Destroy(_sphereCollider);
+        }
+        base.EndInteraction();
     }
 
     private void ResetPlayerChoiceButtons()
@@ -216,7 +222,6 @@ public class DialogueManager : MonoBehaviour, IInteractable
         {
             case 0:
                 leftImage.color = Color.white;
-                //leftImage.GetComponent<RectTransform>().anchorMax
                 rightImage.color = Color.grey;
                 break;
             case 1:
