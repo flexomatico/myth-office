@@ -14,7 +14,7 @@ using UnityEngine.Rendering;
 public class DialogueManager : AbstractInteractable
 {
     [SerializeField] private Dialogue dialogue;
-    [SerializeField][Range(0.1f, 10.0f)] private float colliderRadius;
+    [SerializeField][Range(0.1f, 10.0f)] private float colliderRadius = 3.0f;
 
     private EventSystem eventSystem;
     private Canvas canvas;
@@ -114,11 +114,13 @@ public class DialogueManager : AbstractInteractable
 
     public new void EndInteraction()
     {
-        base.EndInteraction();
         dialoguePanel.gameObject.SetActive(false);
         _playerInput.actions["Submit"].performed -= ContinueInteraction;
         _playerInput.SwitchCurrentActionMap("Player");
         currentDialogue = 0;
+        InteractionManager.Instance.RemoveInteractable(this);
+        Destroy(_sphereCollider);
+        base.EndInteraction();
     }
 
     private void ResetPlayerChoiceButtons()
