@@ -6484,6 +6484,7 @@ MonoBehaviour:
   - 'BR 1: Unlock Supply Closet'
   FulfillsPrerequisites:
   - 'BR 1: Checked Coffee'
+  deleteAfterFinished: 0
   dialogue: {fileID: 11400000, guid: 8c71ad47d029e482eac7c26446c8f737, type: 2}
   colliderRadius: 3
 --- !u!1001 &1146521744
@@ -6576,6 +6577,7 @@ GameObject:
   - component: {fileID: 1160381286}
   - component: {fileID: 1160381288}
   - component: {fileID: 1160381287}
+  - component: {fileID: 1160381290}
   - component: {fileID: 1160381289}
   m_Layer: 0
   m_Name: Odin_Placeholder
@@ -6614,6 +6616,8 @@ MonoBehaviour:
   NeedsPrerequisites: []
   FulfillsPrerequisites:
   - 'BR 1: Unlock Supply Closet'
+  - 'BR 1: ODIN Intermediary Allowed'
+  deleteAfterFinished: 1
   dialogue: {fileID: 11400000, guid: bf45dc518f04e42a4baf4d1554e37dfd, type: 2}
   colliderRadius: 3.2
 --- !u!212 &1160381288
@@ -6684,8 +6688,27 @@ MonoBehaviour:
   - 'BR 1: Checked Coffee'
   FulfillsPrerequisites:
   - 'BR 1: Can Take CAVE'
+  deleteAfterFinished: 1
   dialogue: {fileID: 11400000, guid: c06060c7774564425abe33fc9308b823, type: 2}
   colliderRadius: 3.25
+--- !u!114 &1160381290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160381285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NeedsPrerequisites:
+  - 'BR 1: ODIN Intermediary Allowed'
+  FulfillsPrerequisites: []
+  deleteAfterFinished: 0
+  dialogue: {fileID: 11400000, guid: 62383a661fa018249b2627a0d8c35551, type: 2}
+  colliderRadius: 3.21
 --- !u!1001 &1169786615
 PrefabInstance:
   m_ObjectHideFlags: 0
