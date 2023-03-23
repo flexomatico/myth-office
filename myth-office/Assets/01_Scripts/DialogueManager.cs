@@ -21,6 +21,7 @@ public class DialogueManager : AbstractInteractable
     private GameObject dialoguePanel;
     private TextMeshProUGUI textField;
     private Image leftImage;
+    private Image middleImage;
     private Image rightImage;
     private AudioSource audioSource;
     private Button[] buttons;
@@ -56,6 +57,7 @@ public class DialogueManager : AbstractInteractable
             dialoguePanel = uiRefs.dialoguePanel;
             textField = uiRefs.textField;
             leftImage = uiRefs.leftImage;
+            middleImage = uiRefs.middleImage;
             rightImage = uiRefs.rightImage;
             audioSource = uiRefs.audioSource;
             buttons = uiRefs.buttons;
@@ -172,6 +174,16 @@ public class DialogueManager : AbstractInteractable
             rightImage.sprite = response.rightImage;
             rightImage.preserveAspect = true;
             SetSpeakerImageRect(response.rightImage, rightImage);
+        }
+
+        if (response.middleImage != null)
+        {
+            middleImage.sprite = response.middleImage;
+            middleImage.enabled = true;
+        }
+        else
+        {
+            middleImage.enabled = false;
         }
         
         audioSource.clip = response.sound;
