@@ -118,8 +118,11 @@ public class DialogueManager : AbstractInteractable
         _playerInput.actions["Submit"].performed -= ContinueInteraction;
         _playerInput.SwitchCurrentActionMap("Player");
         currentDialogue = 0;
-        InteractionManager.Instance.RemoveInteractable(this);
-        Destroy(_sphereCollider);
+
+        if (deleteAfterFinished)
+        {
+            Destroy(_sphereCollider);
+        }
         base.EndInteraction();
     }
 

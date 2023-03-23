@@ -10,6 +10,8 @@ public abstract class AbstractInteractable : MonoBehaviour
     [ListToPopup(typeof(InteractionManager), "allPrerequisites")]
     public List<string> FulfillsPrerequisites;
     
+    [SerializeField] protected bool deleteAfterFinished = false;
+    
     public abstract void StartInteraction(PlayerInput playerInput);
 
     public abstract void ContinueInteraction(InputAction.CallbackContext context);
@@ -17,6 +19,10 @@ public abstract class AbstractInteractable : MonoBehaviour
     public void EndInteraction()
     {
         InteractionManager.Instance.MarkPrerequisiteAsFulfilled(FulfillsPrerequisites);
-        Destroy(this);
+        if (deleteAfterFinished)
+        {
+            InteractionManager.Instance.RemoveInteractable(this);
+            Destroy(this);
+        }
     }
 }
