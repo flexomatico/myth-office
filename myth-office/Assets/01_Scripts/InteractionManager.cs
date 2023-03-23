@@ -18,13 +18,15 @@ public class InteractionManager : MonoBehaviour
     [ListToPopup(typeof(InteractionManager), "allPrerequisites")]
     public List<string> InitiallyFulfilledPrerequisites;
 
+    public static InteractionManager Instance { get; private set; }
+
     private void OnValidate()
     {
         allPrerequisites = prerequisites.prerequisites;
         fulfilledPrerequisites = InitiallyFulfilledPrerequisites;
     }
 
-    public static void MarkPrerequisiteAsFulfilled(List<string> fulfills)
+    public void MarkPrerequisiteAsFulfilled(List<string> fulfills)
     {
         foreach (string s in fulfills)
         {
@@ -33,6 +35,23 @@ public class InteractionManager : MonoBehaviour
                 continue;
 
             fulfilledPrerequisites.Add(s);
+        }
+    }
+
+    public void RemoveInteractable(AbstractInteractable interactable)
+    {
+        _interactables.Remove(interactable);
+    }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
         }
     }
 
@@ -60,8 +79,10 @@ public class InteractionManager : MonoBehaviour
                 fulfillsAllPrerequisites = false;
             }
         }
+
+        bool isNotInListYet = !_interactables.Contains(interactable);
         
-        if (fulfillsAllPrerequisites)
+        if (fulfillsAllPrerequisites && isNotInListYet)
         {
             _interactables.Add(interactable);
         }
