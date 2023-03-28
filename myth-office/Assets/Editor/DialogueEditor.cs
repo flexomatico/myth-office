@@ -27,7 +27,7 @@ public class DialogueEditor : Editor
     private const float ShrinkHeaderWidth = 15.0f;
     private const float XShiftHeaders = 15.0f;
 
-    private const float npcResponseElementHeight = 195.0f;
+    private const float npcResponseElementHeight = 212.0f;
     private const float playerResponseChoiceHeight = 65.0f;
     private const float listManipulationButtonsHeight = 25.0f;
 
@@ -117,16 +117,20 @@ public class DialogueEditor : Editor
             rect.y += GetDefaultSpaceBetweenElements();
             EditorGUI.PropertyField(rect, element.FindPropertyRelative("choices"), GUIContent.none);
 
-            rect.y += OnReorderListElementHeight(index) - EditorGUIUtility.singleLineHeight * 6.65f;
+            rect.y += OnReorderListElementHeight(index) - EditorGUIUtility.singleLineHeight * 7.65f;
             rect.height = EditorGUIUtility.singleLineHeight;
         }
+        
         EditorGUI.PropertyField(rect, element.FindPropertyRelative("leftImage"), new GUIContent("Left Image"));
         rect.y += GetDefaultSpaceBetweenElements(); 
+        EditorGUI.PropertyField(rect, element.FindPropertyRelative("middleImage"), new GUIContent("Middle Image")); 
+        rect.y += GetDefaultSpaceBetweenElements(); 
         EditorGUI.PropertyField(rect, element.FindPropertyRelative("rightImage"), new GUIContent("Right Image")); 
+            
         rect.y += GetDefaultSpaceBetweenElements(); 
         EditorGUI.PropertyField(rect, element.FindPropertyRelative("sound"), new GUIContent("Sound"));
 
-        
+
         EditorGUI.indentLevel--;
     }
     
@@ -179,7 +183,7 @@ public class DialogueEditor : Editor
             SerializedProperty choicesProperty = element.FindPropertyRelative("choices");
             float expandedHeight = HeightHeader * 2.0f + playerResponseChoiceHeight * choicesProperty.arraySize + listManipulationButtonsHeight;
             expandedHeight = choicesProperty.arraySize == 0 ? HeightHeader * 2.0f + listManipulationButtonsHeight + GetDefaultSpaceBetweenElements() : expandedHeight;
-            float otherPropsHeight = EditorGUIUtility.singleLineHeight * 6.0f;
+            float otherPropsHeight = EditorGUIUtility.singleLineHeight * 7.0f;
             return choicesProperty.isExpanded ? expandedHeight + otherPropsHeight : HeightHeader * 2.0f + otherPropsHeight;
         }
         return 0.0f;

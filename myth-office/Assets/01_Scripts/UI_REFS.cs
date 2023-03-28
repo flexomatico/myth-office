@@ -13,6 +13,7 @@ public class UI_REFS : MonoBehaviour
     public GameObject dialoguePanel;
     public TextMeshProUGUI textField;
     public Image leftImage;
+    public Image middleImage;
     public Image rightImage;
     public AudioSource audioSource;
     public Button[] buttons;
