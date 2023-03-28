@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
-  m_Name: BR 1 - Supply Closet
+  m_Name: (OLD) BR 1 - Supply Closet
   m_EditorClassIdentifier: 
   dialogueParts:
   - rid: 9132166938793345051
@@ -32,6 +32,7 @@ MonoBehaviour:
         speakerName: Supply Closet
         speakerLocation: 1
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: The door opens into a small room with shelves on the walls. The room
@@ -44,6 +45,7 @@ MonoBehaviour:
         speakerName: Intern
         speakerLocation: 0
         leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
@@ -55,6 +57,7 @@ MonoBehaviour:
         speakerName: Supply Closet
         speakerLocation: 1
         leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: Near the back of the small room is a cupboard.
@@ -65,6 +68,7 @@ MonoBehaviour:
         speakerName: Intern
         speakerLocation: 0
         leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
@@ -76,6 +80,7 @@ MonoBehaviour:
         speakerName: Cupboard
         speakerLocation: 1
         leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: "Inside are half a dozen cups with \u201CPantheon Inc.\u201D written
@@ -88,6 +93,7 @@ MonoBehaviour:
         speakerName: Cupboard
         speakerLocation: 1
         leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: "At the bottom of the cupboard is a large blue plastic container. A
@@ -99,6 +105,7 @@ MonoBehaviour:
         speakerName: Intern
         speakerLocation: 0
         leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
@@ -110,6 +117,7 @@ MonoBehaviour:
         speakerName: Cupboard
         speakerLocation: 1
         leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: The container is empty.
@@ -120,6 +128,7 @@ MonoBehaviour:
         speakerName: Intern
         speakerLocation: 0
         leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
