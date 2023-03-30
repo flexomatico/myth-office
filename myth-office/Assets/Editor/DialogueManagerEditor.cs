@@ -16,6 +16,8 @@ public class DialogueManagerEditor : Editor
     private SerializedProperty deleteAfterFinished;
     private SerializedProperty doAfterFinished;
 
+    private bool showDoAfterFinished = false;
+
     private void OnEnable()
     {
         dialogue = serializedObject.FindProperty("dialogue");
@@ -35,7 +37,12 @@ public class DialogueManagerEditor : Editor
         EditorGUILayout.PropertyField(colliderRadius);
         EditorGUILayout.PropertyField(NeedsPrerequisites, true);
         EditorGUILayout.PropertyField(FulfillsPrerequisites, true);
-        EditorGUILayout.PropertyField(doAfterFinished, true);
+        showDoAfterFinished = EditorGUILayout.BeginFoldoutHeaderGroup(showDoAfterFinished, "Do After Finished");
+        if (showDoAfterFinished)
+        {
+            EditorGUILayout.PropertyField(doAfterFinished, true);
+        }
+        EditorGUILayout.EndFoldoutHeaderGroup();
         
         serializedObject.ApplyModifiedProperties();
     }
