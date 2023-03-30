@@ -64,28 +64,21 @@ public class InteractionManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        AbstractInteractable interactable = other.gameObject.GetComponent<AbstractInteractable>();
-        if (interactable == null)
+        AbstractInteractable[] interactables = other.gameObject.GetComponents<AbstractInteractable>();
+        if (interactables == null)
         {
             return;
         }
 
-        bool fulfillsAllPrerequisites = true;
-        foreach (string s in interactable.NeedsPrerequisites)
+        foreach (AbstractInteractable interactable in interactables)
         {
-            bool prerequisiteNotFulfilled = !fulfilledPrerequisites.Contains(s);
-            if (prerequisiteNotFulfilled)
+            bool isNotInListYet = !_interactables.Contains(interactable);
+            if (isNotInListYet)
             {
-                fulfillsAllPrerequisites = false;
+                _interactables.Add(interactable);
             }
         }
 
-        bool isNotInListYet = !_interactables.Contains(interactable);
-        
-        if (fulfillsAllPrerequisites && isNotInListYet)
-        {
-            _interactables.Add(interactable);
-        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -104,7 +97,24 @@ public class InteractionManager : MonoBehaviour
         {
             return;
         }
-        
-        _interactables[0].StartInteraction(_playerInput);
+
+        foreach (AbstractInteractable interactable in _interactables)
+        {
+            bool fulfillsAllPrerequisites = true;
+            foreach (string s in interactable.NeedsPrerequisites)
+            {
+                bool prerequisiteNotFulfilled = !fulfilledPrerequisites.Contains(s);
+                if (prerequisiteNotFulfilled)
+                {
+                    fulfillsAllPrerequisites = false;
+                }
+            }
+
+            if (fulfillsAllPrerequisites)
+            {
+                interactable.StartInteraction(_playerInput);
+            }
+        }
+
     }
 }

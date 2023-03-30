@@ -13,7 +13,7 @@ using UnityEngine.Rendering;
 
 public class DialogueManager : AbstractInteractable
 {
-    [SerializeField] private Dialogue dialogue;
+    [SerializeField] public Dialogue dialogue;
     [SerializeField][Range(0.1f, 10.0f)] private float colliderRadius = 3.0f;
 
     private EventSystem eventSystem;
@@ -126,6 +126,12 @@ public class DialogueManager : AbstractInteractable
             Destroy(_sphereCollider);
         }
         base.EndInteraction();
+    }
+
+    public void DeleteDialogueManager()
+    {
+        deleteAfterFinished = true;
+        EndInteraction();
     }
 
     private void ResetPlayerChoiceButtons()
