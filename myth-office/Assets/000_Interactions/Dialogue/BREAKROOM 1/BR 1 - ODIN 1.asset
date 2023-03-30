@@ -45,7 +45,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: bfeb988f8f5b840c7ae12f1bfd71535a, type: 3}
         line: "So how\u2019d you like the Breakroom? Pretty cool right? Even has
           one of them TVs you humans are so into."
     - rid: 9132166938793345032
@@ -57,7 +57,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 6a9d9aca2ae824736bc5a478d0daccb4, type: 3}
         line: "But the Breakroom is for breaks, and we\u2019re on the clock, Inth\xEBrn!"
     - rid: 9132166938793345033
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -68,7 +68,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: "I\u2019m sorry, but I don\u2019t even know what I\u2019m doing here?"
     - rid: 9132166938793345034
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -79,7 +79,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 7b188b24a892a444898e810967f769e7, type: 3}
         line: 'Ah, well! You see, sometimes the Breakroom needs to be restocked.
           Water cooler needs water, no cups in the dispenser. You''ll get the hang
           of it in no time. '
@@ -92,7 +92,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: What? No? I mean, why am-
     - rid: 9132166938793345036
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -103,7 +103,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 696d62616db4b4df7aaeae7ef918c8b6, type: 3}
         line: "You\u2019d think with how much Thor naps that he\u2019d be on the
           decaff. No! He walks around with that blasted protein shaker all the time.
           Drinks coffee from it too."
@@ -139,7 +139,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: caf29a6d3bdd64239adb788ad762a67e, type: 3}
         line: So, if I was on my way to Valhalla, does that mean that I di-
     - rid: 9132166938793345040
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -150,7 +150,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 7b188b24a892a444898e810967f769e7, type: 3}
         line: "And then there\u2019s Heimdall. Stays up all night watching those
           monitors. I swear, best security guard we\u2019ve ever had. "
     - rid: 9132166938793345041
@@ -162,7 +162,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 694f854d6a8eb4d3fa5ac58ad3ef38f4, type: 3}
         line: TEA drinker!
     - rid: 9132166938793345042
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -206,7 +206,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
         line: Uhm. Restocking the Breakroom?
     - rid: 9132166938793345046
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -217,7 +217,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 694f854d6a8eb4d3fa5ac58ad3ef38f4, type: 3}
         line: Right!
     - rid: 9132166938793345047
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -228,7 +228,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 05d1d0b079cd34acc865025a73a427ac, type: 3}
         line: (SOUND EFFECT INDICATES COFFEE MACHINE IS OUT OF COFFEE)
     - rid: 9132166938793345048
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -239,7 +239,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: d30eca6975a574459a5827948b77aa7a, type: 3}
         line: 'You see? Thor you son of a- '
     - rid: 9132166938793345049
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -250,7 +250,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 7b188b24a892a444898e810967f769e7, type: 3}
         line: Hm. Thor you dumbass.
     - rid: 9132166938793345050
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
