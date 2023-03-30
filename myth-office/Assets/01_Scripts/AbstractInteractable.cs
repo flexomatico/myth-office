@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public abstract class AbstractInteractable : MonoBehaviour
@@ -9,8 +10,11 @@ public abstract class AbstractInteractable : MonoBehaviour
     public List<string> NeedsPrerequisites;
     [ListToPopup(typeof(InteractionManager), "allPrerequisites")]
     public List<string> FulfillsPrerequisites;
-    
+
     [SerializeField] protected bool deleteAfterFinished = false;
+
+    [SerializeField] protected UnityEvent doAfterFinished;
+    private bool hasInvokedAfterFinishedEvents = false;
     
     public abstract void StartInteraction(PlayerInput playerInput);
 
@@ -18,6 +22,11 @@ public abstract class AbstractInteractable : MonoBehaviour
 
     public void EndInteraction()
     {
+        if (!hasInvokedAfterFinishedEvents)
+        {
+            doAfterFinished.Invoke();
+            hasInvokedAfterFinishedEvents = true;
+        }
         InteractionManager.Instance.MarkPrerequisiteAsFulfilled(FulfillsPrerequisites);
         if (deleteAfterFinished)
         {

@@ -13,7 +13,7 @@ using UnityEngine.Rendering;
 
 public class DialogueManager : AbstractInteractable
 {
-    [SerializeField] private Dialogue dialogue;
+    [SerializeField] public Dialogue dialogue;
     [SerializeField][Range(0.1f, 10.0f)] private float colliderRadius = 3.0f;
 
     private EventSystem eventSystem;
@@ -116,9 +116,10 @@ public class DialogueManager : AbstractInteractable
 
     public new void EndInteraction()
     {
+        ResetSpeakerImages();
         dialoguePanel.gameObject.SetActive(false);
-        _playerInput.actions["Submit"].performed -= ContinueInteraction;
-        _playerInput.SwitchCurrentActionMap("Player");
+        InteractionManager.Instance._playerInput.actions["Submit"].performed -= ContinueInteraction;
+        InteractionManager.Instance._playerInput.SwitchCurrentActionMap("Player");
         currentDialogue = 0;
 
         if (deleteAfterFinished)
@@ -126,6 +127,12 @@ public class DialogueManager : AbstractInteractable
             Destroy(_sphereCollider);
         }
         base.EndInteraction();
+    }
+
+    public void DeleteDialogueManager()
+    {
+        deleteAfterFinished = true;
+        EndInteraction();
     }
 
     private void ResetPlayerChoiceButtons()
@@ -164,16 +171,26 @@ public class DialogueManager : AbstractInteractable
         DialoguePart response = dialogueParts[currentDialogue];
         if (response.leftImage != null)
         {
+            leftImage.enabled = true;
             leftImage.sprite = response.leftImage;
             leftImage.preserveAspect = true;
             SetSpeakerImageRect(response.leftImage, leftImage);
         }
+        else if (leftImage.sprite == null)
+        {
+            leftImage.enabled = false;
+        }
 
         if (response.rightImage != null)
         {
+            rightImage.enabled = true;
             rightImage.sprite = response.rightImage;
             rightImage.preserveAspect = true;
             SetSpeakerImageRect(response.rightImage, rightImage);
+        }
+        else if (rightImage.sprite == null)
+        {
+            rightImage.enabled = false;
         }
 
         if (response.middleImage != null)
@@ -225,6 +242,13 @@ public class DialogueManager : AbstractInteractable
     {
         leftName.text = "...";
         rightName.text = "...";
+    }
+
+    private void ResetSpeakerImages()
+    {
+        leftImage.sprite = null;
+        middleImage.sprite = null;
+        rightImage.sprite = null;
     }
 
     private void SetActiveSpeaker()

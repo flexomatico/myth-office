@@ -10,7 +10,7 @@ public class InteractionManager : MonoBehaviour
     private List<AbstractInteractable> _interactables = new List<AbstractInteractable>();
 
     private CapsuleCollider _collider;
-    private PlayerInput _playerInput;
+    public PlayerInput _playerInput;
 
     public Prerequisites prerequisites;
     public static List<string> allPrerequisites;
@@ -70,19 +70,8 @@ public class InteractionManager : MonoBehaviour
             return;
         }
 
-        bool fulfillsAllPrerequisites = true;
-        foreach (string s in interactable.NeedsPrerequisites)
-        {
-            bool prerequisiteNotFulfilled = !fulfilledPrerequisites.Contains(s);
-            if (prerequisiteNotFulfilled)
-            {
-                fulfillsAllPrerequisites = false;
-            }
-        }
-
         bool isNotInListYet = !_interactables.Contains(interactable);
-        
-        if (fulfillsAllPrerequisites && isNotInListYet)
+        if (isNotInListYet)
         {
             _interactables.Add(interactable);
         }
@@ -104,7 +93,25 @@ public class InteractionManager : MonoBehaviour
         {
             return;
         }
-        
-        _interactables[0].StartInteraction(_playerInput);
+
+        foreach (AbstractInteractable interactable in _interactables)
+        {
+            bool fulfillsAllPrerequisites = true;
+            foreach (string s in interactable.NeedsPrerequisites)
+            {
+                bool prerequisiteNotFulfilled = !fulfilledPrerequisites.Contains(s);
+                if (prerequisiteNotFulfilled)
+                {
+                    fulfillsAllPrerequisites = false;
+                }
+            }
+
+            if (fulfillsAllPrerequisites)
+            {
+                interactable.StartInteraction(_playerInput);
+                return;
+            }
+        }
+
     }
 }
