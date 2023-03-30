@@ -10,7 +10,7 @@ public class InteractionManager : MonoBehaviour
     private List<AbstractInteractable> _interactables = new List<AbstractInteractable>();
 
     private CapsuleCollider _collider;
-    private PlayerInput _playerInput;
+    public PlayerInput _playerInput;
 
     public Prerequisites prerequisites;
     public static List<string> allPrerequisites;
@@ -64,21 +64,17 @@ public class InteractionManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        AbstractInteractable[] interactables = other.gameObject.GetComponents<AbstractInteractable>();
-        if (interactables == null)
+        AbstractInteractable interactable = other.gameObject.GetComponent<AbstractInteractable>();
+        if (interactable == null)
         {
             return;
         }
 
-        foreach (AbstractInteractable interactable in interactables)
+        bool isNotInListYet = !_interactables.Contains(interactable);
+        if (isNotInListYet)
         {
-            bool isNotInListYet = !_interactables.Contains(interactable);
-            if (isNotInListYet)
-            {
-                _interactables.Add(interactable);
-            }
+            _interactables.Add(interactable);
         }
-
     }
 
     private void OnTriggerExit(Collider other)
@@ -113,6 +109,7 @@ public class InteractionManager : MonoBehaviour
             if (fulfillsAllPrerequisites)
             {
                 interactable.StartInteraction(_playerInput);
+                return;
             }
         }
 

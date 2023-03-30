@@ -14,6 +14,7 @@ public abstract class AbstractInteractable : MonoBehaviour
     [SerializeField] protected bool deleteAfterFinished = false;
 
     [SerializeField] protected UnityEvent doAfterFinished;
+    private bool hasInvokedAfterFinishedEvents = false;
     
     public abstract void StartInteraction(PlayerInput playerInput);
 
@@ -21,7 +22,11 @@ public abstract class AbstractInteractable : MonoBehaviour
 
     public void EndInteraction()
     {
-        doAfterFinished.Invoke();
+        if (!hasInvokedAfterFinishedEvents)
+        {
+            doAfterFinished.Invoke();
+            hasInvokedAfterFinishedEvents = true;
+        }
         InteractionManager.Instance.MarkPrerequisiteAsFulfilled(FulfillsPrerequisites);
         if (deleteAfterFinished)
         {
