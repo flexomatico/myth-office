@@ -49,7 +49,8 @@ public class DialogueManager : AbstractInteractable
 
     private void Start()
     {
-        UI_REFS uiRefs = SceneManager.GetSceneByName("UI").GetRootGameObjects()[0].GetComponent<UI_REFS>();
+        //UI_REFS uiRefs = SceneManager.GetSceneByName("UI").GetRootGameObjects()[0].GetComponent<UI_REFS>();
+        UI_REFS uiRefs = FindObjectOfType<UI_REFS>();
         if (uiRefs)
         {
             eventSystem = uiRefs.eventSystem;
