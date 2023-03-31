@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     private CharacterController _controller;
     private Vector3 _playerVelocity;
     private bool _groundedPlayer;
-    private float _playerSpeed = 2.0f;
+    public float _playerSpeed = 2.0f;
     private float _gravityValue = -9.81f;
 
     private void Start()
