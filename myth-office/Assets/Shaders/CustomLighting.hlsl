@@ -32,8 +32,8 @@ float GetSmoothnessPower(float rawSmoothness) {
 	// compute the diffuse light on the fragment
 	float3 CustomLightHandling(CustomLightingData d, Light light) {
 
-	// the light has an RGB color. Darken that based on the shadow of other objects.
-	float3 radiance = light.color * light.shadowAttenuation; 
+	// the light has an RGB color. Darken that based on the shadow of other objects and distance from source.
+	float3 radiance = light.color * (light.shadowAttenuation * light.distanceAttenuation); 
 
 	// Get the light strength based on the angle between the normal and the light direction. Clamped between 0-1
 	float diffuseStrength = saturate(dot(d.normalWS, light.direction));
@@ -50,25 +50,34 @@ float GetSmoothnessPower(float rawSmoothness) {
 #endif
 
 float3 CalculateCustomLighting(CustomLightingData d) {
-	// Light class is not avalible in preview window
-	#ifdef SHADERGRAPH_PREVIEW
-		// assume light direction and calculate based on that.
-		float3 lightDir = float3(0.5, 0.5, 0);
-		float intensity = saturate(dot(d.normalWS, lightDir)) +
-			pow(saturate(dot(d.normalWS, normalize(d.viewDirection + lightDir))), GetSmoothnessPower(d.smoothness)); 
-		return d.albedo * intensity;	
-	#else
-		// Returns the single main light in the scene. Must be a directional light?
-		Light mainLight = GetMainLight(d.shadowCoord, d.position, 1);
+// Light class is not avalible in preview window
+#ifdef SHADERGRAPH_PREVIEW
+	// assume light direction and calculate based on that.
+	float3 lightDir = float3(0.5, 0.5, 0);
+	float intensity = saturate(dot(d.normalWS, lightDir)) +
+		pow(saturate(dot(d.normalWS, normalize(d.viewDirection + lightDir))), GetSmoothnessPower(d.smoothness)); 
+	return d.albedo * intensity;	
+#else
+	// Returns the single main light in the scene. Must be a directional light?
+	Light mainLight = GetMainLight(d.shadowCoord, d.position, 1);
 
-		// start with a black pixel because no light has hit it yet.
-		float3 color = 0;
+	// start with a black pixel because no light has hit it yet.
+	float3 color = 0;
 
-		// Add the light from the main light to the pixel
-		color += CustomLightHandling(d, mainLight);
+	// Add the light from the main light to the pixel
+	color += CustomLightHandling(d, mainLight);
 
-		return color;  
+	#ifdef _ADDITIONAL_LIGHTS
+	// For each additional light, also add them to the fragment color.
+	uint additionalLightCount = GetAdditionalLightsCount();
+	for (uint light_i = 0; light_i < additionalLightCount; light_i++) {
+		Light light = GetAdditionalLight(light_i, d.position, 1);
+		color += CustomLightHandling(d, light);
+	}
 	#endif
+
+	return color;  
+#endif
 }
 
 

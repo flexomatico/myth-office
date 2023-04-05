@@ -21,7 +21,13 @@
             "m_Id": "dae9767618fd4aa9a70cfc6463af0dc7"
         },
         {
+            "m_Id": "ec72549d3e7a49a2a1ee41dc9f5cde65"
+        },
+        {
             "m_Id": "e8582824be3a45af8b21976588d11d0a"
+        },
+        {
+            "m_Id": "f3ab1920000e4a53817cf83d2c6f8532"
         }
     ],
     "m_Dropdowns": [],
@@ -887,8 +893,38 @@
         },
         {
             "m_Id": "f65edc1efabe4adbb57e69d478a20262"
+        },
+        {
+            "m_Id": "f3ab1920000e4a53817cf83d2c6f8532"
+        },
+        {
+            "m_Id": "ec72549d3e7a49a2a1ee41dc9f5cde65"
         }
     ]
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
+    "m_ObjectId": "ec72549d3e7a49a2a1ee41dc9f5cde65",
+    "m_Guid": {
+        "m_GuidSerialized": "51532abe-1126-4c54-b2b9-1884d9716c0f"
+    },
+    "m_Name": "AdditionalLightShadows",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "AdditionalLightShadows",
+    "m_DefaultReferenceName": "_ADDITIONALLIGHTSHADOWS",
+    "m_OverrideReferenceName": "_ADDITIONAL_LIGHT_SHADOWS",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_KeywordType": 0,
+    "m_KeywordDefinition": 1,
+    "m_KeywordScope": 1,
+    "m_KeywordStages": 63,
+    "m_Entries": [],
+    "m_Value": 1,
+    "m_IsEditable": true
 }
 
 {
@@ -913,6 +949,30 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
+    "m_ObjectId": "f3ab1920000e4a53817cf83d2c6f8532",
+    "m_Guid": {
+        "m_GuidSerialized": "a1d6a1cd-887e-4084-88b3-6fa4e805d99c"
+    },
+    "m_Name": "AdditionalLights",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "AdditionalLights",
+    "m_DefaultReferenceName": "_ADDITIONALLIGHTS",
+    "m_OverrideReferenceName": "_ADDITIONAL_LIGHTS",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_KeywordType": 0,
+    "m_KeywordDefinition": 1,
+    "m_KeywordScope": 1,
+    "m_KeywordStages": 63,
+    "m_Entries": [],
+    "m_Value": 1,
+    "m_IsEditable": true
 }
 
 {
