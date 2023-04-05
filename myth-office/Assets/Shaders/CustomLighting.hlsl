@@ -11,14 +11,19 @@
 
 
 struct CustomLightingData {
+	// view propetries
 	float3 normalWS; // normal of the fragment in world space
 	float3 viewDirection; // Direction from the camera to the fragment
 	float3 position; // Fragment world position
 	float4 shadowCoord; // coordnate used to look up in shadow map?
 
+	// object properties
 	float3 albedo; // Base RGB color with no light influence, eg. Sampled color from texture. 
 	float smoothness; // stength of specular highlight
 
+	// stylization
+	float3 celThresholds;
+	float4 celIntensities;
 };
 
 // translate 0-1 smoothness to an exponent, reducing the highlight as smothness grows
@@ -32,15 +37,31 @@ float GetSmoothnessPower(float rawSmoothness) {
 	// compute the diffuse light on the fragment
 	float3 CustomLightHandling(CustomLightingData d, Light light) {
 
-	// the light has an RGB color. Darken that based on the shadow of other objects and distance from source.
-	float3 radiance = light.color * (light.shadowAttenuation * light.distanceAttenuation); 
-
 	// Get the light strength based on the angle between the normal and the light direction. Clamped between 0-1
 	float diffuseStrength = saturate(dot(d.normalWS, light.direction));
 	float specularBase = saturate(dot(d.normalWS, normalize(light.direction + d.viewDirection)));
 	float specularStrength = diffuseStrength * pow(specularBase, GetSmoothnessPower(d.smoothness));
+
+	// the light has an RGB color. Darken that based on the shadow of other objects and distance from source.
+	float lightIntensity = light.shadowAttenuation * light.distanceAttenuation * (diffuseStrength + specularStrength);
+
+	// Clamp the light intensity into different buckets to create the cel shaded look.
+	// TODO: the ifs can be removed by some smart math.
+	if (lightIntensity < d.celThresholds.x) {
+		lightIntensity = d.celIntensities.x;
+	}
+	else if (lightIntensity < d.celThresholds.y) {
+		lightIntensity = d.celIntensities.y;
+	}
+	else if (lightIntensity < d.celThresholds.z) {
+		lightIntensity = d.celIntensities.z;
+	}
+	else {
+		lightIntensity = d.celIntensities.w;
+	}
+
 	// combine the color and strength of the light hitting the fragment.
-	float3 lightStrength = radiance * (diffuseStrength + specularStrength); 
+	float3 lightStrength = light.color * lightIntensity;
 
 	// Use the strength of the light to light up the base texture color sample
 	float3 color = d.albedo * lightStrength;
@@ -83,7 +104,7 @@ float3 CalculateCustomLighting(CustomLightingData d) {
 
 // Wrapper function called by shader graph. Output is provided through out variables
 // _float suffix specifies precision level on GPU
-void CalculateCustomLighting_float(float3 Albedo, float3 Normal, float3 ViewDirection, float Smoothness, float3 Position,
+void CalculateCustomLighting_float(float3 Position, float3 ViewDirection, float3 Albedo, float3 Normal,  float Smoothness,  float3 CelThresholds, float4 CelIntensities,
 	out float3 Color) {
 	CustomLightingData d;
 	d.albedo = Albedo;
@@ -91,6 +112,8 @@ void CalculateCustomLighting_float(float3 Albedo, float3 Normal, float3 ViewDire
 	d.viewDirection = ViewDirection;
 	d.smoothness = Smoothness;
 	d.position = Position;
+	d.celThresholds = CelThresholds;
+	d.celIntensities = CelIntensities; 
 
 	// Calculate the shadow coord based on the fragment position.
 #ifdef SHADERGRAPH_PREVIEW
