@@ -10,9 +10,9 @@ Material:
   m_Name: celShader
   m_Shader: {fileID: -6465566751694194690, guid: 35a5d724620f0c542b3ed22f9159c889,
     type: 3}
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _ADDITIONALLIGHTSHADOWS
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -104,13 +104,13 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NormalStrength: 5.78
+    - _NormalStrength: 15.4
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 1
+    - _Smoothness: 0.697
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -119,8 +119,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _CelIntensities: {r: 0.1, g: 0.25, b: 0.81, a: 2}
-    - _CelTresholds: {r: 0.1, g: 0.25, b: 0.75, a: 0.9}
+    - _CelIntensities: {r: 0.25, g: 0.5, b: 0.9, a: 2}
+    - _CelTresholds: {r: 0.00001, g: 0.05, b: 0.2, a: 0.8}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
