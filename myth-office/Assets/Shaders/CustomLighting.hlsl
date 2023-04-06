@@ -1,14 +1,5 @@
 #ifndef CUSTOM_LIGHTING
-#define CUSTOM_LIGHTING
-
-
-#ifndef SHADERGRAPH_PREVIEW
-#include "Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/Includes/ShaderPass.hlsl"
-#if (SHADERPASS != SHADERPASS_FORWARD)
-#undef REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR
-#endif
-#endif
-
+#define CUSTOM_LIGHTING 
 
 struct CustomLightingData {
 	// view propetries
@@ -22,13 +13,13 @@ struct CustomLightingData {
 	float smoothness; // stength of specular highlight
 
 	// stylization
-	float3 celThresholds;
+	float4 celThresholds;
 	float4 celIntensities;
 };
 
 // translate 0-1 smoothness to an exponent, reducing the highlight as smothness grows
 float GetSmoothnessPower(float rawSmoothness) {
-	return exp2(10 * rawSmoothness + 1);
+	return exp2(10 * rawSmoothness + 1); 
 }
 
 
@@ -42,18 +33,24 @@ float GetSmoothnessPower(float rawSmoothness) {
 	float specularBase = saturate(dot(d.normalWS, normalize(light.direction + d.viewDirection)));
 	float specularStrength = diffuseStrength * pow(specularBase, GetSmoothnessPower(d.smoothness));
 
+	// DistanceAttenuation: distance from light (0 outside range shape)
+	// Intensity: Stengthens light.color.
+	// shadow Attenuation: doesn't seem to do much.
 	// the light has an RGB color. Darken that based on the shadow of other objects and distance from source.
-	float lightIntensity = light.shadowAttenuation * light.distanceAttenuation * (diffuseStrength + specularStrength);
+	float lightIntensity = light.distanceAttenuation *light.shadowAttenuation *(diffuseStrength + specularStrength);
 
 	// Clamp the light intensity into different buckets to create the cel shaded look.
 	// TODO: the ifs can be removed by some smart math.
-	if (lightIntensity < d.celThresholds.x) {
+	if (lightIntensity <= d.celThresholds.x) {
+		lightIntensity = 0;
+	}
+	else if (lightIntensity <= d.celThresholds.y) {
 		lightIntensity = d.celIntensities.x;
 	}
-	else if (lightIntensity < d.celThresholds.y) {
+	else if (lightIntensity <= d.celThresholds.z) {
 		lightIntensity = d.celIntensities.y;
 	}
-	else if (lightIntensity < d.celThresholds.z) {
+	else if (lightIntensity <= d.celThresholds.w) {
 		lightIntensity = d.celIntensities.z;
 	}
 	else {
@@ -92,7 +89,7 @@ float3 CalculateCustomLighting(CustomLightingData d) {
 	// For each additional light, also add them to the fragment color.
 	uint additionalLightCount = GetAdditionalLightsCount();
 	for (uint light_i = 0; light_i < additionalLightCount; light_i++) {
-		Light light = GetAdditionalLight(light_i, d.position, 1);
+		Light light = GetAdditionalLight(light_i, d.position, half4(1,1,1,1));
 		color += CustomLightHandling(d, light);
 	}
 	#endif
@@ -104,7 +101,7 @@ float3 CalculateCustomLighting(CustomLightingData d) {
 
 // Wrapper function called by shader graph. Output is provided through out variables
 // _float suffix specifies precision level on GPU
-void CalculateCustomLighting_float(float3 Position, float3 ViewDirection, float3 Albedo, float3 Normal,  float Smoothness,  float3 CelThresholds, float4 CelIntensities,
+void CalculateCustomLighting_float(float3 Position, float3 ViewDirection, float3 Albedo, float3 Normal,  float Smoothness,  float4 CelThresholds, float4 CelIntensities,
 	out float3 Color) {
 	CustomLightingData d;
 	d.albedo = Albedo;
