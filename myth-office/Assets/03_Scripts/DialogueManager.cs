@@ -19,6 +19,7 @@ public class DialogueManager : AbstractInteractable
     private EventSystem eventSystem;
     private Canvas canvas;
     private GameObject dialoguePanel;
+    private VerticalLayoutGroup dialoguelayoutGroup;
     private TextMeshProUGUI textField;
     private Image leftImage;
     private Image middleImage;
@@ -56,6 +57,7 @@ public class DialogueManager : AbstractInteractable
             eventSystem = uiRefs.eventSystem;
             canvas = uiRefs.canvas;
             dialoguePanel = uiRefs.dialoguePanel;
+            dialoguelayoutGroup = uiRefs.dialogueLayoutGroup;
             textField = uiRefs.textField;
             leftImage = uiRefs.leftImage;
             middleImage = uiRefs.middleImage;
@@ -103,6 +105,9 @@ public class DialogueManager : AbstractInteractable
         {
             case ResponseType.TextResponse:
                 FillDialogueTextField();
+                
+                // If we don't force update the text will be displaced until the frame after the next change in UI.
+                LayoutRebuilder.ForceRebuildLayoutImmediate(dialoguelayoutGroup.GetComponent<RectTransform>());
                 break;
             case ResponseType.ChoiceResponse:
                 FillPlayerChoiceButtons();
@@ -176,6 +181,9 @@ public class DialogueManager : AbstractInteractable
             leftImage.sprite = response.leftImage;
             leftImage.preserveAspect = true;
             SetSpeakerImageRect(response.leftImage, leftImage);
+
+            // Allow each image to have a custom pivot by reading pivots from the sprite data.
+            leftImage.GetComponent<RectTransform>().pivot = leftImage.sprite.pivot / leftImage.sprite.texture.Size();
         }
         else if (leftImage.sprite == null)
         {
@@ -188,6 +196,9 @@ public class DialogueManager : AbstractInteractable
             rightImage.sprite = response.rightImage;
             rightImage.preserveAspect = true;
             SetSpeakerImageRect(response.rightImage, rightImage);
+
+            // Allow each image to have a custom pivot by reading pivots from the sprite data.
+            rightImage.GetComponent<RectTransform>().pivot = rightImage.sprite.pivot / rightImage.sprite.texture.Size();
         }
         else if (rightImage.sprite == null)
         {
@@ -227,14 +238,20 @@ public class DialogueManager : AbstractInteractable
         switch (response.speakerLocation)
         {
             case 0:
-                leftName.gameObject.SetActive(true);
+                // Enable the current speaking name
+                leftName.transform.parent.gameObject.SetActive(true);
                 leftName.text = response.speakerName;
-                rightName.gameObject.SetActive(false);
+
+                // Disable the name of the side that isn't currently speaking.
+                rightName.transform.parent.gameObject.SetActive(false);
                 break;
             case 1:
-                rightName.gameObject.SetActive(true);
+                // Enable the current speaking name
+                rightName.transform.parent.gameObject.SetActive(true);
                 rightName.text = response.speakerName;
-                leftName.gameObject.SetActive(false);
+
+                // Disable the name of the side that isn't currently speaking.
+                leftName.transform.parent.gameObject.SetActive(false);
                 break;
         }
     }
