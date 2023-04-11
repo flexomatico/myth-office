@@ -73,9 +73,6 @@
             "m_Id": "f6a80100e00b4ed9bce3896d91a3ec19"
         },
         {
-            "m_Id": "45ea2049bfa547828924262b17f84f87"
-        },
-        {
             "m_Id": "9e1f61ab5ccd4ba5bd8c43c348338c9a"
         }
     ],
@@ -621,21 +618,6 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "32ba5ca03ff449f2a91da72d194973b1",
-    "m_Id": 1,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 2,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "375f4da77c80474f91fb2d8cc3fbfaee",
     "m_Id": 4,
     "m_DisplayName": "R",
@@ -708,45 +690,6 @@
         "z": 0.0
     },
     "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.SceneDepthNode",
-    "m_ObjectId": "45ea2049bfa547828924262b17f84f87",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Scene Depth",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -380.9999694824219,
-            "y": -162.00001525878907,
-            "width": 145.00003051757813,
-            "height": 111.99999237060547
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "a7e25445858d45d3aacf7892ce19e28c"
-        },
-        {
-            "m_Id": "32ba5ca03ff449f2a91da72d194973b1"
-        }
-    ],
-    "synonyms": [
-        "zbuffer",
-        "zdepth"
-    ],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_DepthSamplingMode": 0
 }
 
 {
@@ -1426,32 +1369,6 @@
     "m_Property": {
         "m_Id": "11f6ccde9e2c4ea08d339e341546e8d1"
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.ScreenPositionMaterialSlot",
-    "m_ObjectId": "a7e25445858d45d3aacf7892ce19e28c",
-    "m_Id": 0,
-    "m_DisplayName": "UV",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "UV",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_Labels": [],
-    "m_ScreenSpaceType": 0
 }
 
 {
