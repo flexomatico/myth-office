@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: celShaderLocked 1
-  m_Shader: {fileID: -6465566751694194690, guid: 715ffed88d73b9144814d44cea36fbe8,
+  m_Shader: {fileID: -6465566751694194690, guid: 429fcdd48d4eac943a1d23ff5def9b90,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -88,6 +88,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
+    - _AlphaHardClip: 0
+    - _AlphaScaling: 1
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -96,12 +98,14 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _DiffuseSpeed: 0.01
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _NoisePatternSize: 10
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
