@@ -10,29 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
-  m_Name: CAVE SOLO 1 - ODIN 1
+  m_Name: CS2 - ATHENA 1
   m_EditorClassIdentifier: 
   dialogueParts:
-  - rid: 9132167094470180872
-  - rid: 9132167094470180873
-  - rid: 9132167094470180874
-  - rid: 9132167094470180876
-  - rid: 9132167094470180877
-  - rid: 9132167094470180878
-  - rid: 9132167094470180879
-  - rid: 9132167094470180880
-  - rid: 9132167094470180881
-  - rid: 9132167094470180882
-  - rid: 9132167094470180883
-  - rid: 9132167094470180884
-  - rid: 9132167094470180885
-  - rid: 9132167094470180886
-  - rid: 9132167094470180888
-  - rid: 9132167094470180889
+  - rid: 668673759249694772
+  - rid: 668673759249694773
+  - rid: 668673759249694774
+  - rid: 668673759249694775
+  - rid: 668673759249694776
+  - rid: 668673759249694778
+  - rid: 668673759249694779
+  - rid: 668673759249694780
+  - rid: 668673759249694781
+  - rid: 668673759249694782
+  - rid: 668673759249694783
+  - rid: 668673759249694784
+  - rid: 668673759249694785
+  - rid: 668673759249694786
+  - rid: 668673759249694787
+  - rid: 668673759249694788
   references:
     version: 2
     RefIds:
-    - rid: 9132167094470180872
+    - rid: 668673759249694772
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -40,21 +40,22 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
+        rightImage: {fileID: 21300000, guid: 46b94033415db426590c58c0859b995a, type: 3}
         sound: {fileID: 0}
-        line: "So, you\u2019re the new kid on the block, eh?"
-    - rid: 9132167094470180873
+        line: "Finally. I was beginning to think that Odin would never let you go\u2026
+          He didn\u2019t start you off with something too complicated, did he?"
+    - rid: 668673759249694773
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Me
+        speakerName: Intern
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: '. . . '
-    - rid: 9132167094470180874
+        line: No. Actually-
+    - rid: 668673759249694774
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -64,23 +65,46 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "I\u2019m sure you\u2019re a bit confused. Heck, so am I. What happened
-          to you? You were on your way to Valhalla!"
-    - rid: 9132167094470180876
+        line: He can be such a sluggard. Always makes someone else do the dirty work.
+    - rid: 668673759249694775
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Anyway, I rushed here as soon as I heard that you arrived. Just wanted
+          to make sure that you would get a proper welcome!
+    - rid: 668673759249694776
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Odin has no doubt explained your role here. He likes to do that, you
+          know, pretending to be the boss. Such a try-hard.
+    - rid: 668673759249694778
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
-        speakerName: 
+        speakerName: Intern
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
-        - Valhalla? What are you-
-        - Last thing I remember was-
+        - Isn't he?
+        - He did mention he was kind of the boss.
         - '. . . '
-    - rid: 9132167094470180877
+    - rid: 668673759249694779
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -90,9 +114,20 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: Yeah, sure! Had one of the Valkyries pick you right up. You looked
-          all out of place in that shirt and tie.
-    - rid: 9132167094470180878
+        line: He most certainly is NOT the boss! If you ever were in doubt, I AM
+          THE BOSS.
+    - rid: 668673759249694780
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Okay. So, could you then tell-
+    - rid: 668673759249694781
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -102,19 +137,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "Looks good though, kid. I\u2019m sure you\u2019ll do great here!"
-    - rid: 9132167094470180879
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Me
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: "I don\u2019t even know what-"
-    - rid: 9132167094470180880
+        line: Oh, how rude of me! I just realized, I have not introduced myself.
+    - rid: 668673759249694782
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -124,99 +148,74 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "See, you\u2019re starting your very first day with me, the Allfather!
-          I mean, what else could you want?"
-    - rid: 9132167094470180881
+        line: "It\u2019s hardly necessary, surely Odin must have mentioned me. But
+          anyway, I am Athena."
+    - rid: 668673759249694783
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Allfather
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: "Yeah, I see it on your face. \u201CIs that really the Allfather? Odin
-          the almighty?\u201D"
-    - rid: 9132167094470180882
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Me
+        speakerName: Athena
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: '. . . '
-    - rid: 9132167094470180883
+        line: Better stay close to me, Interneus. I guarantee it will make your life
+          much easier here at the office.
+    - rid: 668673759249694784
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Oh! You do know where we are right?
-    - rid: 9132167094470180884
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Me
+        speakerName: Interneus
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: No?
-    - rid: 9132167094470180885
+        line: "Right, well then\u2026 Could you then explain to me what I\u2019m
+          doing here?"
+    - rid: 668673759249694785
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Odin
+        speakerName: Athena
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "Well, it\u2019s Pantheon Incorporated of course! The wondrous workplace
-          of the divine."
-    - rid: 9132167094470180886
+        line: "Haha. Ohh, you\u2019re a funny one,"
+    - rid: 668673759249694786
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: "And now, you\u2019re the new inth\xEBrn. Must be pretty exciting for
-          you! Say, what\u2019s your name, kid?"
-    - rid: 9132167094470180888
-      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 1
-        speakerName: "Inth\xEBrn"
+        speakerName: Interneus
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        choices:
-        - "Inth\xEBrn?"
-        - My name is-
-        - '. . . '
-    - rid: 9132167094470180889
+        line: No, really. I-
+    - rid: 668673759249694787
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Odin
+        speakerName: Athena
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "Ah! We\u2019re here. Come along, Inth\xEBrn!"
+        line: "Why don\u2019t we start out with something easy? Something that I
+          am sure you can handle."
+    - rid: 668673759249694788
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Athena
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Leave here and get me a cappucino!\r"
