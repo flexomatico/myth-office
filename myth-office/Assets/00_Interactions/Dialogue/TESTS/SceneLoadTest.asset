@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
   m_Name: SceneLoadTest
   m_EditorClassIdentifier: 
-  dialogueParts: []
+  dialogueParts:
+  - rid: 2923783100915253249
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2923783100915253249
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        speakerName: Inthern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        choices:
+        - Press Button
+        - Close eyes and imagine going to hell
