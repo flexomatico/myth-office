@@ -17,6 +17,7 @@ public class CaveCaller : MonoBehaviour
     private float currentAnimTime = 0.0f;
 
     private Collider boxCollider;
+    private bool caveCanLeave = true;
 
     private void Start()
     {
@@ -29,6 +30,7 @@ public class CaveCaller : MonoBehaviour
     {
         transform.position = Vector3.zero;
         if (playSound) arriveSoundSource.PlayDelayed(0.5f);
+        caveCanLeave = false;
     }
     
     public void GoToNextOffice(GameObject _nextOffice)
@@ -65,12 +67,16 @@ public class CaveCaller : MonoBehaviour
         activeOffice = nextOffice;
         activeOffice.transform.position = Vector3.zero;
         arriveSoundSource.Play();
+        caveCanLeave = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        currentAnimTime = 0.0f;
-        StartCoroutine(MoveCaveVertically());
+        if (caveCanLeave)
+        {
+            currentAnimTime = 0.0f;
+            StartCoroutine(MoveCaveVertically());
+        }
     }
 
     private IEnumerator MoveCaveVertically()
