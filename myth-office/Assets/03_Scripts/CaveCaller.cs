@@ -16,10 +16,13 @@ public class CaveCaller : MonoBehaviour
     public float travelTime = 10.0f;
     private float currentAnimTime = 0.0f;
 
+    private Collider boxCollider;
+
     private void Start()
     {
         arriveSoundSource = gameObject.AddComponent<AudioSource>();
         arriveSoundSource.clip = arriveSound;
+        boxCollider = GetComponent<BoxCollider>();
     }
 
     public void CallCave(bool playSound)
@@ -32,6 +35,7 @@ public class CaveCaller : MonoBehaviour
     {
         nextOffice = Instantiate(_nextOffice);
         nextOffice.transform.position += new Vector3(0, travelDistance, 0);
+        currentAnimTime = 0.0f;
         StartCoroutine(MoveOfficesVertically());
     }
 
@@ -61,5 +65,24 @@ public class CaveCaller : MonoBehaviour
         activeOffice = nextOffice;
         activeOffice.transform.position = Vector3.zero;
         arriveSoundSource.Play();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        currentAnimTime = 0.0f;
+        StartCoroutine(MoveCaveVertically());
+    }
+
+    private IEnumerator MoveCaveVertically()
+    {
+        while (currentAnimTime < 1.0f)
+        {
+            float nextYPos = animCurve.Evaluate(currentAnimTime) * travelDistance;
+            Vector3 newPos = new Vector3(0, nextYPos, 0);
+            transform.position = newPos;
+            
+            currentAnimTime += Time.deltaTime / travelTime;
+            yield return null;
+        }
     }
 }
