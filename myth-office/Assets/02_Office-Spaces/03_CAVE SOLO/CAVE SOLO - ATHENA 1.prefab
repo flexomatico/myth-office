@@ -30,6 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1400619382373355944}
+  - {fileID: 4705297764079781175}
   m_Father: {fileID: 4226195346817001350}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 3.81, y: 43.71, z: 0}
@@ -95,7 +96,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1400619382373355944}
   - component: {fileID: 701690845949133545}
-  - component: {fileID: 8090502778052119500}
   m_Layer: 0
   m_Name: CS2 - ATHENA 1 - Dialogue
   m_TagString: Untagged
@@ -132,28 +132,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NeedsPrerequisites: []
   FulfillsPrerequisites:
-  - 'CS2: ATHENA Intermediary Allowed'
-  - 'CS2: Can Leave via CAVE'
+  - 'CS2: Athena Intermediary Allowed'
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
   dialogue: {fileID: 11400000, guid: 637370b55bb073740b237d976d5112d1, type: 2}
   colliderRadius: 4.5
---- !u!114 &8090502778052119500
+--- !u!1 &8908526622572426346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4705297764079781175}
+  - component: {fileID: 8121431318859529757}
+  m_Layer: 0
+  m_Name: CS2 - ATHENA 2 - Intermediary Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4705297764079781175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908526622572426346}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5102721299301664511}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8121431318859529757
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7500453451025391777}
+  m_GameObject: {fileID: 8908526622572426346}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
-  - 'CS2: ATHENA Intermediary Allowed'
+  - 'CS2: Athena Intermediary Allowed'
   FulfillsPrerequisites: []
   deleteAfterFinished: 0
   doAfterFinished:
