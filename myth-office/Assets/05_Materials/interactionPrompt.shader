@@ -1,4 +1,4 @@
-Shader "Universal Render Pipeline/2D/Sprite-Unlit-Default"
+Shader "Universal Render Pipeline/2D/SpriteAlwaysOn"
 {
     Properties
     {
