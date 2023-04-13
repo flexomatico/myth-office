@@ -35,6 +35,8 @@ public class DialogueManager : AbstractInteractable
     private PlayerInput _playerInput;
     private SphereCollider _sphereCollider;
 
+    private GameObject interactionPrompt;
+
     void Awake()
     {
         _sphereCollider = gameObject.AddComponent<SphereCollider>();
@@ -66,6 +68,7 @@ public class DialogueManager : AbstractInteractable
             buttons = uiRefs.buttons;
             leftName = uiRefs.leftName;
             rightName = uiRefs.rightName;
+            interactionPrompt = uiRefs.interactionPrompt;
         }
         else
         {
@@ -73,6 +76,21 @@ public class DialogueManager : AbstractInteractable
         }
         
         dialogueParts = dialogue.dialogueParts;
+
+        CreateInteractionPrompt();
+    }
+
+    private void CreateInteractionPrompt()
+    {
+        interactionPrompt = Instantiate(interactionPrompt, transform);
+        float scale = interactionPrompt.transform.localScale.x / transform.localScale.x;
+        interactionPrompt.transform.localScale = new Vector3(scale, scale, scale);
+        SetInteractionPromptVisibility(false);
+    }
+
+    public override void SetInteractionPromptVisibility(bool state)
+    {
+        interactionPrompt.SetActive(state);
     }
 
     public override void StartInteraction(PlayerInput playerInput)
@@ -131,6 +149,7 @@ public class DialogueManager : AbstractInteractable
         if (deleteAfterFinished)
         {
             Destroy(_sphereCollider);
+            Destroy(interactionPrompt);
         }
         base.EndInteraction();
     }
@@ -181,6 +200,7 @@ public class DialogueManager : AbstractInteractable
             leftImage.sprite = response.leftImage;
             leftImage.preserveAspect = true;
             SetSpeakerImageRect(response.leftImage, leftImage);
+            leftImage.SetNativeSize();
 
             // Allow each image to have a custom pivot by reading pivots from the sprite data.
             leftImage.GetComponent<RectTransform>().pivot = leftImage.sprite.pivot / leftImage.sprite.texture.Size();
@@ -196,6 +216,7 @@ public class DialogueManager : AbstractInteractable
             rightImage.sprite = response.rightImage;
             rightImage.preserveAspect = true;
             SetSpeakerImageRect(response.rightImage, rightImage);
+            rightImage.SetNativeSize();
 
             // Allow each image to have a custom pivot by reading pivots from the sprite data.
             rightImage.GetComponent<RectTransform>().pivot = rightImage.sprite.pivot / rightImage.sprite.texture.Size();
