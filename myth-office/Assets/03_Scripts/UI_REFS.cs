@@ -20,4 +20,5 @@ public class UI_REFS : MonoBehaviour
     public Button[] buttons;
     public TextMeshProUGUI leftName;
     public TextMeshProUGUI rightName;
+    public GameObject interactionPrompt;
 }

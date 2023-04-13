@@ -74,6 +74,7 @@ public class InteractionManager : MonoBehaviour
         if (isNotInListYet)
         {
             _interactables.Add(interactable);
+            interactable.ToggleInteractionPromptVisibility();
         }
     }
 
@@ -83,6 +84,7 @@ public class InteractionManager : MonoBehaviour
         if (interactable != null)
         {
             _interactables.Remove(interactable);
+            interactable.ToggleInteractionPromptVisibility();
         }
     }
 

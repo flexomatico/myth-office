@@ -15,6 +15,8 @@ public abstract class AbstractInteractable : MonoBehaviour
 
     [SerializeField] protected UnityEvent doAfterFinished;
     private bool hasInvokedAfterFinishedEvents = false;
+
+    public abstract void ToggleInteractionPromptVisibility();
     
     public abstract void StartInteraction(PlayerInput playerInput);
 

@@ -35,6 +35,8 @@ public class DialogueManager : AbstractInteractable
     private PlayerInput _playerInput;
     private SphereCollider _sphereCollider;
 
+    private GameObject interactionPrompt;
+
     void Awake()
     {
         _sphereCollider = gameObject.AddComponent<SphereCollider>();
@@ -66,6 +68,7 @@ public class DialogueManager : AbstractInteractable
             buttons = uiRefs.buttons;
             leftName = uiRefs.leftName;
             rightName = uiRefs.rightName;
+            interactionPrompt = uiRefs.interactionPrompt;
         }
         else
         {
@@ -73,6 +76,22 @@ public class DialogueManager : AbstractInteractable
         }
         
         dialogueParts = dialogue.dialogueParts;
+
+        CreateInteractionPrompt();
+    }
+
+    private void CreateInteractionPrompt()
+    {
+        interactionPrompt = Instantiate(interactionPrompt, transform);
+        float scale = interactionPrompt.transform.localScale.x / transform.localScale.x;
+        interactionPrompt.transform.localScale = new Vector3(scale, scale, scale);
+        ToggleInteractionPromptVisibility();
+    }
+
+    public override void ToggleInteractionPromptVisibility()
+    {
+        bool isActive = interactionPrompt.activeSelf;
+        interactionPrompt.SetActive(!isActive);
     }
 
     public override void StartInteraction(PlayerInput playerInput)
@@ -131,6 +150,7 @@ public class DialogueManager : AbstractInteractable
         if (deleteAfterFinished)
         {
             Destroy(_sphereCollider);
+            Destroy(interactionPrompt);
         }
         base.EndInteraction();
     }
