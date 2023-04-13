@@ -1,0 +1,676 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
+  m_Name: RAO 1 - RA 1
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - rid: 1780414180754718739
+  - rid: 1780414180754718740
+  - rid: 1780414180754718741
+  - rid: 1780414180754718742
+  - rid: 1780414180754718743
+  - rid: 1780414180754718744
+  - rid: 1780414180754718745
+  - rid: 1780414180754718746
+  - rid: 1780414180754718747
+  - rid: 1780414180754718748
+  - rid: 1780414180754718749
+  - rid: 1780414180754718750
+  - rid: 1780414180754718751
+  - rid: 1780414180754718752
+  - rid: 1780414180754718753
+  - rid: 1780414180754718754
+  - rid: 1780414180754718755
+  - rid: 1780414180754718756
+  - rid: 1780414180754718757
+  - rid: 1780414180754718758
+  - rid: 1780414180754718759
+  - rid: 1780414180754718760
+  - rid: 1780414180754718761
+  - rid: 1780414180754718762
+  - rid: 1780414180754718763
+  - rid: 1780414180754718764
+  - rid: 1780414180754718765
+  - rid: 1780414180754718766
+  - rid: 1780414180754718767
+  - rid: 1780414180754718768
+  - rid: 1780414180754718769
+  - rid: 1780414180754718770
+  - rid: 1780414180754718771
+  - rid: 1780414180754718772
+  - rid: 1780414180754718773
+  - rid: 1780414180754718775
+  - rid: 1780414180754718776
+  - rid: 1780414180754718777
+  - rid: 1780414180754718778
+  - rid: 1780414180754718779
+  - rid: 1780414180754718780
+  - rid: 1780414180754718781
+  - rid: 1780414180754718782
+  - rid: 1780414180754718783
+  - rid: 1780414180754718784
+  - rid: 1780414180754718785
+  - rid: 1780414180754718786
+  - rid: 1780414180754718787
+  - rid: 1780414180754718788
+  - rid: 1780414180754718789
+  - rid: 1780414180754718790
+  - rid: 1780414180754718791
+  - rid: 1780414180754718792
+  - rid: 1780414180754718793
+  references:
+    version: 2
+    RefIds:
+    - rid: 1780414180754718739
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: ca9e282ae360a424f82df14d1d34f276, type: 3}
+        sound: {fileID: 0}
+        line: Hi there.
+    - rid: 1780414180754718740
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 1780414180754718741
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Are you Ra?
+    - rid: 1780414180754718742
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 1780414180754718743
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Uhm. Hello...?
+    - rid: 1780414180754718744
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Now is really not a good time. Come back later, please.
+    - rid: 1780414180754718745
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Odin sent me. Uh, he told me to tell you that there is no more coffee.
+    - rid: 1780414180754718746
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: I do not see why this is any of my concern.
+    - rid: 1780414180754718747
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Coffee and all other consumables are the responsibility of Freya, you
+          know, over at the Nature and Agriculture Department.
+    - rid: 1780414180754718748
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Surely, he knows this.
+    - rid: 1780414180754718749
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Classic Odin, sending some errand boy to do his dirty work.
+    - rid: 1780414180754718750
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 1780414180754718751
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "And who are you again? I don\u2019t recall your face and trust me
+          when I say I do not forget a face."
+    - rid: 1780414180754718752
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: The face is the key to every person.
+    - rid: 1780414180754718753
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Or something like that\u2026"
+    - rid: 1780414180754718754
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Uh. I\u2019m the new intern. My name is-"
+    - rid: 1780414180754718755
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Oh yeah. The new hireling.
+    - rid: 1780414180754718756
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Pleasure to meet you, Interniris. Manpower is always highly appreciated
+          here at the Pantheon.
+    - rid: 1780414180754718757
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Now if you would excuse me. Quite busy here as you can see.
+    - rid: 1780414180754718758
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "The numbers don\u2019t speak for themselves."
+    - rid: 1780414180754718759
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 1780414180754718760
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Cause, you know\u2026 They\u2019re numbers\u2026"
+    - rid: 1780414180754718761
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "And numbers don\u2019t speak\u2026"
+    - rid: 1780414180754718762
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 1780414180754718763
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interniris
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 1780414180754718764
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 1780414180754718765
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interniris
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: . . .
+    - rid: 1780414180754718766
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 1780414180754718767
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interniris
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Right so... I should probably mention the thing about the coffee.
+    - rid: 1780414180754718768
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interniris
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "It\u2019s not that we\u2019re out of coffee. It\u2019s more like the
+          coffee bean is gone\u2026"
+    - rid: 1780414180754718769
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 1780414180754718770
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Gone? What do you mean gone? Did Freya ruin a harvest again?
+    - rid: 1780414180754718771
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Please don\u2019t say she ruined it. Last time was a disaster\u2026
+          work performance decreased with 43% until the next harvest was done."
+    - rid: 1780414180754718772
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "It took her two hours, I\u2019m telling you. Two hours!"
+    - rid: 1780414180754718773
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interniris
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Oh no no, it\u2019s not Freya! It\u2019s the coffee bean itself."
+    - rid: 1780414180754718775
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        speakerName: Interniris
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        choices:
+        - It is no more!
+        - Someone completely deleted it from existence!
+        - "I was told that it\u2019s undone across all realms!"
+    - rid: 1780414180754718776
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: WHAT! How is this even possible?!
+    - rid: 1780414180754718777
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "This place basically runs on that stuff! WE\u2019LL BE LOSING MONEY
+          BY THE MINUTE!"
+    - rid: 1780414180754718778
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "You\u2019re killing the company, Interniris. KILLING IT!!"
+    - rid: 1780414180754718779
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interniris
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "I\u2019m just\u2013"
+    - rid: 1780414180754718780
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Who knows about this?
+    - rid: 1780414180754718781
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: You? Odin? Who else?
+    - rid: 1780414180754718782
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Just don\u2019t say Athena."
+    - rid: 1780414180754718783
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interniris
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Only Odin and I know.
+    - rid: 1780414180754718784
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Good\u2026 That\u2019s good."
+    - rid: 1780414180754718785
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Listen. There is a cheap and easy way to fix this.
+    - rid: 1780414180754718786
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Just find the blueprint of the original coffee bean. Then come back
+          here.
+    - rid: 1780414180754718787
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Also, no one needs to hear about this. Do you hear me, Interniris?
+    - rid: 1780414180754718788
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Soon, this little hiccup will be all forgotten.
+    - rid: 1780414180754718789
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Go NOW!
+    - rid: 1780414180754718790
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interniris
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Where can I find the blueprint?
+    - rid: 1780414180754718791
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Just take the C.A.V.E.. It will take you directly to the archives.
+    - rid: 1780414180754718792
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "My my\u2026 Have the other Gods taught you nothing?!"
+    - rid: 1780414180754718793
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Now GO, Interniris! TIME IS MONEY!!

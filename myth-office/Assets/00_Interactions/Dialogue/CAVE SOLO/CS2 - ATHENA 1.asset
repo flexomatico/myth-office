@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
+  m_Name: CS2 - ATHENA 1
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - rid: 668673759249694772
+  - rid: 668673759249694773
+  - rid: 668673759249694774
+  - rid: 668673759249694775
+  - rid: 668673759249694776
+  - rid: 668673759249694778
+  - rid: 668673759249694779
+  - rid: 668673759249694780
+  - rid: 668673759249694781
+  - rid: 668673759249694782
+  - rid: 668673759249694783
+  - rid: 668673759249694784
+  - rid: 668673759249694785
+  - rid: 668673759249694786
+  - rid: 668673759249694787
+  - rid: 668673759249694788
+  references:
+    version: 2
+    RefIds:
+    - rid: 668673759249694772
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 46b94033415db426590c58c0859b995a, type: 3}
+        sound: {fileID: 0}
+        line: "Finally. I was beginning to think that Odin would never let you go\u2026
+          He didn\u2019t start you off with something too complicated, did he?"
+    - rid: 668673759249694773
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: No. Actually-
+    - rid: 668673759249694774
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: He can be such a sluggard. Always makes someone else do the dirty work.
+    - rid: 668673759249694775
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Anyway, I rushed here as soon as I heard that you arrived. Just wanted
+          to make sure that you would get a proper welcome!
+    - rid: 668673759249694776
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Odin has no doubt explained your role here. He likes to do that, you
+          know, pretending to be the boss. Such a try-hard.
+    - rid: 668673759249694778
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        choices:
+        - Isn't he?
+        - He did mention he was kind of the boss.
+        - '. . . '
+    - rid: 668673759249694779
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: He most certainly is NOT the boss! If you ever were in doubt, I AM
+          THE BOSS.
+    - rid: 668673759249694780
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Okay. So, could you then tell-
+    - rid: 668673759249694781
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Oh, how rude of me! I just realized, I have not introduced myself.
+    - rid: 668673759249694782
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "It\u2019s hardly necessary, surely Odin must have mentioned me. But
+          anyway, I am Athena."
+    - rid: 668673759249694783
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Athena
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Better stay close to me, Interneus. I guarantee it will make your life
+          much easier here at the office.
+    - rid: 668673759249694784
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interneus
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Right, well then\u2026 Could you then explain to me what I\u2019m
+          doing here?"
+    - rid: 668673759249694785
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Athena
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Haha. Ohh, you\u2019re a funny one,"
+    - rid: 668673759249694786
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interneus
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: No, really. I-
+    - rid: 668673759249694787
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Athena
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Why don\u2019t we start out with something easy? Something that I
+          am sure you can handle."
+    - rid: 668673759249694788
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Athena
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Leave here and get me a cappucino!\r"

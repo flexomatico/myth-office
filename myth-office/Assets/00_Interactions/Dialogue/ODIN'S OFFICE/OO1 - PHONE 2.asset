@@ -1,0 +1,239 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
+  m_Name: OO1 - PHONE 2
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - rid: 668673759249694754
+  - rid: 668673759249694755
+  - rid: 668673759249694756
+  - rid: 668673759249694757
+  - rid: 668673759249694791
+  - rid: 668673759249694758
+  - rid: 668673759249694759
+  - rid: 668673759249694760
+  - rid: 668673759249694761
+  - rid: 668673759249694762
+  - rid: 668673759249694763
+  - rid: 668673759249694765
+  - rid: 668673759249694766
+  - rid: 668673759249694767
+  - rid: 668673759249694768
+  - rid: 668673759249694769
+  - rid: 668673759249694770
+  - rid: 668673759249694771
+  references:
+    version: 2
+    RefIds:
+    - rid: 668673759249694754
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 8a06c190c699e4a8fae8ee1df2865989, type: 3}
+        sound: {fileID: 0}
+        line: Odin's office, this is-
+    - rid: 668673759249694755
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Oh he\u2019s not there?"
+    - rid: 668673759249694756
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: He asked a human to guard his phone?
+    - rid: 668673759249694757
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Well, that's no surprise. Ran with his tail between his legs.
+    - rid: 668673759249694758
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "I\u2019m sorry, who am I speaking to?"
+    - rid: 668673759249694759
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 668673759249694760
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Frigg.
+    - rid: 668673759249694761
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 668673759249694762
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: 
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Oh. Uhm\u2026 Hi."
+    - rid: 668673759249694763
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Frigg
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Hi.
+    - rid: 668673759249694765
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        choices:
+        - "He says he\u2019s sorry."
+        - He says he misses you.
+        - "He says that he\u2019s busy."
+    - rid: 668673759249694766
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Frigg
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Oh, I\u2019m sure he told you that, little human. To be frank, I don\u2019t
+          really care. "
+    - rid: 668673759249694767
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: He seemed really stressed out.
+    - rid: 668673759249694768
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Frigg
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Do you think I care, human? \r\n"
+    - rid: 668673759249694769
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Frigg
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Tell my husband to get a hold of our son and to stop bringing the title
+          of Allfather to shame.
+    - rid: 668673759249694770
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Frigg
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: And tell him to call me AT ONCE.
+    - rid: 668673759249694771
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: But, he's-
+    - rid: 668673759249694791
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Typical
