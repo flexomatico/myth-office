@@ -30,12 +30,48 @@ MonoBehaviour:
   - rid: 9132166938793345045
   - rid: 9132166938793345046
   - rid: 9132166938793345047
+  - rid: 668673808796483584
+  - rid: 668673808796483585
+  - rid: 668673808796483586
   - rid: 9132166938793345048
   - rid: 9132166938793345049
   - rid: 9132166938793345050
   references:
     version: 2
     RefIds:
+    - rid: 668673808796483584
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Odin
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: 76997e21ac8009a4785061c651cc757d, type: 3}
+        line: '. . . '
+    - rid: 668673808796483585
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Odin
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: 76997e21ac8009a4785061c651cc757d, type: 3}
+        line: '. . . '
+    - rid: 668673808796483586
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Odin
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: b6bb1e20045ccee43b8d049e679fddf7, type: 3}
+        line: '!!!'
     - rid: 9132166938793345031
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -104,7 +140,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: ac5a58e5aae2a4fdf8eb2ccc7b1ce1fc, type: 3}
-        line: "You\u2019d think with how much Thor naps that he\u2019d be on the
+        line: "You\u2019d think with how much Zeus naps that he\u2019d be on the
           decaff. No! He walks around with that blasted protein shaker all the time.
           Drinks coffee from it too."
     - rid: 9132166938793345037
@@ -129,7 +165,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "I\u2019m not even sure if that boy can read. "
+        line: "I\u2019m not even sure if that man can read. "
     - rid: 9132166938793345039
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -228,8 +264,8 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 05d1d0b079cd34acc865025a73a427ac, type: 3}
-        line: (SOUND EFFECT INDICATES COFFEE MACHINE IS OUT OF COFFEE)
+        sound: {fileID: 8300000, guid: 82446118f6b3c2d4a8a283f2b1c99c3d, type: 3}
+        line: '. . . '
     - rid: 9132166938793345048
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:

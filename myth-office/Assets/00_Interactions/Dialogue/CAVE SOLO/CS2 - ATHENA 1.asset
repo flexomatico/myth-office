@@ -40,7 +40,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 46b94033415db426590c58c0859b995a, type: 3}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 8300000, guid: 54bbffb0272284c8d969c5b3f164dea9, type: 3}
         line: "Finally. I was beginning to think that Odin would never let you go\u2026
           He didn\u2019t start you off with something too complicated, did he?"
@@ -63,9 +63,9 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
         sound: {fileID: 8300000, guid: 382abd3dd41014c90be9f731fb3b3b8e, type: 3}
-        line: He can be such a sluggard. Always makes someone else do the dirty work.
+        line: He can be such a sluggard. Always makes someone else do his dirty work.
     - rid: 668673759249694775
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -74,7 +74,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
         line: Anyway, I rushed here as soon as I heard that you arrived. Just wanted
           to make sure that you would get a proper welcome!
@@ -86,7 +86,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
         line: Odin has no doubt explained your role here. He likes to do that, you
           know, pretending to be the boss. Such a try-hard.
@@ -101,7 +101,7 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
-        - Isn't he?
+        - Isn't he the boss?
         - He did mention he was kind of the boss.
         - '. . . '
     - rid: 668673759249694779
@@ -112,7 +112,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 81198992f009c604f8841970e7d5ab45, type: 3}
         sound: {fileID: 8300000, guid: 3790160d7f8be4fa1b8b12c784f82e67, type: 3}
         line: He most certainly is NOT the boss! If you ever were in doubt, I AM
           THE BOSS.
@@ -135,7 +135,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 8300000, guid: 382abd3dd41014c90be9f731fb3b3b8e, type: 3}
         line: Oh, how rude of me! I just realized, I have not introduced myself.
     - rid: 668673759249694782
@@ -158,7 +158,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
         sound: {fileID: 0}
         line: Better stay close to me, Interneus. I guarantee it will make your life
           much easier here at the office.
@@ -182,7 +182,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 8300000, guid: c589e8f3077674c53887e1ab5ad92de4, type: 3}
         line: "Haha. Ohh, you\u2019re a funny one,"
     - rid: 668673759249694786
