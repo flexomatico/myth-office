@@ -28,6 +28,7 @@ public class CaveCaller : MonoBehaviour
 
     public void CallCave(bool playSound)
     {
+        boxCollider.enabled = true;
         transform.position = Vector3.zero;
         if (playSound) arriveSoundSource.PlayDelayed(0.5f);
         caveCanLeave = false;
@@ -75,6 +76,7 @@ public class CaveCaller : MonoBehaviour
         if (caveCanLeave)
         {
             currentAnimTime = 0.0f;
+            boxCollider.enabled = false;
             StartCoroutine(MoveCaveVertically());
         }
     }
