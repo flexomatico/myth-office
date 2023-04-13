@@ -85,13 +85,12 @@ public class DialogueManager : AbstractInteractable
         interactionPrompt = Instantiate(interactionPrompt, transform);
         float scale = interactionPrompt.transform.localScale.x / transform.localScale.x;
         interactionPrompt.transform.localScale = new Vector3(scale, scale, scale);
-        ToggleInteractionPromptVisibility();
+        SetInteractionPromptVisibility(false);
     }
 
-    public override void ToggleInteractionPromptVisibility()
+    public override void SetInteractionPromptVisibility(bool state)
     {
-        bool isActive = interactionPrompt.activeSelf;
-        interactionPrompt.SetActive(!isActive);
+        interactionPrompt.SetActive(state);
     }
 
     public override void StartInteraction(PlayerInput playerInput)

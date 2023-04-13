@@ -74,7 +74,10 @@ public class InteractionManager : MonoBehaviour
         if (isNotInListYet)
         {
             _interactables.Add(interactable);
-            interactable.ToggleInteractionPromptVisibility();
+            if (CheckIfPrerequisitesFulfilled(interactable))
+            {
+                interactable.SetInteractionPromptVisibility(true);
+            }
         }
     }
 
@@ -84,7 +87,11 @@ public class InteractionManager : MonoBehaviour
         if (interactable != null)
         {
             _interactables.Remove(interactable);
-            interactable.ToggleInteractionPromptVisibility();
+
+            if (CheckIfPrerequisitesFulfilled(interactable))
+            {
+                interactable.SetInteractionPromptVisibility(false);
+            }
         }
     }
 
@@ -98,22 +105,26 @@ public class InteractionManager : MonoBehaviour
 
         foreach (AbstractInteractable interactable in _interactables)
         {
-            bool fulfillsAllPrerequisites = true;
-            foreach (string s in interactable.NeedsPrerequisites)
-            {
-                bool prerequisiteNotFulfilled = !fulfilledPrerequisites.Contains(s);
-                if (prerequisiteNotFulfilled)
-                {
-                    fulfillsAllPrerequisites = false;
-                }
-            }
-
-            if (fulfillsAllPrerequisites)
+            if (CheckIfPrerequisitesFulfilled(interactable))
             {
                 interactable.StartInteraction(_playerInput);
                 return;
             }
         }
+    }
 
+    public bool CheckIfPrerequisitesFulfilled(AbstractInteractable interactable)
+    {
+        bool fulfillsAllPrerequisites = true;
+        foreach (string s in interactable.NeedsPrerequisites)
+        {
+            bool prerequisiteNotFulfilled = !fulfilledPrerequisites.Contains(s);
+            if (prerequisiteNotFulfilled)
+            {
+                fulfillsAllPrerequisites = false;
+            }
+        }
+
+        return fulfillsAllPrerequisites;
     }
 }
