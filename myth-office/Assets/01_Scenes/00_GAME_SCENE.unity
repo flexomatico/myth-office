@@ -1057,7 +1057,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076024482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.63, y: 0.297, z: -9.97}
+  m_LocalPosition: {x: 53.63, y: 0.297, z: -6.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1651,6 +1651,26 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 95
       objectReference: {fileID: 0}
+    - target: {fileID: 106944321810963489, guid: be44b664a07fc457b876209fb47108f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 106944321810963935, guid: be44b664a07fc457b876209fb47108f8,
+        type: 3}
+      propertyPath: FulfillsPrerequisites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 106944321810963935, guid: be44b664a07fc457b876209fb47108f8,
+        type: 3}
+      propertyPath: FulfillsPrerequisites.Array.data[0]
+      value: 'BR 1: ODIN Intermediary Allowed'
+      objectReference: {fileID: 0}
+    - target: {fileID: 106944321810963935, guid: be44b664a07fc457b876209fb47108f8,
+        type: 3}
+      propertyPath: FulfillsPrerequisites.Array.data[1]
+      value: 'BR 1: Unlock Supply Closet'
+      objectReference: {fileID: 0}
     - target: {fileID: 106944321828977810, guid: be44b664a07fc457b876209fb47108f8,
         type: 3}
       propertyPath: m_RootOrder
@@ -1660,6 +1680,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 106944322020351750, guid: be44b664a07fc457b876209fb47108f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 106944322299103798, guid: be44b664a07fc457b876209fb47108f8,
         type: 3}
