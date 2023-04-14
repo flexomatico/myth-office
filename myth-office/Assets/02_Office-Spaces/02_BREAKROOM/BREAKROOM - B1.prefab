@@ -684,7 +684,19 @@ MonoBehaviour:
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8549004150325096470}
+        m_TargetAssemblyTypeName: JourneyHelper, Assembly-CSharp
+        m_MethodName: CallCAVE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogue: {fileID: 11400000, guid: c06060c7774564425abe33fc9308b823, type: 2}
   colliderRadius: 3.25
 --- !u!1 &5988218242845699687
@@ -1601,12 +1613,12 @@ PrefabInstance:
     - target: {fileID: 500260431718092287, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 500260432073508029, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 500260432290557441, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -1651,7 +1663,7 @@ PrefabInstance:
     - target: {fileID: 1244995094602237295, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1244995094723335355, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -1787,3 +1799,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7848440932128374002}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8549004150325096470 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1895851113434975460, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7848440932128374002}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afffcd44b3d684d3792e5629f1eeecc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
