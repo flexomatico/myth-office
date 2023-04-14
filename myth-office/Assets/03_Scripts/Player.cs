@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        _controller = gameObject.AddComponent<CharacterController>();
+        _controller = gameObject.GetComponent<CharacterController>();
     }
 
     void Update()
