@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
-  - 'BR 1: Unlock Supply Closet'
+  - 
   FulfillsPrerequisites:
   - 'BR 1: Unlock Supply Closet'
   deleteAfterFinished: 1
@@ -562,6 +562,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907486914556675684, guid: ea9f26cd684ac4bee9960e8a7c9e12e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907486914626877182, guid: ea9f26cd684ac4bee9960e8a7c9e12e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907486914827143610, guid: ea9f26cd684ac4bee9960e8a7c9e12e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907486915634205097, guid: ea9f26cd684ac4bee9960e8a7c9e12e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907486915812456277, guid: ea9f26cd684ac4bee9960e8a7c9e12e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907486916164576974, guid: ea9f26cd684ac4bee9960e8a7c9e12e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8897839806455490025, guid: ea9f26cd684ac4bee9960e8a7c9e12e6,
         type: 3}

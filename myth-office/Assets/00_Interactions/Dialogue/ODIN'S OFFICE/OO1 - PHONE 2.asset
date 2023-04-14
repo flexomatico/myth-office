@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: OO1 - PHONE 2
   m_EditorClassIdentifier: 
   dialogueParts:
+  - rid: 8161442042441891840
   - rid: 668673759249694754
   - rid: 668673759249694755
   - rid: 668673759249694756
@@ -248,4 +249,15 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
+        line: ...
+    - rid: 8161442042441891840
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Phone
+        speakerLocation: 1
+        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 8a06c190c699e4a8fae8ee1df2865989, type: 3}
+        sound: {fileID: 8300000, guid: 7e29be3764a374de483c1b7b950efd1f, type: 3}
         line: ...
