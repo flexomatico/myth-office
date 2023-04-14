@@ -76,9 +76,15 @@ public class InteractionManager : MonoBehaviour
             _interactables.Add(interactable);
             if (CheckIfPrerequisitesFulfilled(interactable))
             {
-                interactable.SetInteractionPromptVisibility(true);
+                StartCoroutine(DelayShowInteractionPrompt(interactable));
             }
         }
+    }
+
+    private IEnumerator DelayShowInteractionPrompt(AbstractInteractable interactable)
+    {
+        yield return null;
+        interactable.SetInteractionPromptVisibility(true);
     }
 
     private void OnTriggerExit(Collider other)
