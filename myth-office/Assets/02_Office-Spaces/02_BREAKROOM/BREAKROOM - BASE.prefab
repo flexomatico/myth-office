@@ -8310,9 +8310,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8718817781864375309}
-  - component: {fileID: 1760024274066395954}
+  - component: {fileID: 1895851113434975460}
   m_Layer: 0
-  m_Name: '[SET NEXT OFFICE]'
+  m_Name: Journey Helper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8333,7 +8333,7 @@ Transform:
   m_Father: {fileID: 4775367889307107697}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1760024274066395954
+--- !u!114 &1895851113434975460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8342,29 +8342,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7660616932628349262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
+  m_Script: {fileID: 11500000, guid: afffcd44b3d684d3792e5629f1eeecc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeedsPrerequisites: []
-  FulfillsPrerequisites: []
-  deleteAfterFinished: 0
-  doAfterFinished:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  dialogue: {fileID: 0}
-  colliderRadius: 3
 --- !u!1 &7704606165732375850
 GameObject:
   m_ObjectHideFlags: 0

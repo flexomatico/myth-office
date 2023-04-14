@@ -318,7 +318,19 @@ MonoBehaviour:
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2914064360767909813}
+        m_TargetAssemblyTypeName: JourneyHelper, Assembly-CSharp
+        m_MethodName: CallCAVE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogue: {fileID: 11400000, guid: b457dd06f05fc414aa73c4276b91cf86, type: 2}
   colliderRadius: 3
 --- !u!1001 &3620819968320365393
@@ -856,7 +868,7 @@ PrefabInstance:
     - target: {fileID: 500260431718092287, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 500260432073508029, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -906,7 +918,7 @@ PrefabInstance:
     - target: {fileID: 1244995094602237295, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1244995094723335355, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -1037,6 +1049,18 @@ PrefabInstance:
     - {fileID: 106944322210449229, guid: 6c40057ddb5594f3bbceb3f4c2e632f3, type: 3}
     - {fileID: 2, guid: 6c40057ddb5594f3bbceb3f4c2e632f3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6c40057ddb5594f3bbceb3f4c2e632f3, type: 3}
+--- !u!114 &2914064360767909813 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1895851113434975460, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3620819968320365393}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afffcd44b3d684d3792e5629f1eeecc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8104860129256890912 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4775367889307107697, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,

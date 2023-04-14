@@ -327,6 +327,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2014266947694152182, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640198254952678672, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183628632727077694, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 5413017430694092950, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
       propertyPath: m_Name
@@ -335,7 +350,12 @@ PrefabInstance:
     - target: {fileID: 7049807106508582378, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856925481066313981, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+        type: 3}
+      propertyPath: leaveOnPlayerEnterCAVE
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8319906911170170819, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}

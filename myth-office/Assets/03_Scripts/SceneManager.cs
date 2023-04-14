@@ -1,45 +1,55 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
-public class CaveCaller : MonoBehaviour
+public class SceneManager : MonoBehaviour
 {
+    public List<Journey> journeys;
     public GameObject activeOffice;
+    public GameObject activeCave;
     private GameObject nextOffice;
     public AudioClip arriveSound;
     public AnimationCurve animCurve;
-    [HideInInspector] public Vector3 cavePosition;
     private AudioSource arriveSoundSource;
 
-    public float travelDistance = 20.0f;
-    public float travelTime = 10.0f;
     private float currentAnimTime = 0.0f;
+    public int currentJourney = 0;
+    private float travelDistance;
+    private float travelTime;
+    private bool currentJourneyInitiated = false;
+    
 
-    private Collider boxCollider;
     private bool caveCanLeave = true;
 
     private void Start()
     {
         arriveSoundSource = gameObject.AddComponent<AudioSource>();
         arriveSoundSource.clip = arriveSound;
-        boxCollider = GetComponent<BoxCollider>();
+        activeCave = Instantiate(journeys[currentJourney].cave);
+        activeOffice = Instantiate(new GameObject("Empty GameObject"));
+        GoToNextOffice();
     }
 
-    public void CallCave(bool playSound)
+    public void CallCave()
     {
-        boxCollider.enabled = true;
-        transform.position = Vector3.zero;
-        if (playSound) arriveSoundSource.PlayDelayed(0.5f);
+        activeCave = Instantiate(journeys[currentJourney].cave);
+        arriveSoundSource.PlayDelayed(0.5f);
         caveCanLeave = false;
     }
     
-    public void GoToNextOffice(GameObject _nextOffice)
+    public void GoToNextOffice()
     {
-        nextOffice = Instantiate(_nextOffice);
+        if (currentJourneyInitiated) return;
+        
+        nextOffice = Instantiate(journeys[currentJourney].nextOffice);
         nextOffice.transform.position += new Vector3(0, travelDistance, 0);
         currentAnimTime = 0.0f;
+        travelDistance = journeys[currentJourney].travelDistance;
+        travelTime = journeys[currentJourney].travelTime;
         StartCoroutine(MoveOfficesVertically());
+        currentJourneyInitiated = true;
     }
 
     private IEnumerator MoveOfficesVertically()
@@ -69,14 +79,15 @@ public class CaveCaller : MonoBehaviour
         activeOffice.transform.position = Vector3.zero;
         arriveSoundSource.Play();
         caveCanLeave = true;
+        currentJourney++;
+        currentJourneyInitiated = false;
     }
 
-    private void OnTriggerExit(Collider other)
+    public void PlayerLeftCave()
     {
         if (caveCanLeave)
         {
             currentAnimTime = 0.0f;
-            boxCollider.enabled = false;
             StartCoroutine(MoveCaveVertically());
         }
     }
@@ -87,10 +98,12 @@ public class CaveCaller : MonoBehaviour
         {
             float nextYPos = animCurve.Evaluate(currentAnimTime) * travelDistance;
             Vector3 newPos = new Vector3(0, nextYPos, 0);
-            transform.position = newPos;
+            activeCave.transform.position = newPos;
             
             currentAnimTime += Time.deltaTime / travelTime;
             yield return null;
         }
+        
+        Destroy(activeCave);
     }
 }
