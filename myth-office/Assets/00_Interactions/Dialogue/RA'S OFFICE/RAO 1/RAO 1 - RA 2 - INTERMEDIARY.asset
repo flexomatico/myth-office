@@ -27,7 +27,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 65951d3e9d9b14e06960980c28214dfd, type: 3}
         line: What are you still hanging around here for Interniris?
     - rid: 1780414180754718795
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -38,5 +38,5 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 533fbab197e7f4050bc49b46f9ad995a, type: 3}
         line: GET GOING!

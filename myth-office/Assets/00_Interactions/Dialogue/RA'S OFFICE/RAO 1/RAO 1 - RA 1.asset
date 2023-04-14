@@ -35,8 +35,8 @@ MonoBehaviour:
   - rid: 1780414180754718758
   - rid: 1780414180754718759
   - rid: 1780414180754718760
-  - rid: 1780414180754718761
   - rid: 1780414180754718762
+  - rid: 1780414180754718761
   - rid: 1780414180754718763
   - rid: 1780414180754718764
   - rid: 1780414180754718765
@@ -79,7 +79,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: ca9e282ae360a424f82df14d1d34f276, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: Hi there.
     - rid: 1780414180754718740
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -101,7 +101,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: Are you Ra?
     - rid: 1780414180754718742
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -123,7 +123,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f374fd8408eb1484d9dc138e5ff41145, type: 3}
         line: Uhm. Hello...?
     - rid: 1780414180754718744
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -134,7 +134,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 5956325c402fd4a0f94d5938456f0c02, type: 3}
         line: Now is really not a good time. Come back later, please.
     - rid: 1780414180754718745
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -145,7 +145,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: Odin sent me. Uh, he told me to tell you that there is no more coffee.
     - rid: 1780414180754718746
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -156,7 +156,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 1db3b9c2b09df4513b6b8ae89be64025, type: 3}
         line: I do not see why this is any of my concern.
     - rid: 1780414180754718747
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -201,7 +201,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: '. . . '
     - rid: 1780414180754718751
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -212,7 +212,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 4855c062a1de248b3a81a1908695ceed, type: 3}
         line: "And who are you again? I don\u2019t recall your face and trust me
           when I say I do not forget a face."
     - rid: 1780414180754718752
@@ -246,7 +246,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: caf29a6d3bdd64239adb788ad762a67e, type: 3}
         line: "Uh. I\u2019m the new intern. My name is-"
     - rid: 1780414180754718755
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -257,7 +257,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 65951d3e9d9b14e06960980c28214dfd, type: 3}
         line: Oh yeah. The new hireling.
     - rid: 1780414180754718756
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -268,7 +268,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: ce0b052911df641048be3df2d2d5f03e, type: 3}
         line: Pleasure to meet you, Interniris. Manpower is always highly appreciated
           here at the Pantheon.
     - rid: 1780414180754718757
@@ -291,7 +291,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: fa5af267667264258a38319d4fbe31db, type: 3}
         line: "The numbers don\u2019t speak for themselves."
     - rid: 1780414180754718759
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -313,7 +313,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 5fad71002b4594a3ca4b225654ddc2f3, type: 3}
         line: "Cause, you know\u2026 They\u2019re numbers\u2026"
     - rid: 1780414180754718761
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -324,7 +324,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 65951d3e9d9b14e06960980c28214dfd, type: 3}
         line: "And numbers don\u2019t speak\u2026"
     - rid: 1780414180754718762
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -390,7 +390,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
         line: Right so... I should probably mention the thing about the coffee.
     - rid: 1780414180754718768
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -424,7 +424,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 4855c062a1de248b3a81a1908695ceed, type: 3}
         line: Gone? What do you mean gone? Did Freya ruin a harvest again?
     - rid: 1780414180754718771
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -458,7 +458,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: "Oh no no, it\u2019s not Freya! It\u2019s the coffee bean itself."
     - rid: 1780414180754718775
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
@@ -483,7 +483,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: bb088a4d6c06d43818b394336bd26618, type: 3}
         line: WHAT! How is this even possible?!
     - rid: 1780414180754718777
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -494,7 +494,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 533fbab197e7f4050bc49b46f9ad995a, type: 3}
         line: "This place basically runs on that stuff! WE\u2019LL BE LOSING MONEY
           BY THE MINUTE!"
     - rid: 1780414180754718778
@@ -506,7 +506,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 5fad71002b4594a3ca4b225654ddc2f3, type: 3}
         line: "You\u2019re killing the company, Interniris. KILLING IT!!"
     - rid: 1780414180754718779
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -517,7 +517,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 159f5e67f13ca4da3b3511f67f4a9206, type: 3}
         line: "I\u2019m just\u2013"
     - rid: 1780414180754718780
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -528,7 +528,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 5fad71002b4594a3ca4b225654ddc2f3, type: 3}
         line: Who knows about this?
     - rid: 1780414180754718781
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -561,7 +561,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: Only Odin and I know.
     - rid: 1780414180754718784
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -572,7 +572,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: fa5af267667264258a38319d4fbe31db, type: 3}
         line: "Good\u2026 That\u2019s good."
     - rid: 1780414180754718785
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -628,7 +628,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 65951d3e9d9b14e06960980c28214dfd, type: 3}
         line: Go NOW!
     - rid: 1780414180754718790
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -639,7 +639,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
         line: Where can I find the blueprint?
     - rid: 1780414180754718791
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -650,7 +650,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 5956325c402fd4a0f94d5938456f0c02, type: 3}
         line: Just take the C.A.V.E.. It will take you directly to the archives.
     - rid: 1780414180754718792
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -672,5 +672,5 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 533fbab197e7f4050bc49b46f9ad995a, type: 3}
         line: Now GO, Interniris! TIME IS MONEY!!

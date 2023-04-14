@@ -41,7 +41,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 7b188b24a892a444898e810967f769e7, type: 3}
         line: "Inth\xEBrn, good thing you\u2019re back. We have a bit of a situation."
     - rid: 1780414180754718721
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -63,7 +63,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 953a392b33b8e4da0bb52fd0f740b9b9, type: 3}
         line: It's gone!
     - rid: 1780414180754718724
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
@@ -88,7 +88,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 6e11fe84f91cc4c89ad26c0dde2c3b10, type: 3}
         line: "No one can get coffee! It\u2019s gone. Completely GONE!"
     - rid: 1780414180754718726
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -99,7 +99,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 694f854d6a8eb4d3fa5ac58ad3ef38f4, type: 3}
         line: REMOVED from the TIMELINE!
     - rid: 1780414180754718727
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -110,7 +110,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: a34b19a3691a649bbb458f0f602f77e0, type: 3}
         line: DELETED from EXISTENCE!
     - rid: 1780414180754718728
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -121,7 +121,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 6a9d9aca2ae824736bc5a478d0daccb4, type: 3}
         line: UNDONE across ALL realms!
     - rid: 1780414180754718729
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -132,7 +132,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: affb3ebc900a5464dbccce5e80c5df3c, type: 3}
         line: "And so on\u2026"
     - rid: 1780414180754718730
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -177,7 +177,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
         line: Do you want me to-
     - rid: 1780414180754718734
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -188,7 +188,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: ac5a58e5aae2a4fdf8eb2ccc7b1ce1fc, type: 3}
         line: "Oh, I JUST remembered! I have an important meeting in 5\u2026"
     - rid: 1780414180754718735
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -206,7 +206,7 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: 
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
