@@ -41,6 +41,7 @@ float GetSmoothnessPower(float rawSmoothness) {
 
 	// Clamp the light intensity into different buckets to create the cel shaded look.
 	// TODO: the ifs can be removed by some smart math.
+	/*
 	if (lightIntensity <= d.celThresholds.x) {
 		lightIntensity = 0;
 	}
@@ -56,7 +57,7 @@ float GetSmoothnessPower(float rawSmoothness) {
 	else {
 		lightIntensity = d.celIntensities.w;
 	}
-
+	*/
 	// combine the color and strength of the light hitting the fragment.
 	float3 lightStrength = light.color * lightIntensity;
 
