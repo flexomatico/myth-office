@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1371330317765203457}
   - component: {fileID: 6879737684941447030}
+  - component: {fileID: 5313314684063930779}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -53,7 +54,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -128,6 +129,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5313314684063930779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4860911083963784546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d053bea7198544407a99e2bfb3e7411d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDist: 6.3
+  maxDist: 9.9
 --- !u!1 &5714378291343692669
 GameObject:
   m_ObjectHideFlags: 0
