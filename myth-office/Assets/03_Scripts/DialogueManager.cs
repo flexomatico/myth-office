@@ -202,6 +202,10 @@ public class DialogueManager : AbstractInteractable
             SetSpeakerImageRect(response.leftImage, leftImage);
             leftImage.SetNativeSize();
 
+            // Flip images on the left side of the screen so that they look towards the center.
+            leftImage.gameObject.transform.localScale = new Vector3(-1, 1, 1);
+
+
             // Allow each image to have a custom pivot by reading pivots from the sprite data.
             leftImage.GetComponent<RectTransform>().pivot = leftImage.sprite.pivot / leftImage.sprite.texture.Size();
         }
