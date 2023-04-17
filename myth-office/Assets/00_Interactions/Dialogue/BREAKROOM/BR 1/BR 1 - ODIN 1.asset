@@ -17,8 +17,10 @@ MonoBehaviour:
   - rid: 9132166938793345032
   - rid: 9132166938793345033
   - rid: 9132166938793345034
+  - rid: 1780414289088348160
   - rid: 9132166938793345035
   - rid: 9132166938793345036
+  - rid: 1780414289088348161
   - rid: 9132166938793345037
   - rid: 9132166938793345038
   - rid: 9132166938793345039
@@ -60,7 +62,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 76997e21ac8009a4785061c651cc757d, type: 3}
-        line: '. . . '
+        line: '. . .  . . . '
     - rid: 668673808796483586
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -71,7 +73,29 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: b6bb1e20045ccee43b8d049e679fddf7, type: 3}
-        line: '!!!'
+        line: . . . . . . !!!
+    - rid: 1780414289088348160
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Odin
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: You'll get the hang of it in no time.
+    - rid: 1780414289088348161
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Odin
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Drinks coffee from it too!
     - rid: 9132166938793345031
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -82,7 +106,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
         sound: {fileID: 8300000, guid: 50780c0af1e674670a18b9ca8414be25, type: 3}
-        line: "So how\u2019d you like the Breakroom? Pretty cool right? Even has
+        line: "So how\u2019d you like the breakroom? Pretty cool right? Even has
           one of them TVs you humans are so into."
     - rid: 9132166938793345032
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -94,7 +118,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "But the Breakroom is for breaks, and we\u2019re on the clock, Inth\xEBrn!"
+        line: "But the breakroom is for breaks, and we\u2019re on the clock, Inth\xEBrn!"
     - rid: 9132166938793345033
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -116,9 +140,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 64e1b25ff4b62410a9e8f42a6b707adc, type: 3}
-        line: 'Ah, well! You see, sometimes the Breakroom needs to be restocked.
-          Water cooler needs water, no cups in the dispenser. You''ll get the hang
-          of it in no time. '
+        line: Ah, well! You see, sometimes the Breakroom needs to be restocked. Water
+          cooler needs water, no cups in the dispenser.
     - rid: 9132166938793345035
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -141,8 +164,7 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: ac5a58e5aae2a4fdf8eb2ccc7b1ce1fc, type: 3}
         line: "You\u2019d think with how much Zeus naps that he\u2019d be on the
-          decaff. No! He walks around with that blasted protein shaker all the time.
-          Drinks coffee from it too."
+          decaff. No! He walks around with that blasted protein shaker all the time."
     - rid: 9132166938793345037
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
