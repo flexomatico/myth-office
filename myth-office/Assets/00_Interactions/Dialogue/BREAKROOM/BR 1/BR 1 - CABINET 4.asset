@@ -14,11 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueParts:
   - rid: 9132167090362384385
+  - rid: 1780414308438769664
   - rid: 9132167090362384386
   - rid: 9132167090362384387
   references:
     version: 2
     RefIds:
+    - rid: 1780414308438769664
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Supply Cabinet
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: and four cartons of certified barista quality oatmeal milk.
     - rid: 9132167090362384385
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -30,8 +42,7 @@ MonoBehaviour:
         rightImage: {fileID: 21300000, guid: 0f4c10a3576834324a18fc519d0da85a, type: 3}
         sound: {fileID: 8300000, guid: abb9bd9ee646f414ba056c130c54400a, type: 3}
         line: "Inside are half a dozen cups with \u201CPantheon Inc.\u201D written
-          on them, a gilded drinking horn, two battle axes, a crown fit for a king
-          and four cartons of certified barista quality oatmeal milk."
+          on them, a gilded drinking horn, two battle axes, a crown fit for a king..."
     - rid: 9132167090362384386
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
