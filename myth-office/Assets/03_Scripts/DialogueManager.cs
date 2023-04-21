@@ -207,7 +207,8 @@ public class DialogueManager : AbstractInteractable
 
 
             // Allow each image to have a custom pivot by reading pivots from the sprite data.
-            leftImage.GetComponent<RectTransform>().pivot = leftImage.sprite.pivot / leftImage.sprite.texture.Size();
+            Texture2D leftTexture = leftImage.sprite.texture;
+            leftImage.GetComponent<RectTransform>().pivot = leftImage.sprite.pivot / new Vector2(leftTexture.width, leftTexture.height);
         }
         else if (leftImage.sprite == null)
         {
@@ -223,7 +224,8 @@ public class DialogueManager : AbstractInteractable
             rightImage.SetNativeSize();
 
             // Allow each image to have a custom pivot by reading pivots from the sprite data.
-            rightImage.GetComponent<RectTransform>().pivot = rightImage.sprite.pivot / rightImage.sprite.texture.Size();
+            Texture2D rightTexture = rightImage.sprite.texture;
+            rightImage.GetComponent<RectTransform>().pivot = rightImage.sprite.pivot / new Vector2(rightTexture.width, rightTexture.height);
         }
         else if (rightImage.sprite == null)
         {
