@@ -3,7 +3,22 @@ guid: a37833b4c59880f4daff90dea0c39bce
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gagang Pintu
+    second: {fileID: 2100000, guid: d2f423a61a8a90c40b33e051aa1e4876, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pintu
+    second: {fileID: 2100000, guid: 4f425da90afc6094daec771624abf003, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pintu.001
+    second: {fileID: 2100000, guid: 76c44368565950243ad99d367b2e9cb2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

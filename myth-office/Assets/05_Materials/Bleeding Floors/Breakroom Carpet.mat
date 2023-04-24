@@ -101,7 +101,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _AlphaClipThreshold: 0.349
+    - _AlphaClipThreshold: 0.295
     - _AlphaFalloff: 1
     - _AlphaMaskClip: 0
     - _AlphaScaling: 1
@@ -139,5 +139,5 @@ Material:
     - _Color: {r: 0.8235294, g: 0.8392157, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _TextureScale: {r: 10, g: 10, b: 10, a: 0}
+    - _TextureScale: {r: 10, g: 9.82, b: 10, a: 0}
   m_BuildTextureStacks: []
