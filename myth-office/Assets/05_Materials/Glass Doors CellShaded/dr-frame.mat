@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1875652178600359568
+--- !u!114 &-5530372482646723816
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: yellow7A370E
+  m_Name: dr-frame
   m_Shader: {fileID: -6465566751694194690, guid: 715ffed88d73b9144814d44cea36fbe8,
     type: 3}
   m_ValidKeywords: []
@@ -112,7 +112,7 @@ Material:
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 1
-    - _Glossiness: 0
+    - _Glossiness: 0.4472136
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -121,7 +121,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0
+    - _Smoothness: 0.4472136
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -130,9 +130,9 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.8490566, g: 0.8091498, b: 0.7249021, a: 1}
-    - _Color: {r: 0.8490566, g: 0.8091498, b: 0.7249021, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 0.18181252, g: 0.18181252, b: 0.18181252, a: 1}
+    - _Color: {r: 0.1818125, g: 0.1818125, b: 0.1818125, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _TextureScale: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

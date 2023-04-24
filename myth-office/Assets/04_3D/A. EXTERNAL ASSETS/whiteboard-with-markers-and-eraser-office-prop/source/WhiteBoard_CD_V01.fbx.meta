@@ -3,7 +3,32 @@ guid: e3b648ff45ba33940a412e8a004141c3
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MarkerUV_Blue
+    second: {fileID: 2100000, guid: 6d2bac3fcae32ec47bd5c603524e8243, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MarkerUV_Purple
+    second: {fileID: 2100000, guid: f85b6225494bfd74f9ecd40547f88222, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MarkerUV_Red
+    second: {fileID: 2100000, guid: ba7a0bf1f7c3e5548834ed4cd63053ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_WhiteBoard
+    second: {fileID: 2100000, guid: 914f5ab7a64cb4443a97762931c417a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_WhiteBoard_Eraser
+    second: {fileID: 2100000, guid: 250b2ac05f3d48a43ad813ddbfa96406, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

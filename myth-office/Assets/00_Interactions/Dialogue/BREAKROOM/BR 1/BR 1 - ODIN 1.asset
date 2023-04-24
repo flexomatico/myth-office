@@ -19,9 +19,6 @@ MonoBehaviour:
   - rid: 9132166938793345034
   - rid: 1780414289088348160
   - rid: 9132166938793345035
-  - rid: 9132166938793345036
-  - rid: 1780414289088348161
-  - rid: 9132166938793345037
   - rid: 9132166938793345038
   - rid: 9132166938793345039
   - rid: 9132166938793345040
@@ -85,17 +82,6 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: You'll get the hang of it in no time.
-    - rid: 1780414289088348161
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Drinks coffee from it too!
     - rid: 9132166938793345031
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -153,30 +139,6 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: What? No? I mean, why am-
-    - rid: 9132166938793345036
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: ac5a58e5aae2a4fdf8eb2ccc7b1ce1fc, type: 3}
-        line: "You\u2019d think with how much Zeus naps that he\u2019d be on the
-          decaff. No! He walks around with that blasted protein shaker all the time."
-    - rid: 9132166938793345037
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: "I told him, I did. \u201CUse only disposable cups for the vending
-          machine\u201D. Last week\u2019s memo said it too. "
     - rid: 9132166938793345038
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -187,7 +149,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "I\u2019m not even sure if that man can read. "
+        line: "You\u2019d think with how busy we are here at Pantheon Inc. that the
+          Gods didn\u2019t have time for all these breaks."
     - rid: 9132166938793345039
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:

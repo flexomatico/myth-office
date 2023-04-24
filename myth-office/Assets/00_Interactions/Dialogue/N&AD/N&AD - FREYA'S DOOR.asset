@@ -26,6 +26,14 @@ MonoBehaviour:
   - rid: 668674049974992904
   - rid: 668674049974992905
   - rid: 668674049974992906
+  - rid: 668674049974992907
+  - rid: 668674049974992908
+  - rid: 668674049974992909
+  - rid: 668674049974992910
+  - rid: 668674049974992911
+  - rid: 668674049974992912
+  - rid: 668674049974992913
+  - rid: 668674049974992914
   references:
     version: 2
     RefIds:
@@ -130,7 +138,96 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: 
+        line: Coffee!
+    - rid: 668674049974992907
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: ODIN WANTS COFFEE!!
+    - rid: 668674049974992908
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Look, I\u2019m launching some serious EQs on the western hemisphere
+          right now!"
+    - rid: 668674049974992909
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Can\u2019t help you! Try Poseidon or something."
+    - rid: 668674049974992910
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Poseidon?
+    - rid: 668674049974992911
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: EQs?
+    - rid: 668674049974992912
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '. . . '
+    - rid: 668674049974992913
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Hello?
+    - rid: 668674049974992914
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Freya's Door
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: There are no more responses from within the office.
     - rid: 9132167094470180868
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
