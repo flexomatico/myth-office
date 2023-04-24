@@ -101,8 +101,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _AlphaClipThreshold: 0.349
-    - _AlphaFalloff: 1
+    - _AlphaClipThreshold: 0
+    - _AlphaFalloff: 5
     - _AlphaHardClip: 0.8
     - _AlphaMaskClip: 0
     - _AlphaScaling: 1
@@ -121,7 +121,8 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NoisePatternSize: 1.95
+    - _NoisePatternSize: 2.5
+    - _NoisePatternStrength: 1.5
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
