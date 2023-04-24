@@ -15,9 +15,48 @@ MonoBehaviour:
   dialogueParts:
   - rid: 9132167094470180864
   - rid: 9132167094470180865
+  - rid: 668674049974992915
+  - rid: 668674049974992916
+  - rid: 668674049974992917
   references:
     version: 2
     RefIds:
+    - rid: 668674049974992915
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        choices:
+        - Knock on the door.
+        - Hello?!
+        - Odin really seemed urgent about this coffee thing...
+    - rid: 668674049974992916
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: . . .
+    - rid: 668674049974992917
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: They must be really busy here...
     - rid: 9132167094470180864
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:

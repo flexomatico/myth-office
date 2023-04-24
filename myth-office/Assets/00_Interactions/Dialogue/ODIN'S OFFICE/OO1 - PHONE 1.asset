@@ -20,33 +20,21 @@ MonoBehaviour:
   - rid: 668673759249694723
   - rid: 668673759249694724
   - rid: 668673759249694727
-  - rid: 668673759249694728
-  - rid: 668673759249694729
-  - rid: 668673759249694730
-  - rid: 668673759249694731
-  - rid: 668673759249694732
-  - rid: 668673759249694733
-  - rid: 668673759249694734
-  - rid: 668673759249694735
-  - rid: 668673759249694736
-  - rid: 668673759249694737
-  - rid: 668673759249694738
-  - rid: 668673759249694739
-  - rid: 668673759249694740
-  - rid: 668673759249694741
-  - rid: 668673759249694742
-  - rid: 668673759249694743
-  - rid: 668673759249694744
-  - rid: 668673759249694745
-  - rid: 668673759249694746
-  - rid: 668673759249694747
-  - rid: 668673759249694748
-  - rid: 668673759249694749
-  - rid: 668673759249694750
-  - rid: 668673759249694751
-  - rid: 668673759249694752
-  - rid: 668673759249694753
-  - rid: 8161442028796248064
+  - rid: 668674049974992925
+  - rid: 668674049974992926
+  - rid: 668674049974992927
+  - rid: 668674049974992928
+  - rid: 668674049974992929
+  - rid: 668674049974992930
+  - rid: 668674049974992931
+  - rid: 668674049974992932
+  - rid: 668674049974992933
+  - rid: 668674049974992934
+  - rid: 668674049974992935
+  - rid: 668674049974992936
+  - rid: 668674049974992937
+  - rid: 668674049974992938
+  - rid: 668674049974992939
   references:
     version: 2
     RefIds:
@@ -71,8 +59,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "I\u2019m still out on rotation with Zeus. We\u2019re about to hit
-          another mixer with the people from Zen Corp."
+        line: About to hit another mixer with the people from Zen Corp.
     - rid: 668673759249694722
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -83,8 +70,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "You know, Buddha and those guys. Wouldn\u2019t expect those hippies
-          to be that much fun at parties!"
+        line: "But for some reason they won\u2019t accept my card here. Did you close
+          my expense account again?"
     - rid: 668673759249694723
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -95,7 +82,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
-        line: '. . . '
+        line: "I\u2019m sorry, Odin is not here right now."
     - rid: 668673759249694724
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -119,7 +106,7 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: I'm sorry, Odin is not here right now.
-    - rid: 668673759249694728
+    - rid: 668674049974992925
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
@@ -132,19 +119,8 @@ MonoBehaviour:
         choices:
         - Can I take a message?
         - He went out because of an emergency.
-        - Did you say Zeus?
-    - rid: 668673759249694729
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: ????
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: a293ce7578a2d4d85bb66ac7117ea6ac, type: 3}
-        line: Oh, why didn't you just say so bruh!
-    - rid: 668673759249694730
+        - Who is this again?
+    - rid: 668674049974992926
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -154,8 +130,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "Then I can totally lose this bullshit corporate tone, h\xE5h\xE5h!"
-    - rid: 668673759249694731
+        line: "Oh, why didn\u2019t you just say so bruh."
+    - rid: 668674049974992927
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -166,8 +142,8 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: "I\u2019m his son Thor. God of Thunder and Sales. I\u2019m kinda a
-          big deal y\u2019know."
-    - rid: 668673759249694732
+          big deal y\u2019know.\r\n"
+    - rid: 668674049974992928
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -177,8 +153,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: So, you're like, his new assistant or like what's up?
-    - rid: 668673759249694733
+        line: "So, you\u2019re like, his new assistant or like what\u2019s up?"
+    - rid: 668674049974992929
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -187,9 +163,9 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
-        line: I'm the new intern.
-    - rid: 668673759249694734
+        sound: {fileID: 0}
+        line: "I\u2019m the new intern."
+    - rid: 668674049974992930
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -198,9 +174,9 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: f30b5185ce4964acdb18673d8fae9d44, type: 3}
+        sound: {fileID: 0}
         line: "Ah, hell yah bro. Ok, but where\u2019s Allfather tho\u2019?"
-    - rid: 668673759249694735
+    - rid: 668674049974992931
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -209,22 +185,10 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
+        sound: {fileID: 0}
         line: "He had an emergency to attend to. I\u2019m supposed to tell you to
           come in at once."
-    - rid: 668673759249694736
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Thor
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: afa817e65f82244fb843d64e54d2bad6, type: 3}
-        line: "Well I gotta network bruh. We\u2019re out here putting Pantheon on
-          the map!"
-    - rid: 668673759249694737
+    - rid: 668674049974992932
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -234,122 +198,9 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: And not gonna lie, me and Zeus are really hitting it off. We have so
-          much in common, it's crazy, breh.
-    - rid: 668673759249694738
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: "Inth\xEBrn"
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: caf29a6d3bdd64239adb788ad762a67e, type: 3}
-        line: Oh, because of the lightning and thunder thing?
-    - rid: 668673759249694739
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Thor
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 4defcc8a92d6d4d4caa9159864f97d02, type: 3}
-        line: Oh, yeah...
-    - rid: 668673759249694740
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Thor
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: a293ce7578a2d4d85bb66ac7117ea6ac, type: 3}
-        line: I actually never thought of that.
-    - rid: 668673759249694741
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Thor
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: "Nah, I just think we\u2019re kinda like-minded."
-    - rid: 668673759249694742
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Thor
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Like, dude we totally have the same values.
-    - rid: 668673759249694743
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Thor
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: He loves to party. Like me.
-    - rid: 668673759249694744
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Thor
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: 'And we can hit the gym together as well. Breh, he even benches more
-          than me! '
-    - rid: 668673759249694745
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Thor
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: "In comparison, dad\u2019s such a boomer"
-    - rid: 668673759249694746
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: "Inth\xEBrn"
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
-        line: It seemed really important that you came in today. Your father stressed
-          that-
-    - rid: 668673759249694747
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Thor
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 75c302c713cbb41fcb39a7e6f7498b50, type: 3}
         line: "Okay br\xF6h, this is how it\u2019s gonna go down. Tell my old man
           I won\u2019t be coming in today."
-    - rid: 668673759249694748
+    - rid: 668674049974992933
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -360,7 +211,7 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: "Tell him it\u2019s because\u2026 uhhh\u2026"
-    - rid: 668673759249694749
+    - rid: 668674049974992934
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -370,9 +221,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: That I have important business! And I am THIS close to making a huge
-          sale!
-    - rid: 668673759249694750
+        line: That I have important business!
+    - rid: 668674049974992935
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -382,8 +232,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "\u2026or something like that.\r"
-    - rid: 668673759249694751
+        line: And I am THIS close to making a huge sale!
+    - rid: 668674049974992936
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -392,9 +242,20 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 4defcc8a92d6d4d4caa9159864f97d02, type: 3}
-        line: Can you do that lil' bruh?
-    - rid: 668673759249694752
+        sound: {fileID: 0}
+        line: "\u2026Or something like that."
+    - rid: 668674049974992937
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Thor
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Can you do that, lil' bruh?
+    - rid: 668674049974992938
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -403,9 +264,9 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
+        sound: {fileID: 0}
         line: But Odin said that-
-    - rid: 668673759249694753
+    - rid: 668674049974992939
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -414,19 +275,8 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: afa817e65f82244fb843d64e54d2bad6, type: 3}
-        line: Aight, thanks!
-    - rid: 8161442028796248064
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Phone
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
-        line: ...
+        line: Aight, thanks!
     - rid: 8161442028796248065
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -435,6 +285,6 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 8a06c190c699e4a8fae8ee1df2865989, type: 3}
+        rightImage: {fileID: 21300000, guid: f690d5921de70456fac9d0cd8cede3e5, type: 3}
         sound: {fileID: 8300000, guid: 7e29be3764a374de483c1b7b950efd1f, type: 3}
-        line: ...
+        line: '. . . '

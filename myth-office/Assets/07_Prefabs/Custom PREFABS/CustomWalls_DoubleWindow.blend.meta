@@ -3,7 +3,37 @@ guid: 3efa113bcec604343ad0bcb8813d3ac8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlindsColor
+    second: {fileID: 2100000, guid: 1c83175e7a326a34db7da8e55c4dca0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlindsColor.001
+    second: {fileID: 2100000, guid: 312d1175f042e484fa311d127a01438b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlindsPin
+    second: {fileID: 2100000, guid: a01c591896cd99b40894b2b7c0873e12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlindsPin.001
+    second: {fileID: 2100000, guid: 9e19542b3980a6744b7e5054541732de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowFrame
+    second: {fileID: 2100000, guid: a6558f518e4cc41429de6a12de171188, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowFrame.001
+    second: {fileID: 2100000, guid: 8c2d824b23a9acd45b96b9966cc31fe0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

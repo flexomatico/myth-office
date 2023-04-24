@@ -1314,7 +1314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NeedsPrerequisites: []
   FulfillsPrerequisites:
-  - 'N&AD: Can Leave via CAVE'
+  - 'N&AD 1: Can go to Poseidon''s Door'
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
@@ -1591,7 +1591,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1457652591544604392, guid: a37833b4c59880f4daff90dea0c39bce, type: 3}
+  - {fileID: 2100000, guid: d2f423a61a8a90c40b33e051aa1e4876, type: 2}
   - {fileID: 2100000, guid: 0cc538542b7f845f9badaee18f0f4c04, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1994,7 +1994,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1457652591544604392, guid: a37833b4c59880f4daff90dea0c39bce, type: 3}
+  - {fileID: 2100000, guid: d2f423a61a8a90c40b33e051aa1e4876, type: 2}
   - {fileID: 2100000, guid: 0cc538542b7f845f9badaee18f0f4c04, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2449,7 +2449,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7690461520248937896, guid: a37833b4c59880f4daff90dea0c39bce, type: 3}
+  - {fileID: 2100000, guid: 4f425da90afc6094daec771624abf003, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3449,7 +3449,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeedsPrerequisites: []
+  NeedsPrerequisites:
+  - 'N&AD 1: Can go to Poseidon''s Door'
   FulfillsPrerequisites: []
   deleteAfterFinished: 1
   doAfterFinished:
@@ -7939,6 +7940,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23911448406065566, guid: 5e6c0a296760d204c9e34091c18540fd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c2928be45cd1f945a6bf19f92133993, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e6c0a296760d204c9e34091c18540fd, type: 3}
 --- !u!4 &5297748810208879144 stripped
