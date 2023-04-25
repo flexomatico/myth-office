@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
-  m_Name: BR 3 - ODIN 2 Intermediary
+  m_Name: BR 1 - ODIN 2 - Intermediary
   m_EditorClassIdentifier: 
   dialogueParts:
-  - rid: 1780414468566286384
-  - rid: 1780414468566286385
+  - rid: 668674076555608163
+  - rid: 668674076555608164
   references:
     version: 2
     RefIds:
-    - rid: 1780414468566286384
+    - rid: 668674076555608163
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -28,8 +28,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
         sound: {fileID: 0}
-        line: "C'mon, Inth\xEBrn, hurry!"
-    - rid: 1780414468566286385
+        line: "Go on and take the C.A.V.E, Inth\xEBrn."
+    - rid: 668674076555608164
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -39,4 +39,4 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: Better not let the other Gods notice this atrocity!
+        line: Can't wait to get me a cup o' brown juice.

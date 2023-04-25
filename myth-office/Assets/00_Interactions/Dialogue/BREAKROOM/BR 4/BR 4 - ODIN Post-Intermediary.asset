@@ -10,108 +10,105 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
-  m_Name: N&AD - TV
+  m_Name: BR 4 - ODIN Post-Intermediary
   m_EditorClassIdentifier: 
   dialogueParts:
-  - rid: 1780414468566286339
-  - rid: 1780414468566286340
-  - rid: 1780414468566286341
-  - rid: 1780414468566286344
-  - rid: 1780414468566286345
-  - rid: 1780414468566286342
-  - rid: 1780414468566286343
-  - rid: 1780414468566286346
+  - rid: 668674076555608103
+  - rid: 668674076555608104
+  - rid: 668674076555608105
+  - rid: 668674076555608106
+  - rid: 668674076555608107
+  - rid: 668674076555608108
+  - rid: 668674076555608109
+  - rid: 668674076555608110
   references:
     version: 2
     RefIds:
-    - rid: 1780414468566286339
+    - rid: 668674076555608103
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: TV
-        speakerLocation: 1
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 47a804006e224ab41b12ae9e57907834, type: 3}
+        rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
         sound: {fileID: 0}
-        line: A news reporter is out in the field.
-    - rid: 1780414468566286340
+        line: Oh, I almost forgot to mention...
+    - rid: 668674076555608104
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: TV
+        speakerName: Odin
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: '"Yes, as you can see Carl, the water levels seem to have risen slightly
-          these last couple of days."'
-    - rid: 1780414468566286341
+        sound: {fileID: 8300000, guid: 209377ad23ef447d7aaa518bbff369da, type: 3}
+        line: "Yes, Inth\xEBrn?"
+    - rid: 668674076555608105
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: TV
-        speakerLocation: 1
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: '"I suppose I should have worn my wellies this morning, haha!"'
-    - rid: 1780414468566286342
+        line: 'Thor called and said he wouldn''y be coming in. '
+    - rid: 668674076555608106
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: TV
+        speakerName: Odin
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: 'The report switches back to the studio and the in-studio reporter
-          continues. '
-    - rid: 1780414468566286343
+        sound: {fileID: 8300000, guid: affb3ebc900a5464dbccce5e80c5df3c, type: 3}
+        line: . . .
+    - rid: 668674076555608107
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: TV
-        speakerLocation: 1
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: '"Right you are Carolina! As you can see folks, the situation seems
-          to be perfectly under control."'
-    - rid: 1780414468566286344
+        line: And your wife called after. She wanted you to call right away.
+    - rid: 668674076555608108
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: TV
-        speakerLocation: 1
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: 'The reporter is clearly standing up to their waist in water. '
-    - rid: 1780414468566286345
+        line: She seemed pretty upset.
+    - rid: 668674076555608109
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: TV
+        speakerName: Odin
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: 'Behind them, a boat floats past, picking up people on the way. '
-    - rid: 1780414468566286346
+        sound: {fileID: 8300000, guid: 694f854d6a8eb4d3fa5ac58ad3ef38f4, type: 3}
+        line: ...Wait WHAT-
+    - rid: 668674076555608110
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: TV
-        speakerLocation: 1
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: The program switches to commercials.
+        line: Anyway, I gotta run this coffee up to Athena. Bye!

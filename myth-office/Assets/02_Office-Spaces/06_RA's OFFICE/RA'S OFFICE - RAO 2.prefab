@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
-  - 'BR 1: Unlock Supply Closet'
+  - 'RAO 2: RA 1 Intermediary allowed + can go to phone'
   FulfillsPrerequisites: []
   deleteAfterFinished: 0
   doAfterFinished:
@@ -210,7 +210,19 @@ MonoBehaviour:
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2444134837822620408}
+        m_TargetAssemblyTypeName: JourneyHelper, Assembly-CSharp
+        m_MethodName: CallCAVE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogue: {fileID: 11400000, guid: cc020286b125d42f589827e0c9deea23, type: 2}
   colliderRadius: 3
 --- !u!1 &3405873661828645481
@@ -297,7 +309,19 @@ MonoBehaviour:
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4868427098631425709}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DeleteDialogueManager
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogue: {fileID: 11400000, guid: f851c4818e6c147db94ee9ae5ac6f807, type: 2}
   colliderRadius: 3
 --- !u!1 &7073990006708670016
@@ -467,6 +491,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7763598824528708711}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2444134837822620408 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5356636276525074079, guid: dc08b4606183a42cb976e996399c8aff,
+    type: 3}
+  m_PrefabInstance: {fileID: 7763598824528708711}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afffcd44b3d684d3792e5629f1eeecc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3384738375626701563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4991350003335184028, guid: dc08b4606183a42cb976e996399c8aff,

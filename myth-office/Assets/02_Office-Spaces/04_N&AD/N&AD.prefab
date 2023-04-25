@@ -1370,19 +1370,7 @@ MonoBehaviour:
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6867135437384821239}
-        m_TargetAssemblyTypeName: JourneyHelper, Assembly-CSharp
-        m_MethodName: CallCAVE
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: 3ffe6dd43bff34e3797229bde0dc2653, type: 2}
   colliderRadius: 2.5
 --- !u!1 &5301989208465398160
@@ -3507,7 +3495,19 @@ MonoBehaviour:
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6867135437384821239}
+        m_TargetAssemblyTypeName: JourneyHelper, Assembly-CSharp
+        m_MethodName: CallCAVE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogue: {fileID: 11400000, guid: 1164364e7aad144d0937add6cbc12816, type: 2}
   colliderRadius: 2.5
 --- !u!1 &5301989209623896538

@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
+  m_Name: BR 4 - VM 1
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - rid: 668674076555608069
+  - rid: 668674076555608070
+  - rid: 668674076555608071
+  - rid: 668674076555608072
+  - rid: 668674076555608073
+  - rid: 668674076555608074
+  - rid: 668674076555608075
+  - rid: 668674076555608076
+  - rid: 668674076555608077
+  - rid: 668674076555608078
+  references:
+    version: 2
+    RefIds:
+    - rid: 668674076555608069
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Vending Machine
+        speakerLocation: 1
+        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 0f4c10a3576834324a18fc519d0da85a, type: 3}
+        sound: {fileID: 0}
+        line: It looks as if many cups of coffee have been poured from the machine
+          already.
+    - rid: 668674076555608070
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Vending Machine
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: 'The bottom tray is already filled to the brim and there are several
+          empty cups of coffee on the floor. '
+    - rid: 668674076555608071
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
+        line: The Gods must really like their coffee...
+    - rid: 668674076555608072
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: And now I can finally get Athena her coffee.
+    - rid: 668674076555608073
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        choices:
+        - Pour a fresh cup of coffee.
+        - Pour a cup of coffee, but let it sit a while.
+        - Pour a cup of coffee, but let it cool.
+    - rid: 668674076555608074
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Vending Machine
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: 82446118f6b3c2d4a8a283f2b1c99c3d, type: 3}
+        line: . . .
+    - rid: 668674076555608075
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: f0ffb016aa2e64b079de3229589218d5, type: 3}
+        line: . . .
+    - rid: 668674076555608076
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        choices:
+        - Try again.
+        - Jam that cup into the dispenser!
+        - Are you kidding me...
+    - rid: 668674076555608077
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Vending Machine
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: 76997e21ac8009a4785061c651cc757d, type: 3}
+        line: . . .
+    - rid: 668674076555608078
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '!!!'
