@@ -46,6 +46,7 @@ MonoBehaviour:
   - rid: 1780414153045835824
   - rid: 1780414153045835826
   - rid: 668674049974992918
+  - rid: 668674081472118784
   - rid: 668674049974992919
   - rid: 668674049974992920
   - rid: 668674049974992921
@@ -65,7 +66,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "And if Frigg calls\u2026 Tell her that I miss her\u2026"
+        line: "And if Frigg calls\u2026"
     - rid: 668674049974992919
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -132,6 +133,17 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: You know what, just tell her I'm busy.
+    - rid: 668674081472118784
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Odin
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Tell her that I miss her\u2026"
     - rid: 1780414153045835776
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:

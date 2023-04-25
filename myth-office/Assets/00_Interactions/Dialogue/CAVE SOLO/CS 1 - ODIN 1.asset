@@ -90,8 +90,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: ac5a58e5aae2a4fdf8eb2ccc7b1ce1fc, type: 3}
-        line: Yeah, sure! Had one of the Valkyries pick you right up. You looked
-          all out of place in that shirt and tie.
+        line: Yeah, sure! You looked all out of place in that shirt and tie.
     - rid: 9132167094470180878
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -193,7 +192,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "And now, you\u2019re the new inth\xEBrn. Must be pretty exciting for
+        line: "And now, you\u2019re the new Inth\xEBrn. Must be pretty exciting for
           you! Say, what\u2019s your name, kid?"
     - rid: 9132167094470180888
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
