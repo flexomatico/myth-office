@@ -21,6 +21,7 @@ MonoBehaviour:
   - rid: 668674076555608108
   - rid: 668674076555608109
   - rid: 668674076555608110
+  - rid: 668674076555608165
   references:
     version: 2
     RefIds:
@@ -56,7 +57,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: 'Thor called and said he wouldn''y be coming in. '
+        line: 'Thor called and said he wouldn''t be coming in. '
     - rid: 668674076555608106
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -78,7 +79,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: And your wife called after. She wanted you to call right away.
+        line: And your wife called too. She wanted you to call right away.
     - rid: 668674076555608108
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -111,4 +112,15 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: Anyway, I gotta run this coffee up to Athena. Bye!
+        line: Anyway, I gotta run this coffee up to Athena.
+    - rid: 668674076555608165
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Bye!

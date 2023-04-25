@@ -20,14 +20,17 @@ MonoBehaviour:
   - rid: 668674076555608086
   - rid: 668674076555608087
   - rid: 668674076555608088
+  - rid: 668674076555608166
   - rid: 668674076555608089
   - rid: 668674076555608090
   - rid: 668674076555608091
+  - rid: 668674076555608167
   - rid: 668674076555608092
   - rid: 668674076555608093
   - rid: 668674076555608094
   - rid: 668674076555608095
   - rid: 668674076555608096
+  - rid: 668674076555608168
   - rid: 668674076555608097
   - rid: 668674076555608098
   - rid: 668674076555608099
@@ -69,7 +72,7 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: Ah, well you see, as soon as the other Gods got wind that there was
-          coffee in the machine again, they flock down here...
+          coffee in the machine again, they flocked down here...
     - rid: 668674076555608085
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -102,8 +105,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: Afraid not! But don't worry, when I told everyone the coffee was back
-          I made sure to tell them who orchestrated it all.
+        line: Afraid not!
     - rid: 668674076555608088
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -147,7 +149,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: 'With the help of the new intern of course! '
+        line: "With the help of our brand new Inth\xEBrn."
     - rid: 668674076555608092
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -169,7 +171,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: Saved a cup for Athena.
+        line: I saved a cup for Athena.
     - rid: 668674076555608094
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -180,7 +182,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: ...Really?
+        line: Really?
     - rid: 668674076555608095
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -199,10 +201,10 @@ MonoBehaviour:
         speakerName: Odin
         speakerLocation: 1
         leftImage: {fileID: 0}
-        middleImage: {fileID: 21300000, guid: 47a804006e224ab41b12ae9e57907834, type: 3}
+        middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: No! Here you go.
+        line: Nope!
     - rid: 668674076555608097
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -259,3 +261,37 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: You're welcome, kid.
+    - rid: 668674076555608166
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Odin
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: But don't worry, when I told everyone the coffee was back I made sure
+          to tell them who orchestrated it all.
+    - rid: 668674076555608167
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: . . .
+    - rid: 668674076555608168
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Odin
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 21300000, guid: 47a804006e224ab41b12ae9e57907834, type: 3}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Here you go.

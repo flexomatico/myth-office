@@ -206,7 +206,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
   - 'RAO 2: Can go back to Ra after Phone 2'
-  FulfillsPrerequisites: []
+  FulfillsPrerequisites:
+  - 'RAO 2: Can do Pre-Intermediary with ODIN in BR 4'
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:

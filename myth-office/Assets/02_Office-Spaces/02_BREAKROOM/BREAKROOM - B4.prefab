@@ -216,6 +216,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1107735594824502047}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DeleteDialogueManager
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogue: {fileID: 11400000, guid: 8d12379fc37b0494bb621d7058d77a6a, type: 2}
   colliderRadius: 3.56
 --- !u!1 &4016238479068367596
@@ -890,7 +902,7 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: cc3b20d91e85e314c9f1b4175cc342fd, type: 2}
   colliderRadius: 2.12
 --- !u!1 &7517869757521037256
 GameObject:
