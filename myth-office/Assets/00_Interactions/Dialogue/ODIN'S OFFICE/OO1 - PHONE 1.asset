@@ -18,8 +18,6 @@ MonoBehaviour:
   - rid: 668673759249694721
   - rid: 668673759249694722
   - rid: 668673759249694723
-  - rid: 668673759249694724
-  - rid: 668673759249694727
   - rid: 668674049974992925
   - rid: 668674049974992926
   - rid: 668674049974992927
@@ -83,29 +81,6 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: "I\u2019m sorry, Odin is not here right now."
-    - rid: 668673759249694724
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: ????
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: f30b5185ce4964acdb18673d8fae9d44, type: 3}
-        line: "Anyways, for some reason they won\u2019t accept my card here. Did
-          you close my expense account again?"
-    - rid: 668673759249694727
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: "Inth\xEBrn"
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
-        line: I'm sorry, Odin is not here right now.
     - rid: 668674049974992925
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -243,7 +218,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "\u2026Or something like that."
+        line: "\u2026or something like that."
     - rid: 668674049974992937
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
