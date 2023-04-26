@@ -43,6 +43,17 @@ public class InteractionManager : MonoBehaviour
         _interactables.Remove(interactable);
     }
 
+    public void CheckEnableNextInteractionPrompt()
+    {
+        foreach (AbstractInteractable interactable in _interactables)
+        {
+            if (CheckIfPrerequisitesFulfilled(interactable))
+            {
+                interactable.SetInteractionPromptVisibility(true);
+            }
+        }
+    }
+
     private void Awake()
     {
         if (Instance != null && Instance != this)

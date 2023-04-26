@@ -33,6 +33,7 @@ public abstract class AbstractInteractable : MonoBehaviour
         if (deleteAfterFinished)
         {
             InteractionManager.Instance.RemoveInteractable(this);
+            InteractionManager.Instance.CheckEnableNextInteractionPrompt();
             Destroy(this);
         }
     }
