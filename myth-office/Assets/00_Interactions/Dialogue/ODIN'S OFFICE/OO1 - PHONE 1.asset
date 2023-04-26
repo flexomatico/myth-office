@@ -17,12 +17,12 @@ MonoBehaviour:
   - rid: 668673759249694720
   - rid: 668673759249694721
   - rid: 668673759249694722
+  - rid: 668674081472118786
   - rid: 668673759249694723
-  - rid: 668673759249694724
-  - rid: 668673759249694727
   - rid: 668674049974992925
   - rid: 668674049974992926
   - rid: 668674049974992927
+  - rid: 668674081472118787
   - rid: 668674049974992928
   - rid: 668674049974992929
   - rid: 668674049974992930
@@ -46,7 +46,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 8a06c190c699e4a8fae8ee1df2865989, type: 3}
+        rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: afa817e65f82244fb843d64e54d2bad6, type: 3}
         line: 'Hey dad, it''s me. '
     - rid: 668673759249694721
@@ -70,8 +70,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "But for some reason they won\u2019t accept my card here. Did you close
-          my expense account again?"
+        line: "But for some reason they won\u2019t accept my card here."
     - rid: 668673759249694723
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -83,29 +82,6 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: "I\u2019m sorry, Odin is not here right now."
-    - rid: 668673759249694724
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: ????
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: f30b5185ce4964acdb18673d8fae9d44, type: 3}
-        line: "Anyways, for some reason they won\u2019t accept my card here. Did
-          you close my expense account again?"
-    - rid: 668673759249694727
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: "Inth\xEBrn"
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
-        line: I'm sorry, Odin is not here right now.
     - rid: 668674049974992925
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -141,8 +117,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "I\u2019m his son Thor. God of Thunder and Sales. I\u2019m kinda a
-          big deal y\u2019know.\r\n"
+        line: "I\u2019m his son, Thor. God of Thunder and Sales.\n"
     - rid: 668674049974992928
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -243,7 +218,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "\u2026Or something like that."
+        line: "\u2026or something like that."
     - rid: 668674049974992937
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -277,6 +252,28 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
         line: Aight, thanks!
+    - rid: 668674081472118786
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Did you close my expense account again?
+    - rid: 668674081472118787
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Thor
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "I\u2019m kinda a big deal y\u2019know.\r"
     - rid: 8161442028796248065
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:

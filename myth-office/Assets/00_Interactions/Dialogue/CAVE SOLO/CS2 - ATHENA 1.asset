@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueParts:
   - rid: 668673759249694772
+  - rid: 668674094441168897
   - rid: 668673759249694773
   - rid: 668673759249694774
   - rid: 668673759249694775
+  - rid: 668674094441168898
   - rid: 668673759249694776
+  - rid: 668674094441168899
+  - rid: 668674094441168900
   - rid: 668673759249694778
   - rid: 668673759249694779
   - rid: 668673759249694780
@@ -29,6 +33,7 @@ MonoBehaviour:
   - rid: 668673759249694786
   - rid: 668673759249694787
   - rid: 668673759249694788
+  - rid: 668674094441168901
   references:
     version: 2
     RefIds:
@@ -42,8 +47,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 8300000, guid: 54bbffb0272284c8d969c5b3f164dea9, type: 3}
-        line: "Finally. I was beginning to think that Odin would never let you go\u2026
-          He didn\u2019t start you off with something too complicated, did he?"
+        line: "Finally. I was beginning to think that Odin would never let you go\u2026"
     - rid: 668673759249694773
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -76,8 +80,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
-        line: Anyway, I rushed here as soon as I heard that you arrived. Just wanted
-          to make sure that you would get a proper welcome!
+        line: Anyway, I rushed here as soon as I heard that you arrived.
     - rid: 668673759249694776
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -88,8 +91,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
-        line: Odin has no doubt explained your role here. He likes to do that, you
-          know, pretending to be the boss. Such a try-hard.
+        line: Odin has no doubt explained your role here.
     - rid: 668673759249694778
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -219,3 +221,58 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 442e4082f79494297ab67a1f14f39f22, type: 3}
         line: "Leave here and get me a cappucino!\r"
+    - rid: 668674094441168897
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Athena
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "He didn\u2019t start you off with something too complicated, did he?"
+    - rid: 668674094441168898
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Just wanted to make sure that you would get a proper welcome!
+    - rid: 668674094441168899
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: He likes to do that, you know, pretending to be the boss.
+    - rid: 668674094441168900
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
+        sound: {fileID: 0}
+        line: Such a try-hard.
+    - rid: 668674094441168901
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interneus
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: . . .

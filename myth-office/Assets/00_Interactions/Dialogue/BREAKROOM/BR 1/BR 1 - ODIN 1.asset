@@ -33,7 +33,6 @@ MonoBehaviour:
   - rid: 668673808796483585
   - rid: 668673808796483586
   - rid: 9132166938793345048
-  - rid: 9132166938793345049
   - rid: 9132166938793345050
   references:
     version: 2
@@ -126,7 +125,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 64e1b25ff4b62410a9e8f42a6b707adc, type: 3}
-        line: Ah, well! You see, sometimes the Breakroom needs to be restocked. Water
+        line: Ah, well! You see, sometimes the breakroom needs to be restocked. Water
           cooler needs water, no cups in the dispenser.
     - rid: 9132166938793345035
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -228,7 +227,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
-        line: Uhm. Restocking the Breakroom?
+        line: Uhm. Restocking the breakroom?
     - rid: 9132166938793345046
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -262,17 +261,6 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 694f854d6a8eb4d3fa5ac58ad3ef38f4, type: 3}
         line: 'You see? Zeus you son of a- '
-    - rid: 9132166938793345049
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Hm. Thor you dumbass.
     - rid: 9132166938793345050
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:

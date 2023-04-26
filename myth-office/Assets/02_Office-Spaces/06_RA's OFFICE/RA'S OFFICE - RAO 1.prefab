@@ -51,7 +51,19 @@ MonoBehaviour:
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188406249335797481}
+        m_TargetAssemblyTypeName: JourneyHelper, Assembly-CSharp
+        m_MethodName: CallCAVE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogue: {fileID: 11400000, guid: 00a053a5153ad454598c4ee188684e42, type: 2}
   colliderRadius: 4
 --- !u!1 &6446255985416647678
@@ -275,10 +287,25 @@ PrefabInstance:
     - target: {fileID: 8042267148738494377, guid: dc08b4606183a42cb976e996399c8aff,
         type: 3}
       propertyPath: m_Name
-      value: RA'S OFFICE - RA 1
+      value: RA'S OFFICE - RAO 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1416977631705359904, guid: dc08b4606183a42cb976e996399c8aff, type: 3}
+    - {fileID: 6186984848182586708, guid: dc08b4606183a42cb976e996399c8aff, type: 3}
+    - {fileID: 3304289518234482461, guid: dc08b4606183a42cb976e996399c8aff, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dc08b4606183a42cb976e996399c8aff, type: 3}
+--- !u!114 &188406249335797481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5356636276525074079, guid: dc08b4606183a42cb976e996399c8aff,
+    type: 3}
+  m_PrefabInstance: {fileID: 5245499686715928694}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afffcd44b3d684d3792e5629f1eeecc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &977021967830879978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4991350003335184028, guid: dc08b4606183a42cb976e996399c8aff,

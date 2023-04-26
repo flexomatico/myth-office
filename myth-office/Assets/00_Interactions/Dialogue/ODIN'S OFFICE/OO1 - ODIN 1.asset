@@ -33,30 +33,20 @@ MonoBehaviour:
   - rid: 1780414153045835800
   - rid: 1780414153045835799
   - rid: 1780414153045835801
-  - rid: 1780414153045835802
-  - rid: 1780414153045835803
   - rid: 1780414153045835804
+  - rid: 1780414153045835802
   - rid: 1780414153045835805
   - rid: 1780414153045835807
   - rid: 1780414153045835808
   - rid: 1780414153045835809
   - rid: 1780414153045835810
-  - rid: 1780414153045835811
   - rid: 1780414153045835812
   - rid: 1780414153045835813
   - rid: 1780414153045835814
-  - rid: 1780414153045835815
-  - rid: 1780414153045835816
-  - rid: 1780414153045835817
-  - rid: 1780414153045835818
-  - rid: 1780414153045835819
-  - rid: 1780414153045835820
-  - rid: 1780414153045835821
-  - rid: 1780414153045835822
-  - rid: 1780414153045835823
   - rid: 1780414153045835824
   - rid: 1780414153045835826
   - rid: 668674049974992918
+  - rid: 668674081472118784
   - rid: 668674049974992919
   - rid: 668674049974992920
   - rid: 668674049974992921
@@ -76,12 +66,12 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "And if Frigg calls\u2026 Tell her that I miss her\u2026"
+        line: "And if Frigg calls\u2026"
     - rid: 668674049974992919
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: 
+        speakerName: Odin
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
@@ -143,15 +133,26 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: You know what, just tell her I'm busy.
+    - rid: 668674081472118784
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Odin
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: "Tell her that I miss her\u2026"
     - rid: 1780414153045835776
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
-        leftImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
+        speakerLocation: 1
+        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 0f4c10a3576834324a18fc519d0da85a, type: 3}
+        rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
         sound: {fileID: 8300000, guid: 64e1b25ff4b62410a9e8f42a6b707adc, type: 3}
         line: "Frigg, honey, please. I\u2019m sorry."
     - rid: 1780414153045835777
@@ -162,7 +163,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: f690d5921de70456fac9d0cd8cede3e5, type: 3}
         sound: {fileID: 8300000, guid: e4cc4b00b0bfa41c4b07f4f092dfa526, type: 3}
         line: '. . . '
     - rid: 1780414153045835778
@@ -170,10 +171,10 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
         sound: {fileID: 8300000, guid: 3c2da64d83d79429b97b8ac8d1ce2fd9, type: 3}
         line: No, I won't be too late. The Bifrost closes early these days. Part
           of the daylight savings.
@@ -185,7 +186,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: f690d5921de70456fac9d0cd8cede3e5, type: 3}
         sound: {fileID: 8300000, guid: 4ce1da9b2558d4d138f2b3155171aaca, type: 3}
         line: '. . . '
     - rid: 1780414153045835780
@@ -193,10 +194,10 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
         sound: {fileID: 8300000, guid: bfeb988f8f5b840c7ae12f1bfd71535a, type: 3}
         line: Hold on darling, it seems a human has snuck into my office.
     - rid: 1780414153045835781
@@ -207,7 +208,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: f690d5921de70456fac9d0cd8cede3e5, type: 3}
         sound: {fileID: 8300000, guid: 674c876d2a6124630908311b2a920574, type: 3}
         line: '. . . '
     - rid: 1780414153045835782
@@ -218,7 +219,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: f690d5921de70456fac9d0cd8cede3e5, type: 3}
         sound: {fileID: 8300000, guid: e4cc4b00b0bfa41c4b07f4f092dfa526, type: 3}
         line: '. . . '
     - rid: 1780414153045835787
@@ -226,10 +227,10 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
         sound: {fileID: 8300000, guid: ac433751994034643a39f87da353d6a7, type: 3}
         line: "No, I\u2019m not trying to get out of this conversation! I\u2019d
           never\u2026"
@@ -241,7 +242,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: f690d5921de70456fac9d0cd8cede3e5, type: 3}
         sound: {fileID: 8300000, guid: 4ce1da9b2558d4d138f2b3155171aaca, type: 3}
         line: '. . . '
     - rid: 1780414153045835789
@@ -249,10 +250,10 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
         sound: {fileID: 0}
         line: "Yes, yes. Sorry my love. I\u2019ll make it up to you, I swear."
     - rid: 1780414153045835790
@@ -320,8 +321,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "I went to the Nature & Agriculture Department like you said.\r There
-          was no one there.\r\n"
+        line: I went to the Nature & Agriculture department like you said. There
+          was no one there.
     - rid: 1780414153045835798
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -332,8 +333,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 3c2da64d83d79429b97b8ac8d1ce2fd9, type: 3}
-        line: "Ugh\u2026 One can only hope that those guys are out fixing that mess.\r
-          People are melting in some realms.\n"
+        line: "Ugh\u2026 One can only hope that those guys are out fixing that mess.
+          People are melting in some realms."
     - rid: 1780414153045835799
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -376,40 +377,29 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 7e29be3764a374de483c1b7b950efd1f, type: 3}
+        rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
+        sound: {fileID: 0}
         line: I better take this.
-    - rid: 1780414153045835803
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: a34b19a3691a649bbb458f0f602f77e0, type: 3}
-        line: "Well don\u2019t you judge me now, Inth\xEBrn."
     - rid: 1780414153045835804
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: ????
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
+        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: f690d5921de70456fac9d0cd8cede3e5, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 7e29be3764a374de483c1b7b950efd1f, type: 3}
         line: '. . . '
     - rid: 1780414153045835805
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
         sound: {fileID: 0}
         line: Yes, Allfather here. Yes. Wait, slow down.
     - rid: 1780414153045835807
@@ -417,7 +407,7 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
@@ -428,7 +418,7 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
@@ -439,7 +429,7 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
@@ -450,32 +440,18 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 8c8b1bc52ee1f4ea3b6527d3397c4479, type: 3}
         line: By my beard...
-    - rid: 1780414153045835811
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: "Inth\xEBrn"
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: caf29a6d3bdd64239adb788ad762a67e, type: 3}
-        line: 'I went to the Nature & Agriculture Department like you said. There
-          was no one there.
-
-'
     - rid: 1780414153045835812
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
@@ -486,7 +462,7 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: Odin
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
@@ -502,105 +478,6 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
         sound: {fileID: 8300000, guid: ac5a58e5aae2a4fdf8eb2ccc7b1ce1fc, type: 3}
-        line: "An emergency has arisen, Inth\xEBrn."
-    - rid: 1780414153045835815
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: a34b19a3691a649bbb458f0f602f77e0, type: 3}
-        line: I better take this.
-    - rid: 1780414153045835816
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: ????
-        speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 0f4c10a3576834324a18fc519d0da85a, type: 3}
-        sound: {fileID: 8300000, guid: 49c7311bdd40e4fe8a400532d3d0a9c4, type: 3}
-        line: '. . . '
-    - rid: 1780414153045835817
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: d30eca6975a574459a5827948b77aa7a, type: 3}
-        line: Yes, Allfather here. Yes. Wait, slow down.
-    - rid: 1780414153045835818
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: ????
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 5a5b395952e214dd79e018259dfe9696, type: 3}
-        line: '. . . '
-    - rid: 1780414153045835819
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 953a392b33b8e4da0bb52fd0f740b9b9, type: 3}
-        line: "Wait\u2026 WHAT!? By the Beard of Od-"
-    - rid: 1780414153045835820
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: I mean, of me... By my beard...
-    - rid: 1780414153045835821
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 694f854d6a8eb4d3fa5ac58ad3ef38f4, type: 3}
-        line: This is bad! Really BAD!
-    - rid: 1780414153045835822
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 0
-        leftImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 8a06c190c699e4a8fae8ee1df2865989, type: 3}
-        sound: {fileID: 0}
-        line: Don't move, I'll be there in a second.
-    - rid: 1780414153045835823
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
-        sound: {fileID: 8300000, guid: 50780c0af1e674670a18b9ca8414be25, type: 3}
         line: "An emergency has arisen, Inth\xEBrn."
     - rid: 1780414153045835824
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
