@@ -27,27 +27,47 @@ public class SceneManager : MonoBehaviour
     {
         arriveSoundSource = gameObject.AddComponent<AudioSource>();
         arriveSoundSource.clip = arriveSound;
-        activeCave = Instantiate(journeys[currentJourney].cave);
-        activeOffice = Instantiate(new GameObject("Empty GameObject"));
-        GoToNextOffice();
+        
+        bool isStartOfGame = currentJourney == 0;
+        if (isStartOfGame)
+        {
+            activeOffice = Instantiate(journeys[currentJourney].nextOffice);
+            currentJourney++;
+        }
+        else
+        {
+            activeOffice = Instantiate(new GameObject("Empty GameObject"));
+            activeCave = Instantiate(journeys[currentJourney].cave);
+        }
     }
 
     public void CallCave()
     {
+        currentJourneyInitiated = false;
+        travelDistance = journeys[currentJourney].travelDistance;
+        travelTime = journeys[currentJourney].travelTime;
         activeCave = Instantiate(journeys[currentJourney].cave);
-        arriveSoundSource.PlayDelayed(0.5f);
-        caveCanLeave = false;
+        if (journeys[currentJourney].animateCaveArrival)
+        {
+            activeCave.transform.position += new Vector3(0, travelDistance, 0);
+            currentAnimTime = 0.0f;
+            StartCoroutine(MoveCaveVertically());
+        }
+        else
+        {
+            ArriveCave();
+        }
     }
     
     public void GoToNextOffice()
     {
         if (currentJourneyInitiated) return;
         
+        travelDistance = journeys[currentJourney].travelDistance;
+        travelTime = journeys[currentJourney].travelTime;
         nextOffice = Instantiate(journeys[currentJourney].nextOffice);
         nextOffice.transform.position += new Vector3(0, travelDistance, 0);
         currentAnimTime = 0.0f;
-        travelDistance = journeys[currentJourney].travelDistance;
-        travelTime = journeys[currentJourney].travelTime;
         StartCoroutine(MoveOfficesVertically());
         currentJourneyInitiated = true;
     }
@@ -80,7 +100,6 @@ public class SceneManager : MonoBehaviour
         arriveSoundSource.Play();
         caveCanLeave = true;
         currentJourney++;
-        currentJourneyInitiated = false;
     }
 
     public void PlayerLeftCave()
@@ -94,9 +113,19 @@ public class SceneManager : MonoBehaviour
 
     private IEnumerator MoveCaveVertically()
     {
+        bool caveIsArriving = journeys[currentJourney].animateCaveArrival;
+        float nextYPos;
+        
         while (currentAnimTime < 1.0f)
         {
-            float nextYPos = animCurve.Evaluate(currentAnimTime) * travelDistance;
+            if (caveIsArriving)
+            {
+                nextYPos = animCurve.Evaluate(1.0f - currentAnimTime) * travelDistance;
+            }
+            else
+            {
+                nextYPos = animCurve.Evaluate(currentAnimTime) * travelDistance;
+            }
             Vector3 newPos = new Vector3(0, nextYPos, 0);
             activeCave.transform.position = newPos;
             
@@ -104,6 +133,20 @@ public class SceneManager : MonoBehaviour
             yield return null;
         }
         
-        Destroy(activeCave);
+        if (caveIsArriving)
+        {
+            ArriveCave();
+        }
+        else
+        {
+            Destroy(activeCave);
+        }
+    }
+
+    private void ArriveCave()
+    {
+        activeCave.transform.position = Vector3.zero;
+        arriveSoundSource.PlayDelayed(0.5f);
+        caveCanLeave = false;
     }
 }

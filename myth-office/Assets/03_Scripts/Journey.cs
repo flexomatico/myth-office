@@ -9,4 +9,5 @@ public class Journey
     public GameObject nextOffice;
     public float travelDistance;
     public float travelTime;
+    public bool animateCaveArrival;
 }
