@@ -311,7 +311,19 @@ MonoBehaviour:
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3816555203463318787}
+        m_TargetAssemblyTypeName: JourneyHelper, Assembly-CSharp
+        m_MethodName: GoToNextOffice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogue: {fileID: 11400000, guid: 637370b55bb073740b237d976d5112d1, type: 2}
   colliderRadius: 6
 --- !u!1 &8908526622572426346
@@ -392,12 +404,17 @@ PrefabInstance:
     - target: {fileID: 3255906364038471235, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4640198253357414995, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640198253545884883, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4640198253553002097, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
@@ -517,6 +534,18 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 6689128055341373315, guid: 76ba7a0c7780e40faae3e27ffc0b087d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 76ba7a0c7780e40faae3e27ffc0b087d, type: 3}
+--- !u!114 &3816555203463318787 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9018293031164159302, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5318831456669280325}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afffcd44b3d684d3792e5629f1eeecc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4226195346817001350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8319906911170170819, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
