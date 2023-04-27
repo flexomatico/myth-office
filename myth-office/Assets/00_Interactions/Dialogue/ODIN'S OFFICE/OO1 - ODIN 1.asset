@@ -77,7 +77,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: Hmm... That might be too needy.
+        line: (Hmm... That might be too needy.)
     - rid: 668674049974992920
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -110,7 +110,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: Hmm... I don't want to appear too weak though.
+        line: (Hmm... I don't want to appear too weak though.)
     - rid: 668674049974992923
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -120,7 +120,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: . . .
     - rid: 668674049974992924
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -131,7 +131,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: ac433751994034643a39f87da353d6a7, type: 3}
         line: You know what, just tell her I'm busy.
     - rid: 668674081472118784
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -320,7 +320,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: I went to the Nature & Agriculture department like you said. There
           was no one there.
     - rid: 1780414153045835798
@@ -366,7 +366,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 3c2da64d83d79429b97b8ac8d1ce2fd9, type: 3}
         line: But how do you suggest I get my coffee then? I guess I could send you
           to-
     - rid: 1780414153045835802
@@ -378,7 +378,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: d30eca6975a574459a5827948b77aa7a, type: 3}
         line: I better take this.
     - rid: 1780414153045835804
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -411,7 +411,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 694f854d6a8eb4d3fa5ac58ad3ef38f4, type: 3}
         line: Wait... WHAT?!
     - rid: 1780414153045835808
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -444,7 +444,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 8c8b1bc52ee1f4ea3b6527d3397c4479, type: 3}
+        sound: {fileID: 0}
         line: By my beard...
     - rid: 1780414153045835812
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
