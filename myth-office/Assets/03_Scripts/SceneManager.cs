@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SceneManager : MonoBehaviour
@@ -16,12 +17,16 @@ public class SceneManager : MonoBehaviour
 
     private float currentAnimTime = 0.0f;
     public int currentJourney = 0;
-    private float travelDistance;
+    public float defaultTravelDistance = 30.0f;
     private float travelTime;
+    private float travelDistance;
     private bool currentJourneyInitiated = false;
+    public float caveAutoArriveSpeed = 5;
+    public float caveAutoLeaveSpeed = 2;
     
 
     private bool caveCanLeave = true;
+    private Coroutine animationCoroutine = null;
 
     private void Start()
     {
@@ -44,14 +49,14 @@ public class SceneManager : MonoBehaviour
     public void CallCave()
     {
         currentJourneyInitiated = false;
-        travelDistance = journeys[currentJourney].travelDistance;
-        travelTime = journeys[currentJourney].travelTime;
         activeCave = Instantiate(journeys[currentJourney].cave);
         if (journeys[currentJourney].animateCaveArrival)
         {
+            travelTime = caveAutoArriveSpeed;
+            travelDistance = defaultTravelDistance;
             activeCave.transform.position += new Vector3(0, travelDistance, 0);
             currentAnimTime = 0.0f;
-            StartCoroutine(MoveCaveVertically());
+            StartCoroutine(AnimateCaveArrival());
         }
         else
         {
@@ -63,16 +68,34 @@ public class SceneManager : MonoBehaviour
     {
         if (currentJourneyInitiated) return;
         
-        travelDistance = journeys[currentJourney].travelDistance;
+        if (animationCoroutine != null)
+        {
+            StopCoroutine(animationCoroutine);
+            ArriveAtNextOffice(false);
+            animationCoroutine = null;
+        }
         travelTime = journeys[currentJourney].travelTime;
+        travelDistance = journeys[currentJourney].travelDistance;
         nextOffice = Instantiate(journeys[currentJourney].nextOffice);
         nextOffice.transform.position += new Vector3(0, travelDistance, 0);
         currentAnimTime = 0.0f;
-        StartCoroutine(MoveOfficesVertically());
+        StartCoroutine(MoveOfficesVertically(true));
         currentJourneyInitiated = true;
     }
 
-    private IEnumerator MoveOfficesVertically()
+    public void GoToNowhere()
+    {
+        if (currentJourneyInitiated) return;
+        
+        travelTime = caveAutoLeaveSpeed;
+        travelDistance = defaultTravelDistance;
+        nextOffice = Instantiate(new GameObject("Empty GameObject"));
+        nextOffice.transform.position += new Vector3(0, travelDistance, 0);
+        currentAnimTime = 0.0f;
+        animationCoroutine = StartCoroutine(MoveOfficesVertically(false));
+    }
+
+    private IEnumerator MoveOfficesVertically(bool arriveWithSound)
     {
         while (currentAnimTime < 1.0f)
         {
@@ -89,17 +112,24 @@ public class SceneManager : MonoBehaviour
             yield return null;
         }
         
-        ArriveAtNextOffice();
+        ArriveAtNextOffice(arriveWithSound);
     }
 
-    private void ArriveAtNextOffice()
+    private void ArriveAtNextOffice(bool arriveWithSound)
     {
         Destroy(activeOffice);
         activeOffice = nextOffice;
         activeOffice.transform.position = Vector3.zero;
-        arriveSoundSource.Play();
         caveCanLeave = true;
-        currentJourney++;
+        if (arriveWithSound)
+        {
+            arriveSoundSource.Play();
+        }
+        else
+        {
+            StopCoroutine(animationCoroutine);
+            animationCoroutine = null;
+        }
     }
 
     public void PlayerLeftCave()
@@ -107,25 +137,19 @@ public class SceneManager : MonoBehaviour
         if (caveCanLeave)
         {
             currentAnimTime = 0.0f;
-            StartCoroutine(MoveCaveVertically());
+            StartCoroutine(AnimateCaveDeparture());
         }
     }
 
-    private IEnumerator MoveCaveVertically()
+    private IEnumerator AnimateCaveDeparture()
     {
         bool caveIsArriving = journeys[currentJourney].animateCaveArrival;
         float nextYPos;
         
         while (currentAnimTime < 1.0f)
         {
-            if (caveIsArriving)
-            {
-                nextYPos = animCurve.Evaluate(1.0f - currentAnimTime) * travelDistance;
-            }
-            else
-            {
-                nextYPos = animCurve.Evaluate(currentAnimTime) * travelDistance;
-            }
+            nextYPos = animCurve.Evaluate(currentAnimTime) * travelDistance;
+            
             Vector3 newPos = new Vector3(0, nextYPos, 0);
             activeCave.transform.position = newPos;
             
@@ -133,14 +157,27 @@ public class SceneManager : MonoBehaviour
             yield return null;
         }
         
-        if (caveIsArriving)
+        Destroy(activeCave);
+        currentJourney++;
+    }
+
+    private IEnumerator AnimateCaveArrival()
+    {
+        bool caveIsArriving = journeys[currentJourney].animateCaveArrival;
+        float nextYPos;
+        
+        while (currentAnimTime < 1.0f)
         {
-            ArriveCave();
+            nextYPos = animCurve.Evaluate(1.0f - currentAnimTime) * travelDistance;
+            
+            Vector3 newPos = new Vector3(0, nextYPos, 0);
+            activeCave.transform.position = newPos;
+            
+            currentAnimTime += Time.deltaTime / travelTime;
+            yield return null;
         }
-        else
-        {
-            Destroy(activeCave);
-        }
+        
+        ArriveCave();
     }
 
     private void ArriveCave()

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.24955466, g: 0.2419709, b: 0.26527137, a: 1}
+  m_IndirectSpecularColor: {r: 0.24955466, g: 0.24197093, b: 0.2652714, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1068,14 +1068,14 @@ MonoBehaviour:
   - cave: {fileID: 0}
     nextOffice: {fileID: 7206599764382515618, guid: a551fde49168447d68da3f98ac7fb8cb,
       type: 3}
-    travelDistance: 20
-    travelTime: 5
+    travelDistance: 0
+    travelTime: 0
     animateCaveArrival: 0
   - cave: {fileID: 9197707716465725849, guid: 1b3d1c8520915a94caf7a4eba1633459, type: 3}
     nextOffice: {fileID: 642254687810796880, guid: 4367207b4404547b584d99be639bc8d7,
       type: 3}
-    travelDistance: 20
-    travelTime: 5
+    travelDistance: 15
+    travelTime: 2
     animateCaveArrival: 1
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 7614077457866698455, guid: 5d9085403f91349cd865b7e1e426fd1b,
@@ -1092,9 +1092,9 @@ MonoBehaviour:
   - cave: {fileID: 202292186370722003, guid: bc3c941b0fcd6834291940f858ebca44, type: 3}
     nextOffice: {fileID: 6214194385032012531, guid: 16c75ad38a25a40a6884550128724cee,
       type: 3}
-    travelDistance: 20
-    travelTime: 5
-    animateCaveArrival: 0
+    travelDistance: 15
+    travelTime: 2
+    animateCaveArrival: 1
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 2832796536607985631, guid: d7f672b44063d40fe88e502c9642c1bc,
       type: 3}
@@ -1159,6 +1159,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   currentJourney: 0
+  defaultTravelDistance: 30
+  caveAutoArriveSpeed: 5
+  caveAutoLeaveSpeed: 4
 --- !u!4 &1911464730
 Transform:
   m_ObjectHideFlags: 0

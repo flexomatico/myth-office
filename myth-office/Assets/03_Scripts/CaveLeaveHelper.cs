@@ -26,12 +26,12 @@ public class CaveLeaveHelper : MonoBehaviour
         {
             StopCoroutine(delayMoveAwayCoroutine);
         }
-        if (leaveOnPlayerEnterCAVE) StartCoroutine(DelayGoToNextOffice());
+        if (leaveOnPlayerEnterCAVE) StartCoroutine(DelayGoToNowhere());
     }
 
-    private IEnumerator DelayGoToNextOffice()
+    private IEnumerator DelayGoToNowhere()
     {
         yield return new WaitForSeconds(waitForSeconds);
-        GameObject.Find("SceneManager").GetComponent<SceneManager>().GoToNextOffice();
+        GameObject.Find("SceneManager").GetComponent<SceneManager>().GoToNowhere();
     }
 }
