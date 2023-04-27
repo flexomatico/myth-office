@@ -40,7 +40,6 @@ public class Volume2D : MonoBehaviour
         else
         {
             audioSource.volume = Remap(1.0f - ((dist - minDist) / (maxDist - minDist)), 0.0f, 1.0f, 0.0f, maxVolume);
-            print(audioSource.volume);
         }
     }
     

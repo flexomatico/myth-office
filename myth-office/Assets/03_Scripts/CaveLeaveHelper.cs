@@ -7,9 +7,11 @@ using UnityEngine;
 public class CaveLeaveHelper : MonoBehaviour
 {
     public bool leaveOnPlayerEnterCAVE = false;
+    public float waitForSeconds = 2.0f;
+    private Coroutine delayMoveAwayCoroutine;
     private void OnTriggerExit(Collider other)
     {
-        StartCoroutine(DelayMoveAwayCave());
+        delayMoveAwayCoroutine = StartCoroutine(DelayMoveAwayCave());
     }
 
     private IEnumerator DelayMoveAwayCave()
@@ -20,13 +22,16 @@ public class CaveLeaveHelper : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        StopCoroutine(DelayMoveAwayCave());
+        if (delayMoveAwayCoroutine != null)
+        {
+            StopCoroutine(delayMoveAwayCoroutine);
+        }
         if (leaveOnPlayerEnterCAVE) StartCoroutine(DelayGoToNextOffice());
     }
 
     private IEnumerator DelayGoToNextOffice()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(waitForSeconds);
         GameObject.Find("SceneManager").GetComponent<SceneManager>().GoToNextOffice();
     }
 }

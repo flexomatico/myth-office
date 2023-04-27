@@ -354,6 +354,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: CAVE SOLO - CS1
       objectReference: {fileID: 0}
+    - target: {fileID: 7856925481066313981, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+        type: 3}
+      propertyPath: waitForSeconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856925481066313981, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+        type: 3}
+      propertyPath: leaveOnPlayerEnterCAVE
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8319906911170170819, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
       propertyPath: m_RootOrder
