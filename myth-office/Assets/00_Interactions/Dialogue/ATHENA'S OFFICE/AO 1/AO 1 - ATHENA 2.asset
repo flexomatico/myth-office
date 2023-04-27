@@ -60,7 +60,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: On the screen is a webpage called BattledIn. Is that right?
     - rid: 668674076555608127
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -71,7 +71,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 382abd3dd41014c90be9f731fb3b3b8e, type: 3}
         line: Yes! Just sort by battles won. We want the absolute elite only!
     - rid: 668674076555608128
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -93,7 +93,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
         line: Okay, here we have a profile picture of a woman wearing leather and
           wielding an enormous axe.
     - rid: 668674076555608130
@@ -130,7 +130,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 54bbffb0272284c8d969c5b3f164dea9, type: 3}
         line: Obviously a viking! That red beard is a dead giveaway.
     - rid: 668674076555608133
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -152,8 +152,8 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: . . .
+        sound: {fileID: 8300000, guid: 09bdc0685d1a44188acd92cea74ac783, type: 3}
+        line: 'Hired! '
     - rid: 668674076555608135
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -163,7 +163,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: Okay, this next one's a giant creature with a large club.
     - rid: 668674076555608136
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -210,7 +210,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 5a70e50ac5de54e838c8175a554c6221, type: 3}
         line: Cyclops! Obviously. Only has one eye. This guy's going to Greece at
           once.
     - rid: 668674076555608141
@@ -244,7 +244,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 442e4082f79494297ab67a1f14f39f22, type: 3}
         line: Back on task, Interneus!
     - rid: 668674076555608144
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -255,7 +255,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: Right.
     - rid: 668674076555608145
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -266,9 +266,8 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Done. This next lady has a lion's body! And there's a riddle on her
-          profile!
+        sound: {fileID: 8300000, guid: 09bdc0685d1a44188acd92cea74ac783, type: 3}
+        line: Done.
     - rid: 668674076555608146
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -278,8 +277,9 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: What the f-
+        sound: {fileID: 8300000, guid: f0ffb016aa2e64b079de3229589218d5, type: 3}
+        line: This next lady has a lion's body! And there's a riddle on her profile!
+          What the f-
     - rid: 668674076555608147
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -289,7 +289,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 81198992f009c604f8841970e7d5ab45, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: c0e7fa7220bdb4c78ab548a15ae8543d, type: 3}
         line: Riddle, Interneus!
     - rid: 668674076555608148
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -300,7 +300,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 159f5e67f13ca4da3b3511f67f4a9206, type: 3}
         line: Y- yes.
     - rid: 668674076555608149
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -333,7 +333,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 81198992f009c604f8841970e7d5ab45, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: c0e7fa7220bdb4c78ab548a15ae8543d, type: 3}
         line: Ugh!
     - rid: 668674076555608153
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
@@ -358,7 +358,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 54bbffb0272284c8d969c5b3f164dea9, type: 3}
         line: It's a sphinx! I know her! She was at our last office party.
     - rid: 668674076555608155
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -402,7 +402,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: Yes ma'am!
     - rid: 668674076555608159
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -413,7 +413,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 09bdc0685d1a44188acd92cea74ac783, type: 3}
         line: . . .
     - rid: 668674076555608160
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -424,7 +424,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 0b28ca2b7a3234e0a9c6ccb4885d32f6, type: 3}
         line: And look at the time Interneus, we're almost off the clock!
     - rid: 668674076555608161
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}

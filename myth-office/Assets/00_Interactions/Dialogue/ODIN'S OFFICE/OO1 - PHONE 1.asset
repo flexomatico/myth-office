@@ -35,6 +35,7 @@ MonoBehaviour:
   - rid: 668674049974992937
   - rid: 668674049974992938
   - rid: 668674049974992939
+  - rid: 8161442338378350592
   references:
     version: 2
     RefIds:
@@ -105,7 +106,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f30b5185ce4964acdb18673d8fae9d44, type: 3}
         line: "Oh, why didn\u2019t you just say so bruh."
     - rid: 668674049974992927
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -138,7 +139,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: caf29a6d3bdd64239adb788ad762a67e, type: 3}
         line: "I\u2019m the new intern."
     - rid: 668674049974992930
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -149,7 +150,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 75c302c713cbb41fcb39a7e6f7498b50, type: 3}
         line: "Ah, hell yah bro. Ok, but where\u2019s Allfather tho\u2019?"
     - rid: 668674049974992931
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -160,7 +161,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: "He had an emergency to attend to. I\u2019m supposed to tell you to
           come in at once."
     - rid: 668674049974992932
@@ -172,7 +173,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: afa817e65f82244fb843d64e54d2bad6, type: 3}
         line: "Okay br\xF6h, this is how it\u2019s gonna go down. Tell my old man
           I won\u2019t be coming in today."
     - rid: 668674049974992933
@@ -217,7 +218,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 4defcc8a92d6d4d4caa9159864f97d02, type: 3}
         line: "\u2026or something like that."
     - rid: 668674049974992937
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -239,7 +240,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: But Odin said that-
     - rid: 668674049974992939
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -250,7 +251,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
+        sound: {fileID: 8300000, guid: 75c302c713cbb41fcb39a7e6f7498b50, type: 3}
         line: Aight, thanks!
     - rid: 668674081472118786
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -285,3 +286,14 @@ MonoBehaviour:
         rightImage: {fileID: 21300000, guid: f690d5921de70456fac9d0cd8cede3e5, type: 3}
         sound: {fileID: 8300000, guid: 7e29be3764a374de483c1b7b950efd1f, type: 3}
         line: '. . . '
+    - rid: 8161442338378350592
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Phone
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: f690d5921de70456fac9d0cd8cede3e5, type: 3}
+        sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
+        line: ...

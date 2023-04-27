@@ -86,7 +86,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 65951d3e9d9b14e06960980c28214dfd, type: 3}
+        sound: {fileID: 0}
         line: Also, I could really go for a brew.
     - rid: 1780414468566286390
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -186,7 +186,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 1db3b9c2b09df4513b6b8ae89be64025, type: 3}
         line: Will these assaults on the company coffers never cease?
     - rid: 1780414468566286399
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -287,7 +287,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: . . .
     - rid: 1780414468566286408
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -298,7 +298,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: fd84c0437e1fc4e829bff731ad435d26, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 4855c062a1de248b3a81a1908695ceed, type: 3}
         line: "Go to the phone there and give them a call. They\u2019ll get us sorted."
     - rid: 1780414468566286409
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
