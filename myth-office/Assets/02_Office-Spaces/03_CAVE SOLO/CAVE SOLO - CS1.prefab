@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5173522729090318028}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &6503440442044878316
 AudioSource:
@@ -241,7 +241,7 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5304498708885296201}
         m_TargetAssemblyTypeName: JourneyHelper, Assembly-CSharp
         m_MethodName: GoToNextOffice
         m_Mode: 1
@@ -270,7 +270,7 @@ PrefabInstance:
     - target: {fileID: 3255906364038471235, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3555683034050416498, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
