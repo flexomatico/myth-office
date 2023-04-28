@@ -536,7 +536,6 @@ GameObject:
   - component: {fileID: 5105155041149862930}
   - component: {fileID: 3000315619100538963}
   - component: {fileID: 5577239624677568649}
-  - component: {fileID: 1416977631705359904}
   m_Layer: 0
   m_Name: Ra back
   m_TagString: Untagged
@@ -623,19 +622,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1416977631705359904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4174479461018215420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46523c1305d11e84eac3c6ee73593ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pixelsPerUnit: 200
 --- !u!1 &5069502811536827904
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +772,6 @@ GameObject:
   - component: {fileID: 9064520545595063985}
   - component: {fileID: 5255726211445503420}
   - component: {fileID: 948902199601812327}
-  - component: {fileID: 3304289518234482461}
   m_Layer: 0
   m_Name: Ra hand
   m_TagString: Untagged
@@ -873,19 +858,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &3304289518234482461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5524453832496129380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46523c1305d11e84eac3c6ee73593ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pixelsPerUnit: 200
 --- !u!1 &5634077732329349036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,7 +1274,6 @@ GameObject:
   - component: {fileID: 6471400618898356336}
   - component: {fileID: 8928935066064519143}
   - component: {fileID: 3668171509879731929}
-  - component: {fileID: 6186984848182586708}
   m_Layer: 0
   m_Name: Ra front
   m_TagString: Untagged
@@ -1389,19 +1360,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &6186984848182586708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7442527659747762282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46523c1305d11e84eac3c6ee73593ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pixelsPerUnit: 200
 --- !u!1 &7508265566742232870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3665,7 +3623,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.98152053, b: 0.8254717, a: 1}
-  m_Intensity: 0.95
+  m_Intensity: 1.33
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
