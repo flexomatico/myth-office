@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueParts:
   - rid: 1780414468566286348
+  - rid: 1780414536733425687
   - rid: 1780414468566286349
-  - rid: 1780414468566286350
+  - rid: 1780414536733425688
   - rid: 1780414468566286351
   - rid: 1780414468566286352
   - rid: 1780414468566286353
@@ -35,7 +36,7 @@ MonoBehaviour:
       data:
         responseType: 0
         speakerName: "Inth\xEBrn"
-        speakerLocation: 0
+        speakerLocation: 1
         leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 993227e1513cc4a76bdc5540605a8c09, type: 3}
@@ -51,19 +52,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 6a9d9aca2ae824736bc5a478d0daccb4, type: 3}
-        line: Ah, finally! Took your sweet time.
-    - rid: 1780414468566286350
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: "Ra still stingy with the money? Thought so. Doesn\u2019t he realize
-          this place runs on bean juice!?"
+        line: Ha! That sounds like him.
     - rid: 1780414468566286351
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -74,7 +63,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "All right, Inth\xEBrn, pop them in the machine."
+        line: "But all right, Inth\xEBrn, pop them in the machine."
     - rid: 1780414468566286352
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -186,3 +175,25 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: ac433751994034643a39f87da353d6a7, type: 3}
         line: Go on! Go grind them beans.
+    - rid: 1780414536733425687
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: "Inth\xEBrn"
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: But I think Ra printed raisins and baked beans by mistake...
+    - rid: 1780414536733425688
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: 
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: He's such a doofus.
