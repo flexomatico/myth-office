@@ -8,6 +8,7 @@ public class CaveLeaveHelper : MonoBehaviour
 {
     public bool leaveOnPlayerEnterCAVE = false;
     public float waitForSeconds = 2.0f;
+    public AudioSource wooshAudioSource;
     private Coroutine delayMoveAwayCoroutine;
     private void OnTriggerExit(Collider other)
     {
@@ -18,6 +19,7 @@ public class CaveLeaveHelper : MonoBehaviour
     {
         yield return new WaitForSeconds(2.0f);
         GameObject.Find("SceneManager").GetComponent<SceneManager>().PlayerLeftCave();
+        wooshAudioSource.Play();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,5 +35,6 @@ public class CaveLeaveHelper : MonoBehaviour
     {
         yield return new WaitForSeconds(waitForSeconds);
         GameObject.Find("SceneManager").GetComponent<SceneManager>().GoToNowhere();
+        wooshAudioSource.Play();
     }
 }

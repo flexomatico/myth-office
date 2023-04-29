@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26847973, g: 0.26604116, b: 0.28599173, a: 1}
+  m_IndirectSpecularColor: {r: 0.26847973, g: 0.2660411, b: 0.28599173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1080,8 +1080,8 @@ MonoBehaviour:
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 7614077457866698455, guid: 5d9085403f91349cd865b7e1e426fd1b,
       type: 3}
-    travelDistance: 20
-    travelTime: 5
+    travelDistance: 30
+    travelTime: 6.9
     animateCaveArrival: 0
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 9021977118391850892, guid: 3fa46576cb8264c72810129142a0b39a,
@@ -1292,7 +1292,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.56
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
@@ -1302,7 +1302,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 50.89
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
