@@ -203,7 +203,7 @@ public class DialogueManager : AbstractInteractable
             leftImage.SetNativeSize();
 
             // Flip images on the left side of the screen so that they look towards the center.
-            leftImage.gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            // leftImage.gameObject.transform.localScale = new Vector3(-1, 1, 1);
 
 
             // Allow each image to have a custom pivot by reading pivots from the sprite data.
