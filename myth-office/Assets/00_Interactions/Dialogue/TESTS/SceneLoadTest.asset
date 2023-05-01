@@ -21,12 +21,13 @@ MonoBehaviour:
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
-        speakerName: Inthern
+        speakerName: Intern
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
-        - Press Button
-        - Close eyes and imagine going to hell
+        - Press the "Up" button.
+        - Press the "Down" button.
+        - Press the "Help" button.

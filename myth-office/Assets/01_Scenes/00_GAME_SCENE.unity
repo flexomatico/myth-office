@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26847973, g: 0.2660411, b: 0.28599173, a: 1}
+  m_IndirectSpecularColor: {r: 0.26847973, g: 0.26604113, b: 0.28599173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -341,11 +341,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 4353357421188083188, guid: 87b83070ba0646442829cc2a94705c42,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b83070ba0646442829cc2a94705c42, type: 3}
@@ -1083,12 +1078,6 @@ MonoBehaviour:
     travelTime: 2
     animateCaveArrival: 1
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
-    nextOffice: {fileID: 2832796536607985631, guid: d7f672b44063d40fe88e502c9642c1bc,
-      type: 3}
-    travelDistance: 20
-    travelTime: 5
-    animateCaveArrival: 0
-  - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 7614077457866698455, guid: 5d9085403f91349cd865b7e1e426fd1b,
       type: 3}
     travelDistance: 20
@@ -1100,12 +1089,24 @@ MonoBehaviour:
     travelDistance: 20
     travelTime: 5
     animateCaveArrival: 0
-  - cave: {fileID: 202292186370722003, guid: bc3c941b0fcd6834291940f858ebca44, type: 3}
+  - cave: {fileID: 5413017430694092950, guid: 76ba7a0c7780e40faae3e27ffc0b087d, type: 3}
     nextOffice: {fileID: 6214194385032012531, guid: 16c75ad38a25a40a6884550128724cee,
       type: 3}
     travelDistance: 15
     travelTime: 2
     animateCaveArrival: 1
+  - cave: {fileID: 202292186370722003, guid: bc3c941b0fcd6834291940f858ebca44, type: 3}
+    nextOffice: {fileID: 7037154571526607111, guid: da172f5cf2afafd4b8e57fa36b3696c7,
+      type: 3}
+    travelDistance: 20
+    travelTime: 5
+    animateCaveArrival: 0
+  - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
+    nextOffice: {fileID: 2832796536607985631, guid: d7f672b44063d40fe88e502c9642c1bc,
+      type: 3}
+    travelDistance: 20
+    travelTime: 5
+    animateCaveArrival: 0
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 6214194385032012531, guid: 05426fb2f2dd145c281d3c45c21fafc9,
       type: 3}
@@ -1120,12 +1121,6 @@ MonoBehaviour:
     animateCaveArrival: 0
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 6214194385032012531, guid: 071f6aa31f27d654699bc4de5294ce5b,
-      type: 3}
-    travelDistance: 20
-    travelTime: 5
-    animateCaveArrival: 0
-  - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
-    nextOffice: {fileID: 7037154571526607111, guid: da172f5cf2afafd4b8e57fa36b3696c7,
       type: 3}
     travelDistance: 20
     travelTime: 5
@@ -1257,7 +1252,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727521, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: _playerSpeed
-      value: 5
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727530, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
@@ -1297,7 +1292,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.3
+      value: 3.56
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
@@ -1307,7 +1302,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 47.9
+      value: 50.89
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
