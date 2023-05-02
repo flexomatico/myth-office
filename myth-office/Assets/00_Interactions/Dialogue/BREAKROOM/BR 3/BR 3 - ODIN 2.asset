@@ -21,7 +21,7 @@ MonoBehaviour:
   - rid: 1780414468566286380
   - rid: 1780414468566286381
   - rid: 1780414468566286382
-  - rid: 1780414468566286383
+  - rid: 5229767739195260935
   references:
     version: 2
     RefIds:
@@ -113,17 +113,17 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: c01f31d2852594833966ef90d35d5ecf, type: 3}
-        line: There is NOTHING to be done! Hurry, you must get out of here before
-          any of the other Gods notice your terrible accident.
-    - rid: 1780414468566286383
+        sound: {fileID: 8300000, guid: a34b19a3691a649bbb458f0f602f77e0, type: 3}
+        line: 'No! '
+    - rid: 5229767739195260935
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Odin
-        speakerLocation: 1
+        speakerName: 
+        speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: They will be SO mad!
+        line: Hurry, you must get out of here before any of the other Gods notice
+          your terrible accident.

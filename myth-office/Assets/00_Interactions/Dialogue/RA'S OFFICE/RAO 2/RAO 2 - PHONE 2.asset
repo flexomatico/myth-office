@@ -16,8 +16,6 @@ MonoBehaviour:
   - rid: 1780414468566286486
   - rid: 1780414468566286487
   - rid: 1780414468566286489
-  - rid: 1780414468566286490
-  - rid: 1780414468566286491
   - rid: 1780414468566286492
   - rid: 1780414468566286493
   - rid: 1780414468566286494
@@ -53,6 +51,7 @@ MonoBehaviour:
   - rid: 1780414468566286525
   - rid: 1780414468566286526
   - rid: 1780414468566286527
+  - rid: 5229767739195260936
   references:
     version: 2
     RefIds:
@@ -91,29 +90,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f30b5185ce4964acdb18673d8fae9d44, type: 3}
-        line: "Operator. Oh, it\u2019s you."
-    - rid: 1780414468566286490
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Hermes
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Working hard or hardly working, eh?
-    - rid: 1780414468566286491
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Hermes
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Hm.
+        line: "Operator speaking. Oh, it\u2019s you."
     - rid: 1780414468566286492
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -503,5 +480,16 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
+        sound: {fileID: 0}
         line: But-
+    - rid: 5229767739195260936
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra Worshipper
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
+        line: ...

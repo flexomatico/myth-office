@@ -21,7 +21,6 @@ MonoBehaviour:
   - rid: 1780414468566286391
   - rid: 1780414468566286392
   - rid: 1780414468566286393
-  - rid: 1780414468566286394
   - rid: 1780414468566286395
   - rid: 1780414468566286396
   - rid: 1780414468566286397
@@ -94,23 +93,22 @@ MonoBehaviour:
         responseType: 0
         speakerName: Interniris
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 78e9d3afd9a104b9c9722198bacebcec, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
-        line: "I\u2019m afraid the coffee grinder broke, and the machine only takes
-          grounds."
+        line: "I\u2019m afraid the coffee grinder broke. "
     - rid: 1780414468566286391
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Ra
-        speakerLocation: 1
+        speakerName: Interniris
+        speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: . . .
+        line: Someone printed baked beans, and another someone put them in the grinder...
     - rid: 1780414468566286392
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -119,9 +117,9 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: '. . .  . . . '
+        rightImage: {fileID: 21300000, guid: 76d5e80f063fa4bc5a4b30ce44c3bf92, type: 3}
+        sound: {fileID: 8300000, guid: 5fad71002b4594a3ca4b225654ddc2f3, type: 3}
+        line: WAS IT YOU!?
     - rid: 1780414468566286393
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -132,18 +130,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
-        line: '. . . '
-    - rid: 1780414468566286394
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Interniris
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
-        line: So, I was wonder-
+        line: 'Of course not! '
     - rid: 1780414468566286395
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -152,7 +139,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 76d5e80f063fa4bc5a4b30ce44c3bf92, type: 3}
+        rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
         sound: {fileID: 8300000, guid: 533fbab197e7f4050bc49b46f9ad995a, type: 3}
         line: DO YOU HAVE ANY IDEA WHAT THIS IS GONNA COST US?!!
     - rid: 1780414468566286396
@@ -163,7 +150,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 76d5e80f063fa4bc5a4b30ce44c3bf92, type: 3}
         sound: {fileID: 8300000, guid: fa5af267667264258a38319d4fbe31db, type: 3}
         line: FIRST THE COFFEE BEAN! NOW ESSENTIAL COMPANY EQUIPMENT?!
     - rid: 1780414468566286397
@@ -198,8 +185,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: Interniris, there simply is not enough money in the budget for a new
-          coffee grinder.
+        line: Interniris, there's not enough money in the budget for a new coffee
+          grinder.
     - rid: 1780414468566286400
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -265,8 +252,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: "I can\u2019t be spending any more on employee benefits. So we\u2019re
-          going to have to go straight to the source."
+        line: "We\u2019re going to have to go straight to the source."
     - rid: 1780414468566286406
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -308,7 +294,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
+        rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: The least they could do...
     - rid: 1780414468566286410
@@ -317,7 +303,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Interniris
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f374fd8408eb1484d9dc138e5ff41145, type: 3}
@@ -330,7 +316,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
         sound: {fileID: 8300000, guid: 1db3b9c2b09df4513b6b8ae89be64025, type: 3}
         line: Yes. Go forth, we have no time to lose.
     - rid: 1780414468566286412

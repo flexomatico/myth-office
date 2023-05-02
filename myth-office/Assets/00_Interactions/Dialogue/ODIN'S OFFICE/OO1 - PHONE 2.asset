@@ -16,13 +16,9 @@ MonoBehaviour:
   - rid: 8161442338378350593
   - rid: 668674049974992940
   - rid: 668674049974992941
-  - rid: 668674049974992942
   - rid: 668674049974992943
   - rid: 668674049974992944
-  - rid: 668674049974992945
-  - rid: 668674049974992946
   - rid: 668674049974992947
-  - rid: 668674049974992948
   - rid: 668674049974992949
   - rid: 668674049974992950
   - rid: 668674049974992951
@@ -60,17 +56,6 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: e4cc4b00b0bfa41c4b07f4f092dfa526, type: 3}
         line: He's not there?
-    - rid: 668674049974992942
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: ????
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: "Well, that\u2019s no surprise."
     - rid: 668674049974992943
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -93,28 +78,6 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f0ffb016aa2e64b079de3229589218d5, type: 3}
         line: "I\u2019m sorry, who am I speaking to?"
-    - rid: 668674049974992945
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: ????
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: '. . . '
-    - rid: 668674049974992946
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Intern
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: . . .
     - rid: 668674049974992947
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -126,17 +89,6 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 674c876d2a6124630908311b2a920574, type: 3}
         line: Frigg.
-    - rid: 668674049974992948
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: "Inth\xEBrn"
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: . . .
     - rid: 668674049974992949
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:

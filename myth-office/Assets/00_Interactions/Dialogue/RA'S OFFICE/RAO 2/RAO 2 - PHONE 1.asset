@@ -44,7 +44,6 @@ MonoBehaviour:
   - rid: 1780414468566286446
   - rid: 1780414468566286447
   - rid: 1780414468566286448
-  - rid: 1780414468566286449
   - rid: 1780414468566286450
   - rid: 1780414468566286451
   - rid: 1780414468566286452
@@ -67,7 +66,7 @@ MonoBehaviour:
   - rid: 1780414468566286469
   - rid: 1780414468566286470
   - rid: 1780414468566286471
-  - rid: 1780414468566286472
+  - rid: 5229767739195260940
   references:
     version: 2
     RefIds:
@@ -243,8 +242,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 4defcc8a92d6d4d4caa9159864f97d02, type: 3}
-        line: "Better get that coffee brewing or I hear a certain human will never
-          make lower high-mid low management one day\u2026"
+        line: Better get that coffee brewing or you'll stay an Intern for the rest
+          of eternity!
     - rid: 1780414468566286433
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -265,7 +264,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: f0ffb016aa2e64b079de3229589218d5, type: 3}
+        sound: {fileID: 0}
         line: "\u2026What?"
     - rid: 1780414468566286435
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -277,7 +276,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f30b5185ce4964acdb18673d8fae9d44, type: 3}
-        line: "Don\u2019t worry. It\u2019s your first day, I\u2019m sure you\u2019ll
+        line: "Don\u2019t worry. It\u2019s your first eon, I\u2019m sure you\u2019ll
           be fine."
     - rid: 1780414468566286436
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -299,7 +298,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 3908da86644db4b8395e313380f9b238, type: 3}
         line: '. . . '
     - rid: 1780414468566286438
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -388,8 +387,8 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: . . .
+        sound: {fileID: 8300000, guid: b95accf55776d446c913441832820921, type: 3}
+        line: ...What?
     - rid: 1780414468566286446
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -422,18 +421,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 5a5b395952e214dd79e018259dfe9696, type: 3}
-        line: Oh.
-    - rid: 1780414468566286449
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Ra Worshipper
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Uhm. Okay?
+        line: Oh. Uhm. Okay?
     - rid: 1780414468566286450
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -586,7 +574,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 068b1806fd47f46cfa47ed2e5575cfad, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: So, a mill is like a spinning wheel that...
     - rid: 1780414468566286464
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
@@ -655,7 +643,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
+        rightImage: {fileID: 21300000, guid: 76d5e80f063fa4bc5a4b30ce44c3bf92, type: 3}
         sound: {fileID: 8300000, guid: bb088a4d6c06d43818b394336bd26618, type: 3}
         line: Cut it! Quick!
     - rid: 1780414468566286470
@@ -680,14 +668,14 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: "We\u2019ll be in touch. Bye!"
-    - rid: 1780414468566286472
+    - rid: 5229767739195260940
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Intern
-        speakerLocation: 0
+        speakerName: Ra's Phone
+        speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
-        line: Phew...
+        line: ...
