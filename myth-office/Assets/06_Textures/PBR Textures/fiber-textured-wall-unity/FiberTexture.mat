@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FiberTexture
-  m_Shader: {fileID: -6465566751694194690, guid: 715ffed88d73b9144814d44cea36fbe8,
+  m_Shader: {fileID: -6465566751694194690, guid: 2b47d2221d058be4bbe522bf61904a04,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -71,7 +71,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 27d517d4e17405c4593d96ec0450fabf, type: 3}
+        m_Texture: {fileID: 2800000, guid: efb26e592a4e8bf4e951de4e29fb11c8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -132,5 +132,5 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _TextureScale: {r: 4, g: 4, b: 0, a: 0}
+    - _TextureScale: {r: 3, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
