@@ -650,7 +650,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 830ae39f3968642df884a40ed99930ff, type: 2}
+  - {fileID: 2100000, guid: 93ca6e0f5776c40ce9920149e91609a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1716,7 +1716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9103790082232734915
 Transform:
   m_ObjectHideFlags: 0
@@ -4626,7 +4626,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.9855174, b: 0.9198113, a: 1}
-  m_Intensity: 3115
+  m_Intensity: 1980.14
   m_Range: 186.96979
   m_SpotAngle: 57.646862
   m_InnerSpotAngle: 5.594631
@@ -8718,6 +8718,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7387303111998387580}
     m_Modifications:
+    - target: {fileID: 704477606892564547, guid: c059e46cf0a6c9140a4267dc816faeff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1170070836598033106, guid: c059e46cf0a6c9140a4267dc816faeff,
         type: 3}
       propertyPath: m_RootOrder
