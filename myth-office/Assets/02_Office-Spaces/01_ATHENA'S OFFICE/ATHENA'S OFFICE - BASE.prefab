@@ -9298,6 +9298,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomWalls_SingleWall (USE THIS) (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1979118278320590952, guid: c059e46cf0a6c9140a4267dc816faeff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c059e46cf0a6c9140a4267dc816faeff, type: 3}
 --- !u!4 &72452386847021053 stripped
@@ -11961,6 +11966,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomWalls_SingleWall (USE THIS) (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1979118278320590952, guid: c059e46cf0a6c9140a4267dc816faeff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2581774870209037211, guid: c059e46cf0a6c9140a4267dc816faeff,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -12055,6 +12065,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CustomWalls_SingleWall (USE THIS) (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979118278320590952, guid: c059e46cf0a6c9140a4267dc816faeff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2581774870209037211, guid: c059e46cf0a6c9140a4267dc816faeff,
         type: 3}
@@ -12974,6 +12989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CustomWalls_SingleWall (USE THIS) (09)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979118278320590952, guid: c059e46cf0a6c9140a4267dc816faeff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2581774870209037211, guid: c059e46cf0a6c9140a4267dc816faeff,
         type: 3}
