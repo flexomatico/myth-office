@@ -25,7 +25,6 @@ MonoBehaviour:
   - rid: 668673759249694779
   - rid: 668673759249694780
   - rid: 668673759249694781
-  - rid: 668673759249694782
   - rid: 668673759249694783
   - rid: 668673759249694784
   - rid: 668673759249694785
@@ -59,7 +58,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
-        line: Forget whatever that coo-coo bird is making you do right now.
+        line: Forget whatever that big bird is making you do right now.
     - rid: 668673759249694774
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -70,7 +69,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
         sound: {fileID: 8300000, guid: 382abd3dd41014c90be9f731fb3b3b8e, type: 3}
-        line: Always hogs all the manpower!
+        line: He always hogs all the manpower anyway!
     - rid: 668673759249694775
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -81,7 +80,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
-        line: I need you to come with me right this instant, Interneus!
+        line: I need you to come with me right this instant!
     - rid: 668673759249694776
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -92,7 +91,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
         sound: {fileID: 0}
-        line: You know who I am of course.
+        line: You know who I am of course, Interneus
     - rid: 668673759249694779
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -125,18 +124,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 382abd3dd41014c90be9f731fb3b3b8e, type: 3}
-        line: 'Yes, yes. Goddess of War, Holder of Wisdom. You know the deal. '
-    - rid: 668673759249694782
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Athena
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 81198992f009c604f8841970e7d5ab45, type: 3}
-        sound: {fileID: 0}
-        line: 'Ah! You got me rambling, Interneus. '
+        line: Yes, yes. Goddess of War, Holder of Wisdom. You know the deal.
     - rid: 668673759249694783
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -224,7 +212,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: But Ra told me-
+        line: Wait, but Ra-
     - rid: 668674094441168899
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
