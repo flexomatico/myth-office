@@ -15,7 +15,6 @@ MonoBehaviour:
   dialogueParts:
   - rid: 668674076555608126
   - rid: 668674076555608127
-  - rid: 668674076555608128
   - rid: 668674076555608129
   - rid: 668674076555608130
   - rid: 668674076555608131
@@ -33,11 +32,13 @@ MonoBehaviour:
   - rid: 668674076555608144
   - rid: 668674076555608145
   - rid: 668674076555608146
+  - rid: 6537768836889051144
   - rid: 668674076555608147
   - rid: 668674076555608148
   - rid: 668674076555608149
   - rid: 668674076555608150
   - rid: 668674076555608151
+  - rid: 6537768836889051145
   - rid: 668674076555608153
   - rid: 668674076555608154
   - rid: 668674076555608155
@@ -48,6 +49,8 @@ MonoBehaviour:
   - rid: 668674076555608160
   - rid: 668674076555608161
   - rid: 668674076555608162
+  - rid: 6537768836889051146
+  - rid: 6537768836889051147
   references:
     version: 2
     RefIds:
@@ -57,11 +60,11 @@ MonoBehaviour:
         responseType: 0
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
+        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
-        line: On the screen is a webpage called BattledIn. Is that right?
+        line: On the screen is a website called BattledIn. Is that right?
     - rid: 668674076555608127
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -70,27 +73,16 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 8300000, guid: 382abd3dd41014c90be9f731fb3b3b8e, type: 3}
-        line: Yes! Just sort by battles won. We want the absolute elite only!
-    - rid: 668674076555608128
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Athena
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Now start from the top.
+        line: Yes! Just sort by battles won and start from the top.
     - rid: 668674076555608129
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 35bbd08578c834121aa5fc919e0757e7, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
@@ -113,7 +105,7 @@ MonoBehaviour:
         responseType: 1
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -193,14 +185,14 @@ MonoBehaviour:
         responseType: 1
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         choices:
-        - I think it's a troll.
-        - I think it's a cyclops.
-        - I think it's a minotaur.
+        - I think it's... a troll?
+        - I think it's... a cyclops?
+        - I think it's... a minotaur?
     - rid: 668674076555608140
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -230,7 +222,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -243,7 +235,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 81198992f009c604f8841970e7d5ab45, type: 3}
         sound: {fileID: 8300000, guid: 442e4082f79494297ab67a1f14f39f22, type: 3}
         line: Back on task, Interneus!
     - rid: 668674076555608144
@@ -252,9 +244,9 @@ MonoBehaviour:
         responseType: 0
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 35bbd08578c834121aa5fc919e0757e7, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: Right.
     - rid: 668674076555608145
@@ -274,12 +266,11 @@ MonoBehaviour:
         responseType: 0
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f0ffb016aa2e64b079de3229589218d5, type: 3}
         line: This next lady has a lion's body! And there's a riddle on her profile!
-          What the f-
     - rid: 668674076555608147
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -297,7 +288,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 35bbd08578c834121aa5fc919e0757e7, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 8300000, guid: 159f5e67f13ca4da3b3511f67f4a9206, type: 3}
@@ -334,16 +325,16 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 81198992f009c604f8841970e7d5ab45, type: 3}
         sound: {fileID: 8300000, guid: c0e7fa7220bdb4c78ab548a15ae8543d, type: 3}
-        line: Ugh!
+        line: Ugh... Lame!
     - rid: 668674076555608153
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 1
-        speakerName: 
+        speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
         choices:
         - It might be a chimera.
@@ -403,7 +394,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
-        line: Yes ma'am!
+        line: Yes, ma'am!
     - rid: 668674076555608159
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -423,9 +414,9 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
         sound: {fileID: 8300000, guid: 0b28ca2b7a3234e0a9c6ccb4885d32f6, type: 3}
-        line: And look at the time Interneus, we're almost off the clock!
+        line: Okay enough! That should get things sorted.
     - rid: 668674076555608161
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -434,18 +425,61 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
-        line: We still need to do a quick rundown of your first day with us. Head
-          to Ra's office!
+        line: Okay, now for a much more important task.
     - rid: 668674076555608162
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: . . .
+    - rid: 6537768836889051144
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interneus
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: What the f-
+    - rid: 6537768836889051145
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interneus
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: 78e9d3afd9a104b9c9722198bacebcec, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: So dumb...
+    - rid: 6537768836889051146
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Athena
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
+        sound: {fileID: 0}
+        line: Go get me a cappucino. I've been hankering for one all day.
+    - rid: 6537768836889051147
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interneus
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: All right...

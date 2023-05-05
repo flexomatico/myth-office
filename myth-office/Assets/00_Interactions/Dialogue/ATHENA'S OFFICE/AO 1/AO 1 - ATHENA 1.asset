@@ -17,15 +17,19 @@ MonoBehaviour:
   - rid: 668674076555608112
   - rid: 668674076555608113
   - rid: 668674076555608114
-  - rid: 668674076555608115
+  - rid: 6537768836889051139
   - rid: 668674076555608116
   - rid: 668674076555608117
   - rid: 668674076555608118
+  - rid: 6537768836889051140
+  - rid: 6537768836889051141
+  - rid: 6537768836889051142
   - rid: 668674076555608119
   - rid: 668674076555608120
   - rid: 668674076555608121
   - rid: 668674076555608123
   - rid: 668674076555608122
+  - rid: 6537768836889051143
   references:
     version: 2
     RefIds:
@@ -33,13 +37,13 @@ MonoBehaviour:
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Interneus
-        speakerLocation: 0
-        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
+        speakerName: Athena
+        speakerLocation: 1
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
-        line: Here's your coffee.
+        line: Great. Here we are.
     - rid: 668674076555608112
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -48,32 +52,22 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: c0e7fa7220bdb4c78ab548a15ae8543d, type: 3}
-        line: Gimme!
-    - rid: 668674076555608113
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Athena
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 81198992f009c604f8841970e7d5ab45, type: 3}
-        sound: {fileID: 8300000, guid: 3790160d7f8be4fa1b8b12c784f82e67, type: 3}
-        line: "It\u2019s barely hot\u2026 And needs more foam! A lot more!"
-    - rid: 668674076555608114
+        sound: {fileID: 8300000, guid: c0e7fa7220bdb4c78ab548a15ae8543d, type: 3}
+        line: You must have heard? Humans are going crazy, declaring war on each
+          other.
+    - rid: 668674076555608113
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
-        line: "I\u2019m sorry, should I try to get you another one?"
-    - rid: 668674076555608115
+        sound: {fileID: 8300000, guid: 3790160d7f8be4fa1b8b12c784f82e67, type: 3}
+        line: I had no idea...
+    - rid: 668674076555608114
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
@@ -81,10 +75,9 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 0b28ca2b7a3234e0a9c6ccb4885d32f6, type: 3}
-        line: No time for that now, Interneus. The people on earth are rioting against
-          us!
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
+        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
+        line: 'Question is: Why?'
     - rid: 668674076555608116
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -95,8 +88,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
         sound: {fileID: 0}
-        line: "Apparently you humans really liked coffee. And somehow the coffee
-          disappearing was \r\nseen as a cruel act by us Gods.\r\n"
+        line: Ha! That sounds like humans all right!
     - rid: 668674076555608117
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -105,21 +97,20 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 8300000, guid: 442e4082f79494297ab67a1f14f39f22, type: 3}
-        line: I mean I like my morning coffee too, but people need to chill!
+        line: But something seems off... I just can't put my finger on it...
     - rid: 668674076555608118
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
-        speakerName: Athena
-        speakerLocation: 1
-        leftImage: {fileID: 0}
+        speakerName: Interneus
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
-        line: Anyways, a rebellion on earth sounds like the perfect gig for a war
-          goddess.
+        line: Uhm... It's probably something Odin did.
     - rid: 668674076555608119
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -139,10 +130,10 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 81198992f009c604f8841970e7d5ab45, type: 3}
         sound: {fileID: 0}
         line: "Although, with Ra\u2019s recent downsizing of my team we\u2019ll have
-          to hire some fresh goons we can send there."
+          to hire some fresh staff we can send to Earth."
     - rid: 668674076555608121
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -151,10 +142,9 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
-        line: "Interneus, you\u2019ll be reviewing some warrior profiles and giving
-          me the complete rundown."
+        line: "Interneus, you\u2019ll be reviewing some potential personnel for me."
     - rid: 668674076555608122
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -163,17 +153,77 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
         sound: {fileID: 8300000, guid: 0b28ca2b7a3234e0a9c6ccb4885d32f6, type: 3}
-        line: "Just use my computer. It\u2019s already on our go-to hiring platform."
+        line: I'll be giving the final go, of course.
     - rid: 668674076555608123
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: Interneus
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: . . .
+    - rid: 6537768836889051139
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        speakerName: Interneus
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: 35bbd08578c834121aa5fc919e0757e7, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        choices:
+        - Maybe it's because of global warming?
+        - Maybe it's because of the pandemic?
+        - Maybe it's because of the rising cost of living?
+    - rid: 6537768836889051140
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Athena
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
+        sound: {fileID: 0}
+        line: That does sound like him, stirring up trouble. You're probably right,
+          Interneus...
+    - rid: 6537768836889051141
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Interneus
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: So what did you want my help with?
+    - rid: 6537768836889051142
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Athena
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
+        sound: {fileID: 0}
+        line: Right! With all this war going on the humans need a proper war goddess.
+    - rid: 6537768836889051143
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Athena
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
+        sound: {fileID: 0}
+        line: "Just use my computer over there. It\u2019s already on our go-to hiring
+          platform."
