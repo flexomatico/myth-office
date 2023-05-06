@@ -27,7 +27,6 @@ MonoBehaviour:
   - rid: 668674049974992930
   - rid: 668674049974992931
   - rid: 668674049974992932
-  - rid: 668674049974992933
   - rid: 668674049974992934
   - rid: 668674049974992935
   - rid: 668674049974992936
@@ -105,7 +104,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: f30b5185ce4964acdb18673d8fae9d44, type: 3}
-        line: "Oh, why didn\u2019t you just say so bruh."
+        line: "Oh, why didn\u2019t you just say so, br\xE5h."
     - rid: 668674049974992927
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -175,17 +174,6 @@ MonoBehaviour:
         sound: {fileID: 8300000, guid: afa817e65f82244fb843d64e54d2bad6, type: 3}
         line: "Okay br\xF6h, this is how it\u2019s gonna go down. Tell my old man
           I won\u2019t be coming in today."
-    - rid: 668674049974992933
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Thor
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: "Tell him it\u2019s because\u2026 uhhh\u2026"
     - rid: 668674049974992934
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -196,7 +184,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: That I have important business!
+        line: Tell him it's because... Uhh... That I have important business!
     - rid: 668674049974992935
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
