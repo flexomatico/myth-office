@@ -274,7 +274,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   dialogue: {fileID: 11400000, guid: 86e8fbd3486774857b823449866df6a1, type: 2}
-  colliderRadius: 4.12
+  colliderRadius: 2.79
 --- !u!1001 &3799407250922795279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -321,6 +321,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CAVE SOLO - CS1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019271123231605565, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019271123231605565, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019271123231605565, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: 7856925481066313981, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
