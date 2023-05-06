@@ -64,7 +64,7 @@ MonoBehaviour:
         speakerLocation: 0
         leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 068b1806fd47f46cfa47ed2e5575cfad, type: 3}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 0}
         choices:
         - Dial a random number.
@@ -89,7 +89,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: f30b5185ce4964acdb18673d8fae9d44, type: 3}
         line: "Operator. Oh, it\u2019s you."
     - rid: 1780414468566286490
@@ -133,7 +133,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 8300000, guid: 3908da86644db4b8395e313380f9b238, type: 3}
         line: . . .
     - rid: 1780414468566286494
@@ -144,7 +144,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 032487f13e0e35c4d84626ec1f74918d, type: 3}
         sound: {fileID: 8300000, guid: 49c7311bdd40e4fe8a400532d3d0a9c4, type: 3}
         line: "Ra! Great God of the Sun, you have returned to us! We waited so long\u2026"
     - rid: 1780414468566286495
@@ -155,7 +155,7 @@ MonoBehaviour:
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: "Uh yeah, hi. It\u2019s me again."
     - rid: 1780414468566286496
@@ -166,7 +166,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 0}
         line: Oh.
     - rid: 1780414468566286497
@@ -188,7 +188,7 @@ MonoBehaviour:
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 0}
         line: . . .
     - rid: 1780414468566286499
@@ -210,7 +210,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: b95accf55776d446c913441832820921, type: 3}
         line: Well, we followed your instructions.
     - rid: 1780414468566286501
@@ -221,7 +221,7 @@ MonoBehaviour:
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 0}
         line: Yeah?
     - rid: 1780414468566286502
@@ -232,7 +232,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: 74f4e13c6aea847dbbd527312ad6d76c, type: 3}
         line: "Yeah, works like a charm. We\u2019re most definitely a force to be
           reckoned with now."
@@ -244,7 +244,7 @@ MonoBehaviour:
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 8300000, guid: f374fd8408eb1484d9dc138e5ff41145, type: 3}
         line: What?
     - rid: 1780414468566286504
@@ -255,7 +255,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: 74f4e13c6aea847dbbd527312ad6d76c, type: 3}
         line: And the economy! Getting those slabs to the top of the pyramids; so
           much easier!
@@ -278,7 +278,7 @@ MonoBehaviour:
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: What are you talking about?
     - rid: 1780414468566286507
@@ -289,7 +289,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 032487f13e0e35c4d84626ec1f74918d, type: 3}
         sound: {fileID: 8300000, guid: 74f4e13c6aea847dbbd527312ad6d76c, type: 3}
         line: Well, so at first we got the wheel to rotate just like you said.
     - rid: 1780414468566286508
@@ -344,7 +344,7 @@ MonoBehaviour:
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 0}
         line: . . .
     - rid: 1780414468566286513
@@ -366,7 +366,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 032487f13e0e35c4d84626ec1f74918d, type: 3}
         sound: {fileID: 8300000, guid: 74f4e13c6aea847dbbd527312ad6d76c, type: 3}
         line: Actually, we call it the Helios-co-ptah.
     - rid: 1780414468566286515
@@ -377,7 +377,7 @@ MonoBehaviour:
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 0}
         line: . . .
     - rid: 1780414468566286517
@@ -402,7 +402,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: 74f4e13c6aea847dbbd527312ad6d76c, type: 3}
         line: Like I said. FULL economic and military superiority.
     - rid: 1780414468566286519
@@ -446,7 +446,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 068b1806fd47f46cfa47ed2e5575cfad, type: 3}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: 74f4e13c6aea847dbbd527312ad6d76c, type: 3}
         line: "Anyway, turns out if you spin the wings really fast it\u2019s really
           good at chopping."
@@ -480,7 +480,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 068b1806fd47f46cfa47ed2e5575cfad, type: 3}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: b95accf55776d446c913441832820921, type: 3}
         line: So, can I speak with Ra now?
     - rid: 1780414468566286526
@@ -491,7 +491,7 @@ MonoBehaviour:
         speakerLocation: 0
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: Uhm. Thank you for your service. Ra really appreciates it.
     - rid: 1780414468566286527
@@ -502,6 +502,6 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
         line: But-
