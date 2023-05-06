@@ -89,7 +89,7 @@ public class DialogueManager : AbstractInteractable
         interactionPrompt = Instantiate(interactionPrompt, transform);
         float scale = interactionPrompt.transform.localScale.x / transform.localScale.x;
         interactionPrompt.transform.localScale = new Vector3(scale, scale, scale);
-        interactionPrompt.transform.localPosition = interactionPromptOffset;
+        interactionPrompt.transform.position += interactionPromptOffset;
         SetInteractionPromptVisibility(false);
     }
 

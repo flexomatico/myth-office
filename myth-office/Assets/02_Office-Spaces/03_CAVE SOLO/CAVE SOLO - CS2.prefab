@@ -202,7 +202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7500453451025391777}
   m_LocalRotation: {x: 0.029844545, y: 0.44000643, z: -0.01463628, w: 0.8973792}
-  m_LocalPosition: {x: -2.13, y: 0.07, z: 1.09}
+  m_LocalPosition: {x: -2.63, y: 0.07, z: 1.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -269,6 +269,7 @@ MonoBehaviour:
         m_CallState: 2
   dialogue: {fileID: 11400000, guid: 637370b55bb073740b237d976d5112d1, type: 2}
   colliderRadius: 2.67
+  interactionPromptOffset: {x: 0.84, y: 3.19, z: -3.55}
 --- !u!1 &8908526622572426346
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +295,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8908526622572426346}
   m_LocalRotation: {x: 0.029844545, y: 0.44000643, z: -0.01463628, w: 0.8973792}
-  m_LocalPosition: {x: -1.95, y: 0.06, z: 1.06}
+  m_LocalPosition: {x: -2.63, y: 0.07, z: 1.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -324,7 +325,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   dialogue: {fileID: 11400000, guid: 35135bc6fdd4c3d49b855a0fc2e0c9aa, type: 2}
-  colliderRadius: 2.6
+  colliderRadius: 2.67
+  interactionPromptOffset: {x: 0.84, y: 3.19, z: -3.55}
 --- !u!1001 &4708302574226739118
 PrefabInstance:
   m_ObjectHideFlags: 0

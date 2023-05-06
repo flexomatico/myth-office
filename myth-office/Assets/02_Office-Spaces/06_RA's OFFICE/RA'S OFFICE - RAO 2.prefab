@@ -51,62 +51,12 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
-  dialogue: {fileID: 11400000, guid: b0df5630d9a764b079ada99c7e832d96, type: 2}
-  colliderRadius: 3
---- !u!1 &889669059579738721
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4365287020834847106}
-  - component: {fileID: 144316690674250128}
-  m_Layer: 0
-  m_Name: RAO 2 - PHONE 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4365287020834847106
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889669059579738721}
-  m_LocalRotation: {x: -0, y: -0, z: 1.7763568e-15, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2589436262555076741}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &144316690674250128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889669059579738721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NeedsPrerequisites:
-  - 'RAO 2: Can go back to phone after Ra 2'
-  FulfillsPrerequisites:
-  - 'RAO 2: Can go back to Ra after Phone 2'
-  deleteAfterFinished: 1
-  doAfterFinished:
+  doBeforeStarted:
     m_PersistentCalls:
       m_Calls: []
-  dialogue: {fileID: 11400000, guid: 70c523f4899fd46a59a283d6ffce7e04, type: 2}
-  colliderRadius: 2.4
+  dialogue: {fileID: 11400000, guid: b0df5630d9a764b079ada99c7e832d96, type: 2}
+  colliderRadius: 3
+  interactionPromptOffset: {x: 1.62, y: 1.38, z: 0}
 --- !u!1 &1568146933202135499
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,8 +108,12 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: e74a90e6fca1e42409cec7949b20ea5c, type: 2}
   colliderRadius: 3
+  interactionPromptOffset: {x: 1.62, y: 1.38, z: 0}
 --- !u!1 &2205857770555628543
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,15 +159,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
-  - 'RAO 2: Can do intermediary after Ra 3'
+  - 'RAO 2: RA 1 Intermediary allowed + can go to phone'
   FulfillsPrerequisites:
   - 'RAO 2: Can do Pre-Intermediary with ODIN in BR 4'
   deleteAfterFinished: 0
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: 9eb4ba422fec94793b8a155002a5456f, type: 2}
   colliderRadius: 3
+  interactionPromptOffset: {x: 1.62, y: 1.38, z: 0}
 --- !u!1 &2969204836137639852
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
-  - 'RAO 2: Can go back to Ra after Phone 2'
+  - 'RAO 2: RA 1 Intermediary allowed + can go to phone'
   FulfillsPrerequisites:
   - 'RAO 2: Can do intermediary after Ra 3'
   deleteAfterFinished: 1
@@ -278,9 +236,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: cc020286b125d42f589827e0c9deea23, type: 2}
   colliderRadius: 3
---- !u!1 &3405873661828645481
+  interactionPromptOffset: {x: 1.62, y: 1.38, z: 0}
+--- !u!1 &3511889966284282570
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,32 +250,57 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2589436262555076741}
+  - component: {fileID: 1028367931635155381}
+  - component: {fileID: 4181362601578006241}
   m_Layer: 0
-  m_Name: PHONE DIALOGUE
+  m_Name: RAO 2 - PHONE 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2589436262555076741
+--- !u!4 &1028367931635155381
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3405873661828645481}
-  m_LocalRotation: {x: 0.00000009732794, y: -0.58863246, z: -0.00000035546256, w: 0.80840087}
-  m_LocalPosition: {x: -0.5489252, y: 0.31677398, z: 0.4255491}
-  m_LocalScale: {x: 4.4593186, y: 4.4593186, z: 4.4593186}
+  m_GameObject: {fileID: 3511889966284282570}
+  m_LocalRotation: {x: -0, y: -0, z: 1.7763568e-15, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4321804302243208583}
-  - {fileID: 4365287020834847106}
-  m_Father: {fileID: 3243989672835894512}
-  m_RootOrder: 0
+  m_Children: []
+  m_Father: {fileID: 3300709308847473079}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4149963918963248099
+--- !u!114 &4181362601578006241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3511889966284282570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NeedsPrerequisites:
+  - 'RAO 2: Can go back to phone after Ra 2'
+  FulfillsPrerequisites:
+  - 'RAO 2: Can go back to Ra after Phone 2'
+  deleteAfterFinished: 1
+  doAfterFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogue: {fileID: 11400000, guid: 70c523f4899fd46a59a283d6ffce7e04, type: 2}
+  colliderRadius: 3.71
+  interactionPromptOffset: {x: 1.34, y: 0.67, z: -0.37}
+--- !u!1 &5091792825242690965
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -321,8 +308,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4321804302243208583}
-  - component: {fileID: 7742994503245601767}
+  - component: {fileID: 298438255224720713}
+  - component: {fileID: 385127581057218509}
   m_Layer: 0
   m_Name: RAO 2 - PHONE 1 Dialogue
   m_TagString: Untagged
@@ -330,28 +317,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4321804302243208583
+--- !u!4 &298438255224720713
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4149963918963248099}
+  m_GameObject: {fileID: 5091792825242690965}
   m_LocalRotation: {x: -0, y: -0, z: 1.7763568e-15, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2589436262555076741}
+  m_Father: {fileID: 3300709308847473079}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7742994503245601767
+--- !u!114 &385127581057218509
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4149963918963248099}
+  m_GameObject: {fileID: 5091792825242690965}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
@@ -377,8 +364,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: f851c4818e6c147db94ee9ae5ac6f807, type: 2}
-  colliderRadius: 2.4
+  colliderRadius: 3.71
+  interactionPromptOffset: {x: 1.34, y: 0.67, z: -0.37}
 --- !u!1 &7073990006708670016
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,15 +415,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
-  - 'RAO 2: Can go back to Ra after Phone 1'
+  - 'RAO 2: RA 1 Intermediary allowed + can go to phone'
   FulfillsPrerequisites:
   - 'RAO 2: Can go back to phone after Ra 2'
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: ef88fcf41917948ab86cbdc67da84420, type: 2}
   colliderRadius: 3
+  interactionPromptOffset: {x: 1.62, y: 1.38, z: 0}
+--- !u!1 &7730760742561933191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3300709308847473079}
+  m_Layer: 0
+  m_Name: PHONE DIALOGUE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3300709308847473079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7730760742561933191}
+  m_LocalRotation: {x: 0.00000009732794, y: -0.58863246, z: -0.00000035546256, w: 0.80840087}
+  m_LocalPosition: {x: -0.5489252, y: 0.31677398, z: 0.4255491}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 298438255224720713}
+  - {fileID: 1028367931635155381}
+  m_Father: {fileID: 7115737775366692387}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8232088464437052819
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +582,7 @@ PrefabInstance:
     - target: {fileID: 5096140277312637079, guid: dc08b4606183a42cb976e996399c8aff,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6004869215314777216, guid: dc08b4606183a42cb976e996399c8aff,
         type: 3}
@@ -593,15 +621,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afffcd44b3d684d3792e5629f1eeecc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &3243989672835894512 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5096140277312637079, guid: dc08b4606183a42cb976e996399c8aff,
-    type: 3}
-  m_PrefabInstance: {fileID: 7763598824528708711}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3384738375626701563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4991350003335184028, guid: dc08b4606183a42cb976e996399c8aff,
+    type: 3}
+  m_PrefabInstance: {fileID: 7763598824528708711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7115737775366692387 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 683977807547849284, guid: dc08b4606183a42cb976e996399c8aff,
     type: 3}
   m_PrefabInstance: {fileID: 7763598824528708711}
   m_PrefabAsset: {fileID: 0}
