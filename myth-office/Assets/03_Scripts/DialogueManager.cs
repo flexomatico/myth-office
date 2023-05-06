@@ -36,6 +36,7 @@ public class DialogueManager : AbstractInteractable
     private SphereCollider _sphereCollider;
 
     private GameObject interactionPrompt;
+    public Vector3 interactionPromptOffset = Vector3.zero;
 
     void Awake()
     {
@@ -48,6 +49,8 @@ public class DialogueManager : AbstractInteractable
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, colliderRadius);
+        Gizmos.color = new Color(255f, 0f, 0f, 0.5f);
+        Gizmos.DrawCube(transform.position + interactionPromptOffset, Vector3.one * 0.7f);
     }
 
     private void Start()
@@ -85,6 +88,7 @@ public class DialogueManager : AbstractInteractable
         interactionPrompt = Instantiate(interactionPrompt, transform);
         float scale = interactionPrompt.transform.localScale.x / transform.localScale.x;
         interactionPrompt.transform.localScale = new Vector3(scale, scale, scale);
+        interactionPrompt.transform.localPosition = interactionPromptOffset;
         SetInteractionPromptVisibility(false);
     }
 

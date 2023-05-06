@@ -11,6 +11,7 @@ public class DialogueManagerEditor : Editor
 {
     private SerializedProperty dialogue;
     private SerializedProperty colliderRadius;
+    private SerializedProperty interactionPromptOffset;
     private SerializedProperty NeedsPrerequisites;
     private SerializedProperty FulfillsPrerequisites;
     private SerializedProperty deleteAfterFinished;
@@ -22,6 +23,7 @@ public class DialogueManagerEditor : Editor
     {
         dialogue = serializedObject.FindProperty("dialogue");
         colliderRadius = serializedObject.FindProperty("colliderRadius");
+        interactionPromptOffset = serializedObject.FindProperty("interactionPromptOffset");
         NeedsPrerequisites = serializedObject.FindProperty("NeedsPrerequisites");
         FulfillsPrerequisites = serializedObject.FindProperty("FulfillsPrerequisites");
         deleteAfterFinished = serializedObject.FindProperty("deleteAfterFinished");
@@ -34,6 +36,7 @@ public class DialogueManagerEditor : Editor
         
         EditorGUILayout.PropertyField(dialogue);
         EditorGUILayout.PropertyField(deleteAfterFinished);
+        EditorGUILayout.PropertyField(interactionPromptOffset);
         EditorGUILayout.PropertyField(colliderRadius);
         EditorGUILayout.PropertyField(NeedsPrerequisites, true);
         EditorGUILayout.PropertyField(FulfillsPrerequisites, true);
