@@ -52,7 +52,6 @@ MonoBehaviour:
   - rid: 6537768836889051146
   - rid: 6537768836889051147
   - rid: 6537768836889051150
-  - rid: 6537768836889051151
   references:
     version: 2
     RefIds:
@@ -429,7 +428,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
-        line: Okay, now for a much more important task.
+        line: Now, for a much more important task.
     - rid: 668674076555608162
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -496,14 +495,3 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: Go on, should be a simple task for you!
-    - rid: 6537768836889051151
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Interneus
-        speakerLocation: 0
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Ok...
