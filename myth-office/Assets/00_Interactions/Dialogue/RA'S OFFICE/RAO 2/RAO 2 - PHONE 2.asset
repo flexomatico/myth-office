@@ -16,8 +16,6 @@ MonoBehaviour:
   - rid: 1780414468566286486
   - rid: 1780414468566286487
   - rid: 1780414468566286489
-  - rid: 1780414468566286490
-  - rid: 1780414468566286491
   - rid: 1780414468566286492
   - rid: 1780414468566286493
   - rid: 1780414468566286494
@@ -53,6 +51,7 @@ MonoBehaviour:
   - rid: 1780414468566286525
   - rid: 1780414468566286526
   - rid: 1780414468566286527
+  - rid: 5229767739195260936
   references:
     version: 2
     RefIds:
@@ -91,29 +90,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f30b5185ce4964acdb18673d8fae9d44, type: 3}
-        line: "Operator. Oh, it\u2019s you."
-    - rid: 1780414468566286490
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Hermes
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Working hard or hardly working, eh?
-    - rid: 1780414468566286491
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Hermes
-        speakerLocation: 1
-        leftImage: {fileID: 0}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: Hm.
+        line: "Operator speaking. Oh, it\u2019s you."
     - rid: 1780414468566286492
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -153,7 +130,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
@@ -186,7 +163,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -219,7 +196,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -242,7 +219,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f374fd8408eb1484d9dc138e5ff41145, type: 3}
@@ -342,7 +319,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -375,7 +352,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 78e9d3afd9a104b9c9722198bacebcec, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -433,7 +410,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Ra
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
+        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
         sound: {fileID: 8300000, guid: 65951d3e9d9b14e06960980c28214dfd, type: 3}
@@ -444,7 +421,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Ra Worshipper
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
+        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 068b1806fd47f46cfa47ed2e5575cfad, type: 3}
         sound: {fileID: 8300000, guid: 74f4e13c6aea847dbbd527312ad6d76c, type: 3}
@@ -467,7 +444,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Ra
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
+        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
         sound: {fileID: 8300000, guid: 5fad71002b4594a3ca4b225654ddc2f3, type: 3}
@@ -489,7 +466,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
@@ -503,5 +480,16 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
+        sound: {fileID: 0}
         line: But-
+    - rid: 5229767739195260936
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra Worshipper
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
+        line: '. . . '
