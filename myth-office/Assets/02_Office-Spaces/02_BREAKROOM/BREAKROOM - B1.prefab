@@ -1,58 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &441411310384073035
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1625702738995109574}
-  - component: {fileID: 5058427292147467250}
-  m_Layer: 0
-  m_Name: SupplyCabinet3 DIALOGUE
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1625702738995109574
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441411310384073035}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1994755, y: 1.8300134, z: -2.438812}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5891925633079691098}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5058427292147467250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441411310384073035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NeedsPrerequisites:
-  - 'BR 1: Unlock Supply Closet'
-  FulfillsPrerequisites: []
-  deleteAfterFinished: 1
-  doAfterFinished:
-    m_PersistentCalls:
-      m_Calls: []
-  dialogue: {fileID: 11400000, guid: 649aa3cad84394cc5a978c0fe38dc5c3, type: 2}
-  colliderRadius: 1.8
 --- !u!1 &993528240223487190
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,8 +51,12 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: 62383a661fa018249b2627a0d8c35551, type: 2}
   colliderRadius: 3.21
+  interactionPromptOffset: {x: 1, y: 1.4, z: 0}
 --- !u!1 &1295900269803228398
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +87,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3363837879772036483}
-  m_RootOrder: 17
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6587871132466050395
 MonoBehaviour:
@@ -156,8 +107,12 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: 23c14a2672ddf684696d524b24c56663, type: 2}
-  colliderRadius: 3.5
+  colliderRadius: 2.55
+  interactionPromptOffset: {x: 0, y: 1.65, z: -1.26}
 --- !u!1 &1985052727010296455
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,8 +165,12 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: 7056630709fad6f449db803515d2873a, type: 2}
   colliderRadius: 3.25
+  interactionPromptOffset: {x: 1, y: 1.4, z: 0}
 --- !u!1 &2070191521070169458
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,61 +307,12 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
-  dialogue: {fileID: 11400000, guid: bf45dc518f04e42a4baf4d1554e37dfd, type: 2}
-  colliderRadius: 3.03
---- !u!1 &3622172982259434762
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 116025026708995239}
-  - component: {fileID: 7486099782380320496}
-  m_Layer: 0
-  m_Name: SupplyCabinet2 DIALOGUE
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &116025026708995239
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3622172982259434762}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5091008, y: 1.8300141, z: -2.0766802}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4282045356212131056}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7486099782380320496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3622172982259434762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NeedsPrerequisites:
-  - 'BR 1: Unlock Supply Closet'
-  FulfillsPrerequisites: []
-  deleteAfterFinished: 1
-  doAfterFinished:
+  doBeforeStarted:
     m_PersistentCalls:
       m_Calls: []
-  dialogue: {fileID: 11400000, guid: e8b95afc9318c4548ad19f06777a3133, type: 2}
-  colliderRadius: 1.8
+  dialogue: {fileID: 11400000, guid: bf45dc518f04e42a4baf4d1554e37dfd, type: 2}
+  colliderRadius: 3.03
+  interactionPromptOffset: {x: 1, y: 1.4, z: 0}
 --- !u!1 &3882722484956415825
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +397,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &3927158231634770438
+--- !u!1 &4126905683376225574
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -495,8 +405,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7970708823823675197}
-  - component: {fileID: 4701237191311448128}
+  - component: {fileID: 8011201664073716985}
+  - component: {fileID: 8630688132385180146}
   m_Layer: 0
   m_Name: SupplyCabinet1 DIALOGUE
   m_TagString: Untagged
@@ -504,28 +414,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7970708823823675197
+--- !u!4 &8011201664073716985
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3927158231634770438}
+  m_GameObject: {fileID: 4126905683376225574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9391158, y: 2.0000155, z: -1.5766635}
+  m_LocalPosition: {x: 0, y: 0, z: -0.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7283572362058707015}
-  m_RootOrder: 0
+  m_Father: {fileID: 9113441666972530744}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4701237191311448128
+--- !u!114 &8630688132385180146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3927158231634770438}
+  m_GameObject: {fileID: 4126905683376225574}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
@@ -538,8 +448,12 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: 933b39de9e951458a911de5b27f07df6, type: 2}
   colliderRadius: 1.8
+  interactionPromptOffset: {x: -0.72, y: 3.03, z: 0}
 --- !u!1 &4415667819025150895
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,7 +488,7 @@ Transform:
   - {fileID: 8339036213769412512}
   - {fileID: 2215434887872106404}
   m_Father: {fileID: 3363837879772036483}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4583040758327978981
 GameObject:
@@ -607,7 +521,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3363837879772036483}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &955057357789637969
 AudioSource:
@@ -837,8 +751,12 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: 8c71ad47d029e482eac7c26446c8f737, type: 2}
   colliderRadius: 3
+  interactionPromptOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &5962998836075256958
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,8 +833,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: c06060c7774564425abe33fc9308b823, type: 2}
   colliderRadius: 3.25
+  interactionPromptOffset: {x: 1, y: 1.4, z: 0}
 --- !u!1 &5988218242845699687
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,8 +873,65 @@ Transform:
   - {fileID: 8499861594538876246}
   - {fileID: 3537032015753973978}
   m_Father: {fileID: 3363837879772036483}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5994354624096311786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5732261340937667122}
+  - component: {fileID: 3057161257193873967}
+  m_Layer: 0
+  m_Name: SupplyCabinet2 DIALOGUE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5732261340937667122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5994354624096311786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1704079845598573253}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3057161257193873967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5994354624096311786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NeedsPrerequisites:
+  - 'BR 1: Unlock Supply Closet'
+  FulfillsPrerequisites: []
+  deleteAfterFinished: 1
+  doAfterFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogue: {fileID: 11400000, guid: e8b95afc9318c4548ad19f06777a3133, type: 2}
+  colliderRadius: 1.8
+  interactionPromptOffset: {x: -0.83, y: 3.02, z: 0}
 --- !u!1 &6706656957308557479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,7 +1031,7 @@ CapsuleCollider:
   m_Height: 6.71
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0.0000038146973}
---- !u!1 &6870503442304359616
+--- !u!1 &8064949405195095558
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1060,8 +1039,65 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7192702069776614860}
-  - component: {fileID: 6739492426524179920}
+  - component: {fileID: 5417236439785483089}
+  - component: {fileID: 3412089411860146213}
+  m_Layer: 0
+  m_Name: SupplyCabinet3 DIALOGUE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5417236439785483089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064949405195095558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8561493584733915113}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3412089411860146213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064949405195095558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NeedsPrerequisites:
+  - 'BR 1: Unlock Supply Closet'
+  FulfillsPrerequisites: []
+  deleteAfterFinished: 1
+  doAfterFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogue: {fileID: 11400000, guid: 649aa3cad84394cc5a978c0fe38dc5c3, type: 2}
+  colliderRadius: 1.8
+  interactionPromptOffset: {x: -0.38, y: 2.94, z: 0}
+--- !u!1 &8561934380668518594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4315269294007787408}
+  - component: {fileID: 2704327682575549008}
   m_Layer: 0
   m_Name: SupplyCabinet4 DIALOGUE
   m_TagString: Untagged
@@ -1069,28 +1105,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7192702069776614860
+--- !u!4 &4315269294007787408
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6870503442304359616}
+  m_GameObject: {fileID: 8561934380668518594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6694756, y: 1.8300141, z: -2.7388043}
+  m_LocalPosition: {x: 0, y: 0, z: -0.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3957193846327571697}
-  m_RootOrder: 0
+  m_Father: {fileID: 4515269091017455721}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6739492426524179920
+--- !u!114 &2704327682575549008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6870503442304359616}
+  m_GameObject: {fileID: 8561934380668518594}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
@@ -1116,8 +1152,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: adde77cc7d74e45b09f6846ec63ead34, type: 2}
   colliderRadius: 2
+  interactionPromptOffset: {x: -0.79, y: 3.03, z: 0}
 --- !u!1 &8564954710025509624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,6 +1719,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 15.07
       objectReference: {fileID: 0}
+    - target: {fileID: 106944321278035443, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 106944321400526542, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
@@ -1693,6 +1738,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 7.771
+      objectReference: {fileID: 0}
+    - target: {fileID: 106944321483217766, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 106944321487516759, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -1743,6 +1793,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106944322151882693, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 106944322210449229, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -1872,7 +1927,7 @@ PrefabInstance:
     - target: {fileID: 720348379061226677, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1244995093778063412, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -1924,15 +1979,25 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1338186571693786314, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 1471156467466218514, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1747434316069675628, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890327102821792539, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 2139150899175484698, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -1962,7 +2027,7 @@ PrefabInstance:
     - target: {fileID: 3310778850944620923, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3503672387004268365, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -1982,7 +2047,7 @@ PrefabInstance:
     - target: {fileID: 4408760514971073448, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4775367889307107697, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -2064,6 +2129,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5927359576331568283, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 5970800981003622234, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_Enabled
@@ -2072,7 +2142,7 @@ PrefabInstance:
     - target: {fileID: 6307188892974393346, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6430712661082497151, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -2082,7 +2152,7 @@ PrefabInstance:
     - target: {fileID: 6485611893474117635, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6537320896365569714, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -2097,7 +2167,7 @@ PrefabInstance:
     - target: {fileID: 6816076417221494312, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6856586751184152437, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -2152,12 +2222,12 @@ PrefabInstance:
     - target: {fileID: 7126969424875772833, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7154272485547159723, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7206599764382515618, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -2187,7 +2257,7 @@ PrefabInstance:
     - target: {fileID: 8055541396157492288, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8206243287099458649, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
         type: 3}
@@ -2199,36 +2269,34 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8718817781864375309, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884855387454148151, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 106944322210449229, guid: 6c40057ddb5594f3bbceb3f4c2e632f3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6c40057ddb5594f3bbceb3f4c2e632f3, type: 3}
+--- !u!4 &1704079845598573253 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8884855387454148151, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7848440932128374002}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3363837879772036483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4775367889307107697, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
     type: 3}
   m_PrefabInstance: {fileID: 7848440932128374002}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3957193846327571697 stripped
+--- !u!4 &4515269091017455721 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6485611893474117635, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 7848440932128374002}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4282045356212131056 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6307188892974393346, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 7848440932128374002}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5891925633079691098 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4408760514971073448, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 7848440932128374002}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7283572362058707015 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 720348379061226677, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+  m_CorrespondingSourceObject: {fileID: 5927359576331568283, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
     type: 3}
   m_PrefabInstance: {fileID: 7848440932128374002}
   m_PrefabAsset: {fileID: 0}
@@ -2244,6 +2312,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afffcd44b3d684d3792e5629f1eeecc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &8561493584733915113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1890327102821792539, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7848440932128374002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9113441666972530744 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1338186571693786314, guid: 6c40057ddb5594f3bbceb3f4c2e632f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7848440932128374002}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8389587267233798551
 PrefabInstance:
   m_ObjectHideFlags: 0
