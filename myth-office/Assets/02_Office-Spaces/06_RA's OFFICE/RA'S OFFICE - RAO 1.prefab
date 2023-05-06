@@ -64,8 +64,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: 00a053a5153ad454598c4ee188684e42, type: 2}
   colliderRadius: 4
+  interactionPromptOffset: {x: 1.62, y: 1.35, z: 0}
 --- !u!1 &6446255985416647678
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,8 +154,12 @@ MonoBehaviour:
   doAfterFinished:
     m_PersistentCalls:
       m_Calls: []
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: 5ba38328826f14779851284d742bb8ab, type: 2}
   colliderRadius: 4
+  interactionPromptOffset: {x: 1.62, y: 1.35, z: 0}
 --- !u!1001 &5245499686715928694
 PrefabInstance:
   m_ObjectHideFlags: 0
