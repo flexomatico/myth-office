@@ -620,7 +620,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4775367889307107697}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: -90}
 --- !u!33 &322120914644349957
 MeshFilter:
@@ -1502,7 +1502,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4775367889307107697}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: -90, z: 0}
 --- !u!33 &2861888209381815781
 MeshFilter:
@@ -1926,7 +1926,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4775367889307107697}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -52.6, z: 0}
 --- !u!108 &4084798797364141116
 Light:
@@ -2598,7 +2598,7 @@ Transform:
   - {fileID: 6809609308190262530}
   - {fileID: 526100758378042405}
   m_Father: {fileID: 4775367889307107697}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3496301266153556453
 GameObject:
@@ -2763,7 +2763,7 @@ Transform:
   - {fileID: 6240992088222858709}
   - {fileID: 7731762750821177520}
   m_Father: {fileID: 4775367889307107697}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4106340021486934501
 GameObject:
@@ -4072,7 +4072,7 @@ Transform:
   - {fileID: 2337388856649017537}
   - {fileID: 2867616600266563108}
   m_Father: {fileID: 4775367889307107697}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5016338271747171802
 GameObject:
@@ -4105,7 +4105,6 @@ Transform:
   - {fileID: 8817164001188696811}
   - {fileID: 7045379168852977655}
   - {fileID: 776422948391976646}
-  - {fileID: 7863035328439005477}
   m_Father: {fileID: 7387303111998387580}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4941,7 +4940,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4775367889307107697}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 6.85, y: 0, z: 0}
 --- !u!108 &6768458929828738934
 Light:
@@ -6087,7 +6086,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4775367889307107697}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &962288583937651006
 MonoBehaviour:
@@ -6717,12 +6716,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8763707042827122150}
   - {fileID: 7387303111998387580}
   - {fileID: 9103790082232734915}
   - {fileID: 3006799766466109490}
   - {fileID: 3114016023072995051}
   - {fileID: 695005430015650401}
   - {fileID: 5861399348795083469}
+  - {fileID: 2382016920995499254}
   - {fileID: 8735843919657593586}
   - {fileID: 4124806712781313588}
   m_Father: {fileID: 0}
@@ -6853,10 +6854,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 7863035328439005477}
-  m_RootOrder: 0
+  m_Father: {fileID: 8763707042827122150}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9173904059151646706
 MonoBehaviour:
@@ -6888,8 +6889,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: c23d012dffc94b846bf72618df1f750c, type: 2}
-  colliderRadius: 3
+  colliderRadius: 3.98
+  interactionPromptOffset: {x: 0, y: 0.95, z: -1}
 --- !u!1 &7587972417158429584
 GameObject:
   m_ObjectHideFlags: 0
@@ -7478,6 +7483,39 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &8248182660282008318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8763707042827122150}
+  m_Layer: 0
+  m_Name: RED BUTTON
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8763707042827122150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8248182660282008318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.585, y: 1.0999995, z: -1.7250595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7863035328439005477}
+  - {fileID: 8524778695930152379}
+  m_Father: {fileID: 4775367889307107697}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8317493013977006241
 GameObject:
   m_ObjectHideFlags: 0
@@ -7587,7 +7625,7 @@ GameObject:
   - component: {fileID: 7863035328439005477}
   - component: {fileID: 154097214912633177}
   m_Layer: 0
-  m_Name: RED BUTTON
+  m_Name: RED BUTTON VISUAL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7601,13 +7639,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8375639595034518495}
   m_LocalRotation: {x: -0, y: 0.34930807, z: -0, w: 0.93700796}
-  m_LocalPosition: {x: 4.195, y: 1.1, z: -35.14}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.84000003, y: 0.84, z: 0.84000003}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 8524778695930152379}
-  m_Father: {fileID: 5343129554341018282}
-  m_RootOrder: 3
+  m_Children: []
+  m_Father: {fileID: 8763707042827122150}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 40.89, z: 0}
 --- !u!212 &154097214912633177
 SpriteRenderer:
@@ -10165,7 +10202,7 @@ PrefabInstance:
     - target: {fileID: 2146585862234446877, guid: e6c1eaebd31a5034ca23438a7151ad39,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2146585862234446877, guid: e6c1eaebd31a5034ca23438a7151ad39,
         type: 3}
