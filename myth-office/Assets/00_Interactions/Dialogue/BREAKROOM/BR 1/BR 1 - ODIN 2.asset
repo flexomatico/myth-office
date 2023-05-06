@@ -24,12 +24,24 @@ MonoBehaviour:
   - rid: 9132166939540193289
   - rid: 9132166939540193288
   - rid: 9132166939540193290
+  - rid: 5229767739195260928
   - rid: 9132166939540193291
   - rid: 9132166939540193292
   - rid: 9132166939540193293
   references:
     version: 2
     RefIds:
+    - rid: 5229767739195260928
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: 
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: The Central Always-Vacant Elevator. We just took it before.
     - rid: 9132166939540193280
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -92,7 +104,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: "Inth\xEBrn"
         speakerLocation: 0
-        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 159f5e67f13ca4da3b3511f67f4a9206, type: 3}
@@ -136,7 +148,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: "Inth\xEBrn"
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
@@ -151,8 +163,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: ffd125dbc9dff7a41a3d2e038f7ca41d, type: 3}
         sound: {fileID: 8300000, guid: 8c8b1bc52ee1f4ea3b6527d3397c4479, type: 3}
-        line: "No, no Inth\xEBrn. It\u2019s the C.A.V.E! The Central Always-Vacant
-          Elevator. We just took it before."
+        line: "No, no Inth\xEBrn. It\u2019s the C.A.V.E!"
     - rid: 9132166939540193291
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
