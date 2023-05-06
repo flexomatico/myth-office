@@ -42,19 +42,19 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 4855c062a1de248b3a81a1908695ceed, type: 3}
-        line: You might've already caught wind about this, but we've had a bit of
-          a screw up in my department...
+        line: You might've already caught wind of this, but we've had a bit of a
+          screw up in my department...
     - rid: 5229767739195260938
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
         responseType: 0
         speakerName: 
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 35bbd08578c834121aa5fc919e0757e7, type: 3}
+        leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 76d5e80f063fa4bc5a4b30ce44c3bf92, type: 3}
         sound: {fileID: 8300000, guid: 65951d3e9d9b14e06960980c28214dfd, type: 3}
-        line: INTERNIRIS, GET GOING ALLREADY!
+        line: INTERNIRIS, GET GOING ALREADY!
     - rid: 5229767739195260939
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:

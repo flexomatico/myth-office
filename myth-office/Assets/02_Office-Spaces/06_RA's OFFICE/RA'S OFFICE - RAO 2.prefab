@@ -208,22 +208,10 @@ MonoBehaviour:
   - 'RAO 2: Can do intermediary after Ra 3'
   FulfillsPrerequisites:
   - 'RAO 2: Can do Pre-Intermediary with ODIN in BR 4'
-  deleteAfterFinished: 1
+  deleteAfterFinished: 0
   doAfterFinished:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2444134837822620408}
-        m_TargetAssemblyTypeName: JourneyHelper, Assembly-CSharp
-        m_MethodName: CallCAVE
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   dialogue: {fileID: 11400000, guid: 9eb4ba422fec94793b8a155002a5456f, type: 2}
   colliderRadius: 3
 --- !u!1 &2969204836137639852
@@ -370,9 +358,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
-  - 'RAO 2: Can go back to phone after Ra 2'
+  - 'RAO 2: RA 1 Intermediary allowed + can go to phone'
   FulfillsPrerequisites:
-  - 'RAO 2: Can go back to Ra after Phone 2'
+  - 'RAO 2: Can go back to Ra after Phone 1'
   deleteAfterFinished: 1
   doAfterFinished:
     m_PersistentCalls:
@@ -566,7 +554,7 @@ PrefabInstance:
     - target: {fileID: 5096140277312637079, guid: dc08b4606183a42cb976e996399c8aff,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6004869215314777216, guid: dc08b4606183a42cb976e996399c8aff,
         type: 3}

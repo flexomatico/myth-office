@@ -19,6 +19,7 @@ MonoBehaviour:
   - rid: 668673759249694774
   - rid: 668673759249694775
   - rid: 668674094441168898
+  - rid: 6537768856200937486
   - rid: 668673759249694776
   - rid: 668674094441168899
   - rid: 668674094441168900
@@ -58,7 +59,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
-        line: Forget whatever that big bird is making you do right now.
+        line: Forget whatever Ra is making you do right now.
     - rid: 668673759249694774
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -89,7 +90,7 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
+        rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
         sound: {fileID: 0}
         line: You know who I am of course, Interneus
     - rid: 668673759249694779
@@ -268,3 +269,14 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 0}
         line: . . .
+    - rid: 6537768856200937486
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
+        sound: {fileID: 0}
+        line: Oh, that featherhead needs to calm his beak!

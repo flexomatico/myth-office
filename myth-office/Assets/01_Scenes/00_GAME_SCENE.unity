@@ -1083,12 +1083,6 @@ MonoBehaviour:
     travelTime: 2
     animateCaveArrival: 1
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
-    nextOffice: {fileID: 2832796536607985631, guid: d7f672b44063d40fe88e502c9642c1bc,
-      type: 3}
-    travelDistance: 20
-    travelTime: 5
-    animateCaveArrival: 0
-  - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 7614077457866698455, guid: 5d9085403f91349cd865b7e1e426fd1b,
       type: 3}
     travelDistance: 20
@@ -1100,20 +1094,14 @@ MonoBehaviour:
     travelDistance: 20
     travelTime: 5
     animateCaveArrival: 0
-  - cave: {fileID: 202292186370722003, guid: bc3c941b0fcd6834291940f858ebca44, type: 3}
+  - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 6214194385032012531, guid: 16c75ad38a25a40a6884550128724cee,
       type: 3}
     travelDistance: 15
-    travelTime: 2
+    travelTime: 5
     animateCaveArrival: 1
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 2832796536607985631, guid: d7f672b44063d40fe88e502c9642c1bc,
-      type: 3}
-    travelDistance: 20
-    travelTime: 5
-    animateCaveArrival: 0
-  - cave: {fileID: 202292186370722003, guid: bc3c941b0fcd6834291940f858ebca44, type: 3}
-    nextOffice: {fileID: 7037154571526607111, guid: da172f5cf2afafd4b8e57fa36b3696c7,
       type: 3}
     travelDistance: 20
     travelTime: 5
@@ -1130,20 +1118,14 @@ MonoBehaviour:
     travelDistance: 20
     travelTime: 5
     animateCaveArrival: 0
-  - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
-    nextOffice: {fileID: 6214194385032012531, guid: 071f6aa31f27d654699bc4de5294ce5b,
-      type: 3}
-    travelDistance: 20
-    travelTime: 5
-    animateCaveArrival: 0
-  - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
+  - cave: {fileID: 202292186370722003, guid: bc3c941b0fcd6834291940f858ebca44, type: 3}
     nextOffice: {fileID: 7037154571526607111, guid: da172f5cf2afafd4b8e57fa36b3696c7,
       type: 3}
     travelDistance: 20
     travelTime: 5
     animateCaveArrival: 0
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
-    nextOffice: {fileID: 298935924928379854, guid: 5e7ee3f0d6a7a5c4e8a438b6f211886d,
+    nextOffice: {fileID: 6214194385032012531, guid: 071f6aa31f27d654699bc4de5294ce5b,
       type: 3}
     travelDistance: 20
     travelTime: 5
@@ -1175,7 +1157,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  currentJourney: 8
+  currentJourney: 9
   defaultTravelDistance: 30
   caveAutoArriveSpeed: 5
   caveAutoLeaveSpeed: 4
@@ -1269,7 +1251,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727521, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: _playerSpeed
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727530, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
