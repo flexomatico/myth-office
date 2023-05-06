@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5173522729090318028}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &6503440442044878316
 AudioSource:
@@ -273,6 +273,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  doBeforeStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6463611987382749682}
+        m_TargetAssemblyTypeName: CaveLeaveHelper, Assembly-CSharp
+        m_MethodName: GoToNoWhere
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1485489027467013328}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: close-doors
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogue: {fileID: 11400000, guid: 86e8fbd3486774857b823449866df6a1, type: 2}
   colliderRadius: 2.79
 --- !u!1001 &3799407250922795279
@@ -322,21 +349,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CAVE SOLO - CS1
       objectReference: {fileID: 0}
-    - target: {fileID: 7019271123231605565, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 3.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 7019271123231605565, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 2.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 7019271123231605565, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -1.62
-      objectReference: {fileID: 0}
     - target: {fileID: 7856925481066313981, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
       propertyPath: waitForSeconds
@@ -345,7 +357,7 @@ PrefabInstance:
     - target: {fileID: 7856925481066313981, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
       propertyPath: leaveOnPlayerEnterCAVE
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8319906911170170819, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
         type: 3}
@@ -406,6 +418,12 @@ PrefabInstance:
     - {fileID: 5602546349984458506, guid: 76ba7a0c7780e40faae3e27ffc0b087d, type: 3}
     - {fileID: 6689128055341373315, guid: 76ba7a0c7780e40faae3e27ffc0b087d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 76ba7a0c7780e40faae3e27ffc0b087d, type: 3}
+--- !u!95 &1485489027467013328 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2317014759706369503, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3799407250922795279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5173522729090318028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8319906911170170819, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
@@ -422,5 +440,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: afffcd44b3d684d3792e5629f1eeecc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6463611987382749682 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7856925481066313981, guid: 76ba7a0c7780e40faae3e27ffc0b087d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3799407250922795279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aaf75e7da7ec4b09847c5f1a031445a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

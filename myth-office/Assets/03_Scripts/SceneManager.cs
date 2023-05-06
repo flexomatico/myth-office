@@ -124,6 +124,7 @@ public class SceneManager : MonoBehaviour
         if (arriveWithSound)
         {
             arriveSoundSource.Play();
+            OpenElevatorDoors();
         }
         else
         {
@@ -183,7 +184,23 @@ public class SceneManager : MonoBehaviour
     private void ArriveCave()
     {
         activeCave.transform.position = Vector3.zero;
+        OpenElevatorDoors();
         arriveSoundSource.PlayDelayed(0.5f);
         caveCanLeave = false;
+    }
+
+    private void OpenElevatorDoors()
+    {
+        Animator elevatorDoorsAnim = GameObject.Find("ElevatorDoors").GetComponent<Animator>();
+        elevatorDoorsAnim.SetTrigger("open-doors");
+    }
+
+    public void CloseElevatorDoors()
+    {
+        if (caveCanLeave)
+        {
+            Animator elevatorDoorsAnim = GameObject.Find("ElevatorDoors").GetComponent<Animator>();
+            elevatorDoorsAnim.SetTrigger("close-doors");
+        }
     }
 }

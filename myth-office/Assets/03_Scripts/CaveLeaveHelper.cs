@@ -6,10 +6,10 @@ using UnityEngine;
 
 public class CaveLeaveHelper : MonoBehaviour
 {
-    public bool leaveOnPlayerEnterCAVE = false;
     public float waitForSeconds = 2.0f;
-    public AudioSource wooshAudioSource;
     private Coroutine delayMoveAwayCoroutine;
+    private bool doorsAreClosed = false;
+    
     private void OnTriggerExit(Collider other)
     {
         delayMoveAwayCoroutine = StartCoroutine(DelayMoveAwayCave());
@@ -17,24 +17,34 @@ public class CaveLeaveHelper : MonoBehaviour
 
     private IEnumerator DelayMoveAwayCave()
     {
-        yield return new WaitForSeconds(2.0f);
-        GameObject.Find("SceneManager").GetComponent<SceneManager>().PlayerLeftCave();
-        wooshAudioSource.Play();
+        if (doorsAreClosed)
+        {
+            yield break;
+        }
+        SceneManager sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
+        yield return new WaitForSeconds(0.5f);
+        sceneManager.CloseElevatorDoors();
+        doorsAreClosed = true;
+        yield return new WaitForSeconds(1.0f);
+        sceneManager.PlayerLeftCave();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (delayMoveAwayCoroutine != null)
+        if (delayMoveAwayCoroutine != null && doorsAreClosed == false)
         {
             StopCoroutine(delayMoveAwayCoroutine);
         }
-        if (leaveOnPlayerEnterCAVE) StartCoroutine(DelayGoToNowhere());
     }
 
     private IEnumerator DelayGoToNowhere()
     {
         yield return new WaitForSeconds(waitForSeconds);
         GameObject.Find("SceneManager").GetComponent<SceneManager>().GoToNowhere();
-        wooshAudioSource.Play();
+    }
+
+    public void GoToNoWhere()
+    {
+        StartCoroutine(DelayGoToNowhere());
     }
 }
