@@ -15,6 +15,7 @@ MonoBehaviour:
   dialogueParts:
   - rid: 1780414468566286528
   - rid: 5229767739195260937
+  - rid: 6537768852292370432
   - rid: 5229767739195260939
   - rid: 5229767739195260938
   references:
@@ -30,7 +31,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
         sound: {fileID: 8300000, guid: fa5af267667264258a38319d4fbe31db, type: 3}
-        line: 'Greetings Ares. Ra here. '
+        line: 'Greetings, Ares. Ra here. '
     - rid: 5229767739195260937
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -62,6 +63,17 @@ MonoBehaviour:
         speakerLocation: 1
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
         sound: {fileID: 0}
         line: Just a moment please...
+    - rid: 6537768852292370432
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: d0a793106c2a3dc45877b96317470371, type: 3}
+        sound: {fileID: 8300000, guid: 75c302c713cbb41fcb39a7e6f7498b50, type: 3}
+        line: . . .
