@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
+  m_Name: RAO 2 - RA 3 Intermediary
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - rid: 1780414468566286528
+  - rid: 5229767739195260937
+  - rid: 6537768852292370432
+  - rid: 5229767739195260939
+  - rid: 5229767739195260938
+  references:
+    version: 2
+    RefIds:
+    - rid: 1780414468566286528
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
+        sound: {fileID: 8300000, guid: fa5af267667264258a38319d4fbe31db, type: 3}
+        line: 'Greetings, Ares. Ra here. '
+    - rid: 5229767739195260937
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: 
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: 4855c062a1de248b3a81a1908695ceed, type: 3}
+        line: You might've already caught wind about this, but we've had a bit of
+          a screw up in my department...
+    - rid: 5229767739195260938
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: 
+        speakerLocation: 1
+        leftImage: {fileID: 21300000, guid: 35bbd08578c834121aa5fc919e0757e7, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 76d5e80f063fa4bc5a4b30ce44c3bf92, type: 3}
+        sound: {fileID: 8300000, guid: 65951d3e9d9b14e06960980c28214dfd, type: 3}
+        line: INTERNIRIS, GET GOING ALLREADY!
+    - rid: 5229767739195260939
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
+        sound: {fileID: 0}
+        line: Just a moment please...
+    - rid: 6537768852292370432
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: ????
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: d0a793106c2a3dc45877b96317470371, type: 3}
+        sound: {fileID: 8300000, guid: 75c302c713cbb41fcb39a7e6f7498b50, type: 3}
+        line: . . .

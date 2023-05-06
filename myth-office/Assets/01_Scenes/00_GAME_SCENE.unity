@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26847973, g: 0.2660411, b: 0.28599173, a: 1}
+  m_IndirectSpecularColor: {r: 0.26847973, g: 0.26604116, b: 0.28599173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -341,6 +341,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353357421188083188, guid: 87b83070ba0646442829cc2a94705c42,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b83070ba0646442829cc2a94705c42, type: 3}
@@ -1078,10 +1083,16 @@ MonoBehaviour:
     travelTime: 2
     animateCaveArrival: 1
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
+    nextOffice: {fileID: 2832796536607985631, guid: d7f672b44063d40fe88e502c9642c1bc,
+      type: 3}
+    travelDistance: 20
+    travelTime: 5
+    animateCaveArrival: 0
+  - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 7614077457866698455, guid: 5d9085403f91349cd865b7e1e426fd1b,
       type: 3}
-    travelDistance: 30
-    travelTime: 6.9
+    travelDistance: 20
+    travelTime: 5
     animateCaveArrival: 0
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 9021977118391850892, guid: 3fa46576cb8264c72810129142a0b39a,
@@ -1097,6 +1108,12 @@ MonoBehaviour:
     animateCaveArrival: 1
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 2832796536607985631, guid: d7f672b44063d40fe88e502c9642c1bc,
+      type: 3}
+    travelDistance: 20
+    travelTime: 5
+    animateCaveArrival: 0
+  - cave: {fileID: 202292186370722003, guid: bc3c941b0fcd6834291940f858ebca44, type: 3}
+    nextOffice: {fileID: 7037154571526607111, guid: da172f5cf2afafd4b8e57fa36b3696c7,
       type: 3}
     travelDistance: 20
     travelTime: 5
@@ -1158,7 +1175,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  currentJourney: 0
+  currentJourney: 8
   defaultTravelDistance: 30
   caveAutoArriveSpeed: 5
   caveAutoLeaveSpeed: 4
@@ -1292,7 +1309,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
@@ -1302,7 +1319,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}

@@ -33,7 +33,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Ra
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4296a51d17c7c443d9f59709d9f3bd3c, type: 3}
         sound: {fileID: 8300000, guid: 1db3b9c2b09df4513b6b8ae89be64025, type: 3}
@@ -70,7 +70,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: fd84c0437e1fc4e829bff731ad435d26, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 1db3b9c2b09df4513b6b8ae89be64025, type: 3}
         line: "Shouldn\u2019t take more than a few years. Maybe a decade. "
     - rid: 1780414468566286478
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -78,7 +78,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Interniris
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 78e9d3afd9a104b9c9722198bacebcec, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -126,7 +126,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 219fa435054d44ce5a312122c70ac952, type: 3}
         line: But, you have a computer and a phone-
     - rid: 1780414468566286483
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -145,7 +145,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Interniris
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}

@@ -27,6 +27,12 @@ public class Player : MonoBehaviour
     private void Start()
     {
         _controller = gameObject.GetComponent<CharacterController>();
+        #if UNITY_STANDALONE_WIN
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+        #endif
     }
 
     void Update()
