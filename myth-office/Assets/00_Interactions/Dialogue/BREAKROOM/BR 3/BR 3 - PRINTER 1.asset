@@ -15,7 +15,6 @@ MonoBehaviour:
   dialogueParts:
   - rid: 1780414536733425667
   - rid: 1780414536733425666
-  - rid: 1780414536733425665
   - rid: 1780414536733425668
   - rid: 1780414536733425669
   - rid: 1780414536733425670
@@ -34,17 +33,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1780414536733425665
-      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
-      data:
-        responseType: 0
-        speakerName: Printer
-        speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
-        middleImage: {fileID: 0}
-        rightImage: {fileID: 0}
-        sound: {fileID: 0}
-        line: It looks like there are 2 jobs queued.
     - rid: 1780414536733425666
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -62,9 +50,9 @@ MonoBehaviour:
         responseType: 0
         speakerName: Printer
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 3564dd9db9a854b1ca36d08435d523b8, type: 3}
+        leftImage: {fileID: 21300000, guid: 35bbd08578c834121aa5fc919e0757e7, type: 3}
         middleImage: {fileID: 0}
-        rightImage: {fileID: 21300000, guid: 8a06c190c699e4a8fae8ee1df2865989, type: 3}
+        rightImage: {fileID: 21300000, guid: 69a89fb188665b64a800528f90b14f09, type: 3}
         sound: {fileID: 0}
         line: It looks like a standard office printer.
     - rid: 1780414536733425668
@@ -73,7 +61,7 @@ MonoBehaviour:
         responseType: 1
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -98,7 +86,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -166,7 +154,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 78e9d3afd9a104b9c9722198bacebcec, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -223,7 +211,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
@@ -234,7 +222,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}

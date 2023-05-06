@@ -15,6 +15,7 @@ public abstract class AbstractInteractable : MonoBehaviour
 
     [SerializeField] protected UnityEvent doAfterFinished;
     private bool hasInvokedAfterFinishedEvents = false;
+    [SerializeField] protected UnityEvent doBeforeStarted;
 
     public abstract void SetInteractionPromptVisibility(bool state);
     

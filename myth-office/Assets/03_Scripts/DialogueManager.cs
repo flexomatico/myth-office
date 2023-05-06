@@ -36,6 +36,7 @@ public class DialogueManager : AbstractInteractable
     private SphereCollider _sphereCollider;
 
     private GameObject interactionPrompt;
+    private float audioPanAmount = 0.5f;
     public Vector3 interactionPromptOffset = Vector3.zero;
 
     void Awake()
@@ -106,6 +107,8 @@ public class DialogueManager : AbstractInteractable
         bool mainDialoguePanelIsHidden = !dialoguePanel.activeSelf;
         if(mainDialoguePanelIsHidden)
             dialoguePanel.SetActive(true);
+        
+        doBeforeStarted.Invoke();
         
         ResetNameTextFields();
         ContinueInteraction(new InputAction.CallbackContext());
@@ -207,7 +210,7 @@ public class DialogueManager : AbstractInteractable
             leftImage.SetNativeSize();
 
             // Flip images on the left side of the screen so that they look towards the center.
-            leftImage.gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            // leftImage.gameObject.transform.localScale = new Vector3(-1, 1, 1);
 
 
             // Allow each image to have a custom pivot by reading pivots from the sprite data.
@@ -308,10 +311,12 @@ public class DialogueManager : AbstractInteractable
             case 0:
                 leftImage.color = Color.white;
                 rightImage.color = Color.grey;
+                audioSource.panStereo = -audioPanAmount;
                 break;
             case 1:
                 rightImage.color = Color.white;
                 leftImage.color = Color.grey;
+                audioSource.panStereo = audioPanAmount;
                 break;
         }
     }

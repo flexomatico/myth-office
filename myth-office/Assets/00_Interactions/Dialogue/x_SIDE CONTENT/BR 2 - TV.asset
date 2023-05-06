@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
+  m_Name: BR 2 - TV
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - rid: 6537768836889051160
+  - rid: 6537768836889051161
+  - rid: 6537768856200937485
+  - rid: 6537768836889051162
+  - rid: 6537768836889051163
+  - rid: 6537768836889051164
+  - rid: 6537768856200937477
+  references:
+    version: 2
+    RefIds:
+    - rid: 6537768836889051160
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b845dda08e7ae784c8d9e6417db3108a, type: 3}
+        sound: {fileID: 0}
+        line: A reporter in the studio is talking to the camera.
+    - rid: 6537768836889051161
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '"Drops in productivity on major industry sectors continue to plummet...'
+    - rid: 6537768836889051162
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '"But first-"'
+    - rid: 6537768836889051163
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '"Is this new gaming shockwave a threat to your child''s mental and
+          physical health?"'
+    - rid: 6537768836889051164
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '"More at six."'
+    - rid: 6537768856200937477
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: cbd1f7d3a9135c54fb48f8477a2bb406, type: 3}
+        sound: {fileID: 0}
+        line: . . .
+    - rid: 6537768856200937485
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: ...as doctors and researchers around the world look for the cause of
+          this global crisis."

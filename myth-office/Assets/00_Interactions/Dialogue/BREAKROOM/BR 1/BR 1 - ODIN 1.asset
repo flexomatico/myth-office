@@ -65,7 +65,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Odin
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
+        leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: b6bb1e20045ccee43b8d049e679fddf7, type: 3}
@@ -87,7 +87,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Odin
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 6d144926e7d41a0458e6623558f1e1e9, type: 3}
         sound: {fileID: 8300000, guid: 50780c0af1e674670a18b9ca8414be25, type: 3}
@@ -110,7 +110,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: "Inth\xEBrn"
         speakerLocation: 0
-        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: caf29a6d3bdd64239adb788ad762a67e, type: 3}
@@ -121,7 +121,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Odin
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: 35bbd08578c834121aa5fc919e0757e7, type: 3}
+        leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 6d144926e7d41a0458e6623558f1e1e9, type: 3}
         sound: {fileID: 8300000, guid: 64e1b25ff4b62410a9e8f42a6b707adc, type: 3}
@@ -133,7 +133,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: "Inth\xEBrn"
         speakerLocation: 0
-        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
+        leftImage: {fileID: 21300000, guid: 78e9d3afd9a104b9c9722198bacebcec, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
@@ -147,7 +147,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 3c2da64d83d79429b97b8ac8d1ce2fd9, type: 3}
         line: "You\u2019d think with how busy we are here at Pantheon Inc. that the
           Gods didn\u2019t have time for all these breaks."
     - rid: 9132166938793345039
@@ -156,7 +156,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: "Inth\xEBrn"
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: caf29a6d3bdd64239adb788ad762a67e, type: 3}
@@ -167,7 +167,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Odin
         speakerLocation: 1
-        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
+        leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: daa041a6f4412274ea627e7167243849, type: 3}
         sound: {fileID: 8300000, guid: 8c8b1bc52ee1f4ea3b6527d3397c4479, type: 3}
@@ -212,7 +212,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: "Inth\xEBrn"
         speakerLocation: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
@@ -260,7 +260,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 6d144926e7d41a0458e6623558f1e1e9, type: 3}
         sound: {fileID: 8300000, guid: 694f854d6a8eb4d3fa5ac58ad3ef38f4, type: 3}
-        line: 'You see? Zeus you son of a- '
+        line: You see? Son of a-
     - rid: 9132166938793345050
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
