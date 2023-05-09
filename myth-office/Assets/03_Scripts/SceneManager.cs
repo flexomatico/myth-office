@@ -23,6 +23,7 @@ public class SceneManager : MonoBehaviour
     private bool currentJourneyInitiated = false;
     public float caveAutoArriveSpeed = 5;
     public float caveAutoLeaveSpeed = 2;
+    public GameObject caveSafetyCollider;
     
 
     private bool caveCanLeave = true;
@@ -193,6 +194,7 @@ public class SceneManager : MonoBehaviour
     {
         Animator elevatorDoorsAnim = GameObject.Find("ElevatorDoors").GetComponent<Animator>();
         elevatorDoorsAnim.SetTrigger("open-doors");
+        caveSafetyCollider.SetActive(false);
     }
 
     public void CloseElevatorDoors()
@@ -201,6 +203,7 @@ public class SceneManager : MonoBehaviour
         {
             Animator elevatorDoorsAnim = GameObject.Find("ElevatorDoors").GetComponent<Animator>();
             elevatorDoorsAnim.SetTrigger("close-doors");
+            caveSafetyCollider.SetActive(true);
         }
     }
 }
