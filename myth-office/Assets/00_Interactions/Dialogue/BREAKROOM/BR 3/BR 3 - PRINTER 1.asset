@@ -78,7 +78,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f374fd8408eb1484d9dc138e5ff41145, type: 3}
         line: ...Baked beans?
     - rid: 1780414536733425670
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -89,7 +89,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: What the hell?
     - rid: 1780414536733425672
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -122,7 +122,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
         line: Here we go I guess...
     - rid: 1780414536733425677
       type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
@@ -157,7 +157,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 78e9d3afd9a104b9c9722198bacebcec, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: caf29a6d3bdd64239adb788ad762a67e, type: 3}
         line: "That\u2019s not coffee, that\u2019s raisins\u2026"
     - rid: 1780414536733425680
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -168,7 +168,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f0ffb016aa2e64b079de3229589218d5, type: 3}
         line: What is going on in this office?
     - rid: 1780414536733425681
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -214,7 +214,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: Bingo, coffee!
     - rid: 1780414536733425686
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}

@@ -43,7 +43,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: d89ca74f1d23a4c7f87c9b610a28815a, type: 3}
         line: '"Drops in productivity on major industry sectors continue to plummet...'
     - rid: 6537768836889051162
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -65,7 +65,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 2e0005647ff6b4e1a80d61c7c77bc5a5, type: 3}
         line: '"Is this new gaming shockwave a threat to your child''s mental and
           physical health?"'
     - rid: 6537768836889051164
@@ -99,6 +99,6 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 587e5bd74275240a39cda4674776860f, type: 3}
         line: ...as doctors and researchers around the world look for the cause of
           this global crisis."
