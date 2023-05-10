@@ -34,7 +34,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 6d144926e7d41a0458e6623558f1e1e9, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: Oh, I almost forgot to mention...
     - rid: 668674076555608104
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -56,7 +56,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
         line: 'Thor called and said he wouldn''t be coming in. '
     - rid: 668674076555608106
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -78,7 +78,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: And your wife called too. She wanted you to call right away.
     - rid: 668674076555608108
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -111,7 +111,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
         line: Anyway, I gotta run this coffee up to Athena.
     - rid: 668674076555608165
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -122,5 +122,5 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: f374fd8408eb1484d9dc138e5ff41145, type: 3}
         line: Bye!

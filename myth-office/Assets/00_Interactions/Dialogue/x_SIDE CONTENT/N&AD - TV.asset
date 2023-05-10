@@ -44,7 +44,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 346cd563525894fd384f6946ba0b4768, type: 3}
         line: '"Yes, as you can see Carl, the water levels seem to have risen slightly
           these last couple of days."'
     - rid: 1780414468566286341
@@ -56,7 +56,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: dc0ed495a5a7a4d0cba56bb217241df3, type: 3}
         line: '"I suppose I should have worn my wellies this morning, haha!"'
     - rid: 1780414468566286342
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -79,7 +79,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 2e0005647ff6b4e1a80d61c7c77bc5a5, type: 3}
         line: '"Right you are Carolina! As you can see folks, the situation seems
           to be perfectly under control."'
     - rid: 1780414468566286344
