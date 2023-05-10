@@ -15,6 +15,12 @@ MonoBehaviour:
   dialogueParts:
   - rid: 6537768836889051152
   - rid: 6537768836889051153
+  - rid: 6537768953136807936
+  - rid: 6537768953136807940
+  - rid: 6537768953136807937
+  - rid: 6537768953136807939
+  - rid: 6537768953136807941
+  - rid: 6537768953136807942
   references:
     version: 2
     RefIds:
@@ -28,7 +34,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: b845dda08e7ae784c8d9e6417db3108a, type: 3}
         sound: {fileID: 0}
-        line: The TV seems to be running commercials.
+        line: There's a news report on. Two reporters are sitting in the studio.
     - rid: 6537768836889051153
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -38,5 +44,73 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: 2e0005647ff6b4e1a80d61c7c77bc5a5, type: 3}
+        line: '"Yes, so as you all just heard people the UN has declared this to
+          be the quietest decade of the century."'
+    - rid: 6537768953136807936
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: 3ad578366e3204b768652ddf7bd6f1bf, type: 3}
+        line: '"Nothing much seems to be going on, on good old Earth."'
+    - rid: 6537768953136807937
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: 7bc2257573e004d53aac9c287eef7c80, type: 3}
+        line: '"Right you are, Carl. It seems nothing out there could shake this
+          steady, steady boat."'
+    - rid: 6537768953136807939
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: '"P'
+        line: '"Next up! Books: A danger to society as we know it?"'
+    - rid: 6537768953136807940
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: '"Not quite the news story, aye Carolina?"'
+    - rid: 6537768953136807941
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 8300000, guid: dc0ed495a5a7a4d0cba56bb217241df3, type: 3}
+        line: '"More at 11."'
+    - rid: 6537768953136807942
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: TV
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: cbd1f7d3a9135c54fb48f8477a2bb406, type: 3}
+        sound: {fileID: 0}
+        line: '. . . '
