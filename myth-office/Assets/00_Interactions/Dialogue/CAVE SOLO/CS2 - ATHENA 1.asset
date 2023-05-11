@@ -58,7 +58,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
+        sound: {fileID: 8300000, guid: 5a70e50ac5de54e838c8175a554c6221, type: 3}
         line: Forget whatever Ra is making you do right now.
     - rid: 668673759249694774
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -80,7 +80,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: c0e7fa7220bdb4c78ab548a15ae8543d, type: 3}
         line: I need you to come with me right this instant!
     - rid: 668673759249694776
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -102,7 +102,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
-        sound: {fileID: 8300000, guid: 3790160d7f8be4fa1b8b12c784f82e67, type: 3}
+        sound: {fileID: 8300000, guid: 0b28ca2b7a3234e0a9c6ccb4885d32f6, type: 3}
         line: No doubt, you have heard all about me.
     - rid: 668673759249694780
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -157,7 +157,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 81198992f009c604f8841970e7d5ab45, type: 3}
-        sound: {fileID: 8300000, guid: c589e8f3077674c53887e1ab5ad92de4, type: 3}
+        sound: {fileID: 8300000, guid: 3790160d7f8be4fa1b8b12c784f82e67, type: 3}
         line: Are you disobeying my commands?!
     - rid: 668673759249694786
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -179,7 +179,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: eb7be84e18af5674c8ea71f6456ca8ab, type: 3}
-        sound: {fileID: 8300000, guid: 0b28ca2b7a3234e0a9c6ccb4885d32f6, type: 3}
+        sound: {fileID: 8300000, guid: c589e8f3077674c53887e1ab5ad92de4, type: 3}
         line: Hahaha!
     - rid: 668673759249694788
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -190,7 +190,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
-        sound: {fileID: 8300000, guid: 442e4082f79494297ab67a1f14f39f22, type: 3}
+        sound: {fileID: 8300000, guid: ad134d436ce2f425292ca2b5a40afdea, type: 3}
         line: You should see your face!
     - rid: 668674094441168897
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -201,7 +201,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: Uh...
     - rid: 668674094441168898
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -212,7 +212,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 35bbd08578c834121aa5fc919e0757e7, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 25e6c0c530c8e4f7b841e9da55bbb4a5, type: 3}
         line: Wait, but Ra-
     - rid: 668674094441168899
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -223,7 +223,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 442e4082f79494297ab67a1f14f39f22, type: 3}
         line: Yes, it is she. Athena!
     - rid: 668674094441168900
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -234,7 +234,7 @@ MonoBehaviour:
         leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 78e47d382dd4a4f85b0671f4798e83a2, type: 3}
         line: . . .
     - rid: 668674094441168901
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -278,5 +278,5 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 4e8beef365c72054e8550771f72ad2bc, type: 3}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 8464d4049e10f457c8ad03c748b6fa75, type: 3}
         line: Oh, that featherhead needs to calm his beak!

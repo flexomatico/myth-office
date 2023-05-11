@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
-  - 'RAO 2: RA 1 Intermediary allowed + can go to phone'
+  - 'RAO 2: Can do intermediary after Ra 3'
   FulfillsPrerequisites:
   - 'RAO 2: Can do Pre-Intermediary with ODIN in BR 4'
   deleteAfterFinished: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
-  - 'RAO 2: RA 1 Intermediary allowed + can go to phone'
+  - 'RAO 2: Can go back to Ra after Phone 2'
   FulfillsPrerequisites:
   - 'RAO 2: Can do intermediary after Ra 3'
   deleteAfterFinished: 1
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedsPrerequisites:
-  - 'RAO 2: RA 1 Intermediary allowed + can go to phone'
+  - 'RAO 2: Can go back to Ra after Phone 1'
   FulfillsPrerequisites:
   - 'RAO 2: Can go back to phone after Ra 2'
   deleteAfterFinished: 1
