@@ -449,7 +449,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b932dab1dfbbb40679a1cba100dade13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeedsPrerequisites: []
+  NeedsPrerequisites:
+  - 'N&AD: Can go to Freya''s Door'
   FulfillsPrerequisites: []
   deleteAfterFinished: 1
   doAfterFinished:
