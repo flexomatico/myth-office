@@ -15,6 +15,7 @@ MonoBehaviour:
   dialogueParts:
   - rid: 1780414468566286384
   - rid: 1780414468566286385
+  - rid: 6537768994308620303
   references:
     version: 2
     RefIds:
@@ -39,4 +40,15 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: Better not let the other Gods notice this atrocity!
+        line: If Athena finds out I'm gonna-
+    - rid: 6537768994308620303
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Odin
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: YOU'LL be in so much trouble!
