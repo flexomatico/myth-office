@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
+  m_Name: RAO1 - PHONE
+  m_EditorClassIdentifier: 
+  dialogueParts:
+  - rid: 6537768994308620288
+  - rid: 6537768994308620291
+  - rid: 6537768994308620290
+  - rid: 6537768994308620292
+  - rid: 6537768994308620293
+  - rid: 6537768994308620294
+  - rid: 6537768994308620295
+  references:
+    version: 2
+    RefIds:
+    - rid: 6537768994308620288
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra's Phone
+        speakerLocation: 1
+        leftImage: {fileID: 21300000, guid: 477e3b4c780384d8590ac9d235bf567c, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
+        sound: {fileID: 0}
+        line: It looks like a normal phone handset.
+    - rid: 6537768994308620290
+      type: {class: ChoiceResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 1
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        choices:
+        - Dial a random number.
+        - Press the hashtag.
+        - Press the red button.
+    - rid: 6537768994308620291
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra's Phone
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: There's a normal set of numbers, the hashtag and a red button.
+    - rid: 6537768994308620292
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra's Phone
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
+        sound: {fileID: 8300000, guid: 3908da86644db4b8395e313380f9b238, type: 3}
+        line: . . .
+    - rid: 6537768994308620293
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: 4567c92418d64426cabf82beb5c52af5, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
+        sound: {fileID: 0}
+        line: . . .
+    - rid: 6537768994308620294
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra's Phone
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
+        sound: {fileID: 8300000, guid: 3908da86644db4b8395e313380f9b238, type: 3}
+        line: The dial tone continues.
+    - rid: 6537768994308620295
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: 78e9d3afd9a104b9c9722198bacebcec, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Hm, I don't know what I expected.
