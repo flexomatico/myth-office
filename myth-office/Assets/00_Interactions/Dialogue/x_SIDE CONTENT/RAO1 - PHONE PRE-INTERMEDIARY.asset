@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44556adf0793743bbb6b04ca94883922, type: 3}
-  m_Name: RAO1 - PHONE
+  m_Name: RAO1 - PHONE PRE-INTERMEDIARY
   m_EditorClassIdentifier: 
   dialogueParts:
   - rid: 6537768994308620288
@@ -58,7 +58,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
         sound: {fileID: 0}
-        line: There's a normal set of numbers, the hashtag and a red button.
+        line: There's the regular set of numbers, the hashtag and a red button.
     - rid: 6537768994308620292
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
