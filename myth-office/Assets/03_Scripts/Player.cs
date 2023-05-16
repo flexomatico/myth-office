@@ -21,8 +21,8 @@ public class Player : MonoBehaviour
 
     // Visual parameters
     public Animator _animator;
-    public MeshRenderer _idleShadow;
-    public MeshRenderer _runShadow;
+    public SpriteRenderer _idleShadow;
+    public SpriteRenderer _runShadow;
 
     private void Start()
     {
