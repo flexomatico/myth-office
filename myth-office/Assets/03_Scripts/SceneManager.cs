@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class SceneManager : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class SceneManager : MonoBehaviour
     private bool currentJourneyInitiated = false;
     public float caveAutoArriveSpeed = 5;
     public float caveAutoLeaveSpeed = 2;
+    public float caveAutoLeaveTime = 2;
     public GameObject caveSafetyCollider;
     
 
@@ -50,6 +52,7 @@ public class SceneManager : MonoBehaviour
     public void CallCave()
     {
         currentJourneyInitiated = false;
+        FinishCaveDeparture();
         activeCave = Instantiate(journeys[currentJourney].cave);
         if (journeys[currentJourney].animateCaveArrival)
         {
@@ -125,7 +128,7 @@ public class SceneManager : MonoBehaviour
         if (arriveWithSound)
         {
             arriveSoundSource.Play();
-            OpenElevatorDoors();
+            StartCoroutine(OpenElevatorDoors());
         }
         else
         {
@@ -139,13 +142,14 @@ public class SceneManager : MonoBehaviour
         if (caveCanLeave)
         {
             currentAnimTime = 0.0f;
-            StartCoroutine(AnimateCaveDeparture());
+            travelTime = caveAutoLeaveTime;
+            travelDistance = defaultTravelDistance;
+            animationCoroutine = StartCoroutine(AnimateCaveDeparture());
         }
     }
 
     private IEnumerator AnimateCaveDeparture()
     {
-        bool caveIsArriving = journeys[currentJourney].animateCaveArrival;
         float nextYPos;
         
         while (currentAnimTime < 1.0f)
@@ -158,14 +162,23 @@ public class SceneManager : MonoBehaviour
             currentAnimTime += Time.deltaTime / travelTime;
             yield return null;
         }
-        
-        Destroy(activeCave);
-        currentJourney++;
+
+        FinishCaveDeparture();
+    }
+
+    private void FinishCaveDeparture()
+    {
+        if (animationCoroutine != null)
+        {
+            Destroy(activeCave);
+            currentJourney++;
+            StopCoroutine(animationCoroutine);
+            animationCoroutine = null;
+        }
     }
 
     private IEnumerator AnimateCaveArrival()
     {
-        bool caveIsArriving = journeys[currentJourney].animateCaveArrival;
         float nextYPos;
         
         while (currentAnimTime < 1.0f)
@@ -185,13 +198,14 @@ public class SceneManager : MonoBehaviour
     private void ArriveCave()
     {
         activeCave.transform.position = Vector3.zero;
-        OpenElevatorDoors();
+        StartCoroutine(OpenElevatorDoors());
         arriveSoundSource.PlayDelayed(0.5f);
         caveCanLeave = false;
     }
 
-    private void OpenElevatorDoors()
+    private IEnumerator OpenElevatorDoors()
     {
+        yield return null;
         Animator elevatorDoorsAnim = GameObject.Find("ElevatorDoors").GetComponent<Animator>();
         elevatorDoorsAnim.SetTrigger("open-doors");
         caveSafetyCollider.SetActive(false);
