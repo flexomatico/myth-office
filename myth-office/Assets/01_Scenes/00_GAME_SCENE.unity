@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26847973, g: 0.2660411, b: 0.28599173, a: 1}
+  m_IndirectSpecularColor: {r: 0.26847973, g: 0.26604113, b: 0.28599173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1185,17 +1185,17 @@ MonoBehaviour:
       type: 3}
     travelDistance: 20
     travelTime: 5
-    animateCaveArrival: 0
+    animateCaveArrival: 1
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 9021977118391850892, guid: 3fa46576cb8264c72810129142a0b39a,
       type: 3}
-    travelDistance: 20
+    travelDistance: 40
     travelTime: 5
     animateCaveArrival: 0
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 6214194385032012531, guid: 16c75ad38a25a40a6884550128724cee,
       type: 3}
-    travelDistance: 15
+    travelDistance: 40
     travelTime: 5
     animateCaveArrival: 1
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
@@ -1261,7 +1261,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  currentJourney: 0
+  currentJourney: 6
   defaultTravelDistance: 30
   caveAutoArriveSpeed: 5
   caveAutoLeaveSpeed: 4
@@ -1396,7 +1396,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
@@ -1406,7 +1406,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.5
+      value: 37.1
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}

@@ -58,6 +58,9 @@ MonoBehaviour:
   - rid: 1780414468566286460
   - rid: 1780414468566286461
   - rid: 1780414468566286462
+  - rid: 2339442193049321472
+  - rid: 2339442193049321473
+  - rid: 2339442193049321474
   - rid: 1780414468566286463
   - rid: 1780414468566286464
   - rid: 1780414468566286465
@@ -444,7 +447,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 8300000, guid: f76749d77e0a441bda2b6faa18899982, type: 3}
-        line: Yeah, so we need a mill because Odin-
+        line: Yeah, so we need a coffee grinder because Odin-
     - rid: 1780414468566286451
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -521,7 +524,7 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: b95accf55776d446c913441832820921, type: 3}
-        line: "So yeah, a\u2026 mill? So I just have one question."
+        line: "So yeah, a\u2026 coffee grinder? I just have a couple of questions."
     - rid: 1780414468566286458
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -554,7 +557,8 @@ MonoBehaviour:
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 23fd5ee1a05922640bd1e6961793b733, type: 3}
         sound: {fileID: 8300000, guid: 49c7311bdd40e4fe8a400532d3d0a9c4, type: 3}
-        line: 'What- and I ask this with the utmost respect and reverence, is a mill? '
+        line: 'What- and I ask this with the utmost respect and reverence, is a "coffee
+          grinder"? '
     - rid: 1780414468566286461
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
       data:
@@ -583,7 +587,7 @@ MonoBehaviour:
         responseType: 0
         speakerName: Intern
         speakerLocation: 0
-        leftImage: {fileID: 21300000, guid: 35bbd08578c834121aa5fc919e0757e7, type: 3}
+        leftImage: {fileID: 21300000, guid: db7d5c3f5f1b547a7be69fa4b8f5de6d, type: 3}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: 70fc243e12a9bf249950e89059188a1d, type: 3}
         sound: {fileID: 0}
@@ -691,3 +695,36 @@ MonoBehaviour:
         rightImage: {fileID: 0}
         sound: {fileID: 8300000, guid: e6871873b746149d2967c1fe47680984, type: 3}
         line: Phew...
+    - rid: 2339442193049321472
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: 
+        speakerLocation: 0
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Okay, it's kind of like a mill-
+    - rid: 2339442193049321473
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Ra Worshipper
+        speakerLocation: 1
+        leftImage: {fileID: 0}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: Yeah, so I'm gonna have to stop you there. A... "mill"?
+    - rid: 2339442193049321474
+      type: {class: TextResponse, ns: , asm: Assembly-CSharp}
+      data:
+        responseType: 0
+        speakerName: Intern
+        speakerLocation: 0
+        leftImage: {fileID: 21300000, guid: 78e9d3afd9a104b9c9722198bacebcec, type: 3}
+        middleImage: {fileID: 0}
+        rightImage: {fileID: 0}
+        sound: {fileID: 0}
+        line: I swear...

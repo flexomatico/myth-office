@@ -298,7 +298,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   dialogue: {fileID: 11400000, guid: 70c523f4899fd46a59a283d6ffce7e04, type: 2}
-  colliderRadius: 3.71
+  colliderRadius: 1.7
   interactionPromptOffset: {x: 1.34, y: 0.67, z: -0.37}
 --- !u!1 &5091792825242690965
 GameObject:
@@ -368,7 +368,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   dialogue: {fileID: 11400000, guid: f851c4818e6c147db94ee9ae5ac6f807, type: 2}
-  colliderRadius: 3.71
+  colliderRadius: 1.7
   interactionPromptOffset: {x: 1.34, y: 0.67, z: -0.37}
 --- !u!1 &7073990006708670016
 GameObject:
@@ -452,7 +452,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7730760742561933191}
   m_LocalRotation: {x: 0.00000009732794, y: -0.58863246, z: -0.00000035546256, w: 0.80840087}
-  m_LocalPosition: {x: -0.5489252, y: 0.31677398, z: 0.4255491}
+  m_LocalPosition: {x: 2.5, y: 0.32, z: 0.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
