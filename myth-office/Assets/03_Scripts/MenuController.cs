@@ -12,6 +12,7 @@ public class MenuController : MonoBehaviour
     public GameObject startMenu;
     public GameObject pauseMenu;
     public GameObject resumeButton;
+    public Animator cameraAnimator;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class MenuController : MonoBehaviour
     {
         _playerInput.SwitchCurrentActionMap("Player");
         startMenu.SetActive(false);
+        cameraAnimator.SetTrigger("continue-camera");
     }
 
     public void PauseGame(InputAction.CallbackContext context)
@@ -31,12 +33,14 @@ public class MenuController : MonoBehaviour
         _playerInput.SwitchCurrentActionMap("UI");
         pauseMenu.SetActive(true);
         eventSystem.SetSelectedGameObject(resumeButton);
+        cameraAnimator.SetTrigger("pause-camera");
     }
 
     public void ContinueGame()
     {
         _playerInput.SwitchCurrentActionMap("Player");
         pauseMenu.SetActive(false);
+        cameraAnimator.SetTrigger("continue-camera");
     }
 
     public void QuitGame()
