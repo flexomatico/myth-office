@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 433903479292632098}
   - component: {fileID: 6125353093773267951}
   m_Layer: 0
-  m_Name: InternVisuals (1)
+  m_Name: InternVisuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625360173527975987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.007, z: 0}
-  m_LocalScale: {x: 2.3856812, y: 1.6534309, z: 1.8508}
+  m_LocalPosition: {x: 0, y: 1.19, z: 0}
+  m_LocalScale: {x: 1.1840808, y: 2.35879, z: 2.6403577}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5368401607061448361}
@@ -479,9 +479,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerSpeed: 6
-  _animator: {fileID: 0}
+  _animator: {fileID: 6054194937368299215}
   _idleShadow: {fileID: 4922249141881815615}
   _runShadow: {fileID: 8183837479476703616}
+  runScale: {x: 2.3856812, y: 1.6534309, z: 1.8508}
+  idleScale: {x: 1.2741779, y: 2.5382712, z: 2.8412635}
 --- !u!114 &5368401607859727520
 MonoBehaviour:
   m_ObjectHideFlags: 0
