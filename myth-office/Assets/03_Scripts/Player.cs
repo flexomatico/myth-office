@@ -21,8 +21,8 @@ public class Player : MonoBehaviour
 
     // Visual parameters
     public Animator _animator;
-    public SpriteRenderer _idleShadow;
-    public SpriteRenderer _runShadow;
+    public MeshRenderer _idleShadow;
+    public MeshRenderer _runShadow;
     public Vector3 runScale;
     public Vector3 idleScale;
     private bool isFlipped = false;
