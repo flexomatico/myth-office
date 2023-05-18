@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     public SpriteRenderer _runShadow;
     public Vector3 runScale;
     public Vector3 idleScale;
+    private bool isFlipped = false;
 
     private void Start()
     {
@@ -76,13 +77,19 @@ public class Player : MonoBehaviour
             _animator.SetBool("Moving", false);
             _runShadow.enabled = false;
             _idleShadow.enabled = true;
-            _animator.transform.localScale = idleScale;
+            Vector3 newScale = idleScale;
+            if (isFlipped)
+                newScale.x *= -1;
+            _animator.transform.localScale = newScale;
         }
         else {
             _animator.SetBool("Moving", true);
             _runShadow.enabled = true;
             _idleShadow.enabled = false;
-            _animator.transform.localScale = runScale;
+            Vector3 newScale = runScale;
+            if (isFlipped)
+                newScale.x *= -1;
+            _animator.transform.localScale = newScale;
         }
 
         // Turn the player based on input direction. Don't change while standing still or just moving up/down.
@@ -92,11 +99,13 @@ public class Player : MonoBehaviour
             //_animator.gameObject.GetComponent<SpriteRenderer>().flipX = true;
             currentScale.x *= -1;
             _animator.transform.localScale = currentScale;
+            isFlipped = true;
         }
         else if (playerInputDirection.x > 0 && currentScale.x < 0) {
             //_animator.gameObject.GetComponent<SpriteRenderer>().flipX = false;
             currentScale.x *= -1;
             _animator.transform.localScale = currentScale;
+            isFlipped = false;
         }
     }
 }
