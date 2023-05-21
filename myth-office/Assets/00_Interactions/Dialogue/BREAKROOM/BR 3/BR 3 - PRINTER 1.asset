@@ -145,7 +145,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: c08fede86ad404c29a03293b959d6891, type: 3}
         line: Hundreds of small, black, wrinkled objects starts rolling out into
           the tray.
     - rid: 1780414536733425679
@@ -203,7 +203,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 8760cf15085c9426eaa04d87d944f575, type: 3}
         line: Black, solid objects start being spit out of the printer at high velocity.
     - rid: 1780414536733425685
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
