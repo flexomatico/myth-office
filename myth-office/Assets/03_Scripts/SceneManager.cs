@@ -26,6 +26,7 @@ public class SceneManager : MonoBehaviour
     public float caveAutoLeaveSpeed = 2;
     public float caveAutoLeaveTime = 2;
     public GameObject caveSafetyCollider;
+    public LightingController lightingController;
     
 
     private bool caveCanLeave = true;
@@ -41,11 +42,13 @@ public class SceneManager : MonoBehaviour
         {
             activeOffice = Instantiate(journeys[currentJourney].nextOffice);
             currentJourney++;
+            lightingController.TurnOffDirectionalLights();
         }
         else
         {
             activeOffice = Instantiate(new GameObject("Empty GameObject"));
             activeCave = Instantiate(journeys[currentJourney].cave);
+            lightingController.FadeInDirectionalLights();
         }
     }
 

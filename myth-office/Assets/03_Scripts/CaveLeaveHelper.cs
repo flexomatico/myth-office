@@ -47,4 +47,9 @@ public class CaveLeaveHelper : MonoBehaviour
     {
         StartCoroutine(DelayGoToNowhere());
     }
+
+    public void FadeInLights()
+    {
+        GameObject.Find("Lighting").GetComponent<LightingController>().FadeInDirectionalLights();
+    }
 }
