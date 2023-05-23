@@ -77,7 +77,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: fe3d647e1cc55994986aaf2009e25c14, type: 3}
-        sound: {fileID: 8300000, guid: 3762cba40fb6e406791b93cc7ce2ba08, type: 3}
+        sound: {fileID: 8300000, guid: 9b5d918b79adf430eb9f0b2bcb7c669a, type: 3}
         line: What?!
     - rid: 668674049974992904
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -88,7 +88,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 0}
+        sound: {fileID: 8300000, guid: 5f5102cad9dc74cd8a09dd1ad0f01567, type: 3}
         line: I can't hear you!
     - rid: 668674049974992906
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -110,7 +110,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 0}
-        sound: {fileID: 8300000, guid: 74a806510b538453bb9c3019279c8ce8, type: 3}
+        sound: {fileID: 8300000, guid: bb7209bfaff1e4a37909ab018db1ef10, type: 3}
         line: ODIN WANTS COFFEE!!
     - rid: 668674049974992908
       type: {class: TextResponse, ns: , asm: Assembly-CSharp}
@@ -121,7 +121,7 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         middleImage: {fileID: 0}
         rightImage: {fileID: 21300000, guid: fe3d647e1cc55994986aaf2009e25c14, type: 3}
-        sound: {fileID: 8300000, guid: 5f5102cad9dc74cd8a09dd1ad0f01567, type: 3}
+        sound: {fileID: 8300000, guid: 3762cba40fb6e406791b93cc7ce2ba08, type: 3}
         line: "Look, I\u2019m launching some serious EQs on the western hemisphere
           right now!"
     - rid: 668674049974992909
