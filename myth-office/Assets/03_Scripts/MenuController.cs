@@ -23,6 +23,21 @@ public class MenuController : MonoBehaviour
     {
         eventSystem.SetSelectedGameObject(playButton);
         _playerInput.SwitchCurrentActionMap("UI");
+        SetCursorLock(false);
+    }
+
+    private void SetCursorLock(bool isLocked)
+    {
+        if (isLocked)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 
     public void StartGame()
@@ -32,6 +47,7 @@ public class MenuController : MonoBehaviour
         cameraAnimator.SetTrigger("continue-camera");
         gradientAnimator.SetTrigger("fade-out");
         hasStarted = true;
+        SetCursorLock(true);
     }
 
     public void PauseGame(InputAction.CallbackContext context)
@@ -41,6 +57,7 @@ public class MenuController : MonoBehaviour
         eventSystem.SetSelectedGameObject(resumeButton);
         cameraAnimator.SetTrigger("pause-camera");
         gradientAnimator.SetTrigger("fade-in");
+        SetCursorLock(false);
     }
 
     public void ContinueGame()
@@ -52,6 +69,7 @@ public class MenuController : MonoBehaviour
         pauseMenu.SetActive(false);
         cameraAnimator.SetTrigger("continue-camera");
         gradientAnimator.SetTrigger("fade-out");
+        SetCursorLock(true);
     }
 
     public void QuitGame()
