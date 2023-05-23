@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.020300362, g: 0.07444946, b: 0.19792414, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2034,7 +2034,7 @@ MonoBehaviour:
       type: 3}
     travelDistance: 40
     travelTime: 5
-    animateCaveArrival: 0
+    animateCaveArrival: 1
   - cave: {fileID: 2146585862234446876, guid: e6c1eaebd31a5034ca23438a7151ad39, type: 3}
     nextOffice: {fileID: 6214194385032012531, guid: 16c75ad38a25a40a6884550128724cee,
       type: 3}
@@ -2546,7 +2546,7 @@ PrefabInstance:
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 66.99807
+      value: 45.4
       objectReference: {fileID: 0}
     - target: {fileID: 5368401607859727535, guid: 9cbff0db305b8416da73fc6e61ad4378,
         type: 3}
@@ -2588,6 +2588,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6868941064144983529, guid: 9cbff0db305b8416da73fc6e61ad4378,
+        type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1254071733}
     m_RemovedComponents:
     - {fileID: 5368401607859727530, guid: 9cbff0db305b8416da73fc6e61ad4378, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9cbff0db305b8416da73fc6e61ad4378, type: 3}
