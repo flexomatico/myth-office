@@ -27,10 +27,12 @@ public class SceneManager : MonoBehaviour
     public float caveAutoLeaveTime = 2;
     public GameObject caveSafetyCollider;
     public LightingController lightingController;
+    public CreditsController creditsController;
     
 
     private bool caveCanLeave = true;
     private Coroutine animationCoroutine = null;
+    private bool isLastJourney = false;
 
     private void Start()
     {
@@ -86,7 +88,16 @@ public class SceneManager : MonoBehaviour
         nextOffice = Instantiate(journeys[currentJourney].nextOffice);
         nextOffice.transform.position += new Vector3(0, travelDistance, 0);
         currentAnimTime = 0.0f;
-        StartCoroutine(MoveOfficesVertically(true));
+        isLastJourney = currentJourney == journeys.Count - 1;
+        if (isLastJourney)
+        {
+            animationCoroutine = StartCoroutine(MoveOfficesVertically(false));
+            creditsController.playCredits();
+        }
+        else
+        {
+            animationCoroutine = StartCoroutine(MoveOfficesVertically(true));
+        }
         currentJourneyInitiated = true;
     }
 
@@ -137,6 +148,10 @@ public class SceneManager : MonoBehaviour
         {
             StopCoroutine(animationCoroutine);
             animationCoroutine = null;
+            if (isLastJourney)
+            {
+                //creditsController.playCredits();
+            }
         }
     }
 
