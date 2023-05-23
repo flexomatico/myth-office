@@ -27,6 +27,7 @@ public class SceneManager : MonoBehaviour
     public float caveAutoLeaveTime = 2;
     public GameObject caveSafetyCollider;
     public LightingController lightingController;
+    public CreditsController creditsController;
     
 
     private bool caveCanLeave = true;
@@ -91,6 +92,7 @@ public class SceneManager : MonoBehaviour
         if (isLastJourney)
         {
             animationCoroutine = StartCoroutine(MoveOfficesVertically(false));
+            creditsController.playCredits();
         }
         else
         {
@@ -146,6 +148,10 @@ public class SceneManager : MonoBehaviour
         {
             StopCoroutine(animationCoroutine);
             animationCoroutine = null;
+            if (isLastJourney)
+            {
+                //creditsController.playCredits();
+            }
         }
     }
 

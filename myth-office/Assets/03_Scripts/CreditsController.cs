@@ -6,6 +6,11 @@ public class CreditsController : MonoBehaviour
 {
 
     public Animator cameraAnimator;
-    
-    public void
+    public Animator creditsAnimator;
+
+    public void playCredits()
+    {
+        cameraAnimator.SetTrigger("move-down");
+        creditsAnimator.SetTrigger("start-scrolling");
+    }
 }
