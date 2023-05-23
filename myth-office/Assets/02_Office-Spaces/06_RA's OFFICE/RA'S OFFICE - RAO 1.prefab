@@ -303,6 +303,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 427980ccfb2732f48a0a72d86692c5e3, type: 2}
+    - target: {fileID: 2268775320751377069, guid: dc08b4606183a42cb976e996399c8aff,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2456394893922208742, guid: dc08b4606183a42cb976e996399c8aff,
         type: 3}
       propertyPath: m_RootOrder
