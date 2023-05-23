@@ -31,6 +31,7 @@ public class SceneManager : MonoBehaviour
 
     private bool caveCanLeave = true;
     private Coroutine animationCoroutine = null;
+    private bool isLastJourney = false;
 
     private void Start()
     {
@@ -86,7 +87,15 @@ public class SceneManager : MonoBehaviour
         nextOffice = Instantiate(journeys[currentJourney].nextOffice);
         nextOffice.transform.position += new Vector3(0, travelDistance, 0);
         currentAnimTime = 0.0f;
-        StartCoroutine(MoveOfficesVertically(true));
+        isLastJourney = currentJourney == journeys.Count - 1;
+        if (isLastJourney)
+        {
+            animationCoroutine = StartCoroutine(MoveOfficesVertically(false));
+        }
+        else
+        {
+            animationCoroutine = StartCoroutine(MoveOfficesVertically(true));
+        }
         currentJourneyInitiated = true;
     }
 
