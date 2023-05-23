@@ -17,12 +17,13 @@ public class MenuController : MonoBehaviour
     public Animator gradientAnimator;
     
     private bool hasStarted = false;
+    private string lastActionMap;
 
     // Start is called before the first frame update
     void Start()
     {
         eventSystem.SetSelectedGameObject(playButton);
-        _playerInput.SwitchCurrentActionMap("UI");
+        _playerInput.SwitchCurrentActionMap("Menu");
         SetCursorLock(false);
     }
 
@@ -52,7 +53,11 @@ public class MenuController : MonoBehaviour
 
     public void PauseGame(InputAction.CallbackContext context)
     {
-        _playerInput.SwitchCurrentActionMap("UI");
+        if (context.started)
+        {
+            lastActionMap = _playerInput.currentActionMap.name;
+        }
+        _playerInput.SwitchCurrentActionMap("Menu");
         pauseMenu.SetActive(true);
         eventSystem.SetSelectedGameObject(resumeButton);
         cameraAnimator.SetTrigger("pause-camera");
@@ -65,7 +70,7 @@ public class MenuController : MonoBehaviour
         if (!hasStarted)
             return;
         
-        _playerInput.SwitchCurrentActionMap("Player");
+        _playerInput.SwitchCurrentActionMap(lastActionMap);
         pauseMenu.SetActive(false);
         cameraAnimator.SetTrigger("continue-camera");
         gradientAnimator.SetTrigger("fade-out");
