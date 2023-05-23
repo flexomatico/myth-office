@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ChoiceButtonStyling : MonoBehaviour, ISelectHandler, IDeselectHandler
+public class ChoiceButtonStyling : MonoBehaviour, ISelectHandler, IDeselectHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Color defaultColor = Color.black;
     public Color selectedColor = new Color(34, 54, 131);
@@ -32,5 +32,16 @@ public class ChoiceButtonStyling : MonoBehaviour, ISelectHandler, IDeselectHandl
         textComp.fontStyle = FontStyles.Normal;
         textComp.characterSpacing = 0;
         textComp.color = defaultColor;
+    }
+    
+    // When highlighted with mouse.
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        OnSelect(eventData);
+    }
+    
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        OnDeselect(eventData);
     }
 }
